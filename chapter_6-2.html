@@ -19,7 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-1 { system: extends lower-alpha; prefix: ''; suffix: '. '; }
+</style>
 <link rel="stylesheet" type="text/css" href="external/custom.css">
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
@@ -38,7 +40,7 @@ lang: "en-US",
 <meta name="twitter:description" content="As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.">
 <meta property="og:description" content="As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.51"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.51"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -60,16 +62,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.3';
+eBookConfig.runestone_version = '8.2.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.40bd1420d3277749.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f00d2d175c91fc71.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
-<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="applied-precalculus" class="pretext book ignore-math">
@@ -270,25 +272,25 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Algebra of Powers: Fractional Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_2" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-3" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-5" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_2.html#ex_4_2" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Power Functions: Positive Integral Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_3" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-3" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-4" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_3.html#ex_4_3" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Power Functions: Fractional and Negative Integral Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_4" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-3" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-7" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_4.html#ex_4_4" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
@@ -300,7 +302,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_5-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Exponential Functions: Practical Meaning</span></a></div>
-<ul id="ptx-toc-group-sec_5_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_1.html#ex_5_1" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_1.html#sec_5_1-4" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_1.html#sec_5_1-5" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_1.html#ex_5_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Graphs of Exponential Functions</span></a></div>
@@ -308,11 +314,19 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Functions Numerically, Modeling</span></a></div>
-<ul id="ptx-toc-group-sec_5_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_3.html#ex_5_3" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_3.html#sec_5_3-4" class="internal"><span class="title">Modeling: The Population of Mozambique</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_3.html#ex_5_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Doubling Time and Half-Life</span></a></div>
-<ul id="ptx-toc-group-sec_5_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_4.html#ex_5_4" class="internal"><span class="codenumber">5.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-4" class="internal"><span class="title">The Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-5" class="internal"><span class="title">The Half-Life</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-6" class="internal"><span class="title">Additional Observations and Examples</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_4.html#ex_5_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_5.html" class="internal"><span class="codenumber">5.5</span> <span class="title">The Natural Base e</span></a></div>
@@ -326,15 +340,28 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction active"><div class="toc-title-box"><a href="chapter_6-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">What Are Logarithms?</span></a></div>
-<ul id="ptx-toc-group-sec_6_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_1.html#ex_6_1" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_1.html#sec_6_1-4" class="internal"><span class="title">Graphs of Functions <span class="process-math">\(y=\log(x)\)</span> and <span class="process-math">\(y=\ln(x)\)</span></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_1.html#ex_6_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Properties of Logarithms, Solving Equations Using Logarithms</span></a></div>
-<ul id="ptx-toc-group-sec_6_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_2.html#ex_6_2" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-4" class="internal"><span class="title">Algebraic Properties of Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-5" class="internal"><span class="title">Solving Equations Using Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-6" class="internal"><span class="title">The Change of Base Formula for Logarithms</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_2.html#ex_6_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_3.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Logarithms in Applications</span></a></div>
-<ul id="ptx-toc-group-sec_6_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_3.html#ex_6_3" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-4" class="internal"><span class="title">Converting Between <span class="process-math">\(Q = A \cdot b^t\)</span> and <span class="process-math">\(Q = A \cdot e^{kt}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-5" class="internal"><span class="title">Calculating the Doubling Time and the Half-Life</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-6" class="internal"><span class="title">The Acidity of a Liquid</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_3.html#ex_6_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -344,11 +371,21 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_7-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Vertical and Horizontal Shifts</span></a></div>
-<ul id="ptx-toc-group-sec_7_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_1.html#ex_7_1" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-3" class="internal"><span class="title">Vertical Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-4" class="internal"><span class="title">Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-5" class="internal"><span class="title">Combining Vertical and Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_1.html#ex_7_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Vertical and Horizontal Scaling</span></a></div>
-<ul id="ptx-toc-group-sec_7_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_2.html#ex_7_2" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-3" class="internal"><span class="title">Vertical Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-4" class="internal"><span class="title">Horizontal Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-5" class="internal"><span class="title">Combining Shifts, Scaling, and Reflections</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_2.html#ex_7_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Composing and Decomposing Functions</span></a></div>
@@ -356,7 +393,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Inverse Functions</span></a></div>
-<ul id="ptx-toc-group-sec_7_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_4.html#ex_7_4" class="internal"><span class="codenumber">7.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_4.html#sec_7_4-4" class="internal"><span class="title">Finding Inverse Functions Algebraically</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_4.html#ex_7_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -370,7 +410,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Angles Using the Unit Circle, Radian Measure</span></a></div>
-<ul id="ptx-toc-group-sec_8_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_2.html#ex_8_2" class="internal"><span class="codenumber">8.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_2.html#sec_8_2-4" class="internal"><span class="title">Definition of Radian Measure</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_2.html#ex_8_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Values of Sine and Cosine for Angles on the Unit Circle</span></a></div>
@@ -378,11 +421,25 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Sine and Cosine Functions</span></a></div>
-<ul id="ptx-toc-group-sec_8_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_4.html#ex_8_4" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-4" class="internal"><span class="title">Graphs of Sine and Cosine Functions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5" class="internal"><span class="title">Transforming Sine and Cosine Functions—Basic Ideas</span></a></div>
+<ul id="ptx-toc-group-sec_8_4-5" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-3" class="internal"><span class="title">Changing the Amplitude</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-4" class="internal"><span class="title">Changing the Midline</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-5" class="internal"><span class="title">Changing the Period</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_4.html#ex_8_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Families of Sine and Cosine Functions, Modeling</span></a></div>
-<ul id="ptx-toc-group-sec_8_5" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_5.html#ex_8_5" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_5" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_5.html#sec_8_5-4" class="internal"><span class="title">Modeling Periodic Processes</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_5.html#ex_8_5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -396,7 +453,9 @@ eBookConfig.enable_chatcodes =  false;
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content">
 <section class="introduction" id="chapter_6-2"><h1 class="heading">Introduction</h1>
-<div class="para" id="chapter_6-2-1">Intro about Chapter 6.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chapter_6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="chapter_6-2-1">In Chapter 5 we saw that solving an equation such as <span class="process-math">\(3000(1.0433)^t=6000\)</span> for the unknown exponent <span class="process-math">\(t\)</span> required a new kind of tool, since none of our familiar algebraic operations could isolate the exponent <span class="process-math">\(t\text{.}\)</span> That tool is the <em class="emphasis">logarithm</em>, the inverse operation of exponentiation. Logarithms let us solve for unknown exponents, and they also arise naturally whenever a quantity spans many orders of magnitude, such as the acidity of a liquid or the intensity of an earthquake.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chapter_6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="chapter_6-2-2">This chapter begins by defining the logarithm base <span class="process-math">\(b\)</span> and, in particular, the common logarithm and the natural logarithm. We then develop the algebraic properties of logarithms and use them to solve exponential equations, as well as to condense and expand logarithmic expressions. The chapter concludes with applications of logarithms, including converting an exponential function between standard and base-<span class="process-math">\(e\)</span> form, calculating doubling time and half-life, and measuring the acidity of a liquid using the pH scale.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#chapter_6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
 </div>
 <div id="ptx-content-footer" class="ptx-content-footer">

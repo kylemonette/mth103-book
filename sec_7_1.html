@@ -19,7 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-1 { system: extends lower-alpha; prefix: ''; suffix: '. '; }
+</style>
 <link rel="stylesheet" type="text/css" href="external/custom.css">
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
@@ -38,7 +40,7 @@ lang: "en-US",
 <meta name="twitter:description" content="As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.">
 <meta property="og:description" content="As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.51"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.51"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -60,16 +62,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.3';
+eBookConfig.runestone_version = '8.2.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.40bd1420d3277749.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f00d2d175c91fc71.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
-<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="applied-precalculus" class="pretext book ignore-math">
@@ -270,25 +272,25 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Algebra of Powers: Fractional Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_2" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-3" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-5" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_2.html#ex_4_2" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Power Functions: Positive Integral Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_3" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-3" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-4" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_3.html#ex_4_3" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Power Functions: Fractional and Negative Integral Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_4" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-3" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-7" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_4.html#ex_4_4" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
@@ -300,7 +302,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_5-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Exponential Functions: Practical Meaning</span></a></div>
-<ul id="ptx-toc-group-sec_5_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_1.html#ex_5_1" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_1.html#sec_5_1-4" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_1.html#sec_5_1-5" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_1.html#ex_5_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Graphs of Exponential Functions</span></a></div>
@@ -308,11 +314,19 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Functions Numerically, Modeling</span></a></div>
-<ul id="ptx-toc-group-sec_5_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_3.html#ex_5_3" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_3.html#sec_5_3-4" class="internal"><span class="title">Modeling: The Population of Mozambique</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_3.html#ex_5_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Doubling Time and Half-Life</span></a></div>
-<ul id="ptx-toc-group-sec_5_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_4.html#ex_5_4" class="internal"><span class="codenumber">5.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-4" class="internal"><span class="title">The Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-5" class="internal"><span class="title">The Half-Life</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-6" class="internal"><span class="title">Additional Observations and Examples</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_4.html#ex_5_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_5.html" class="internal"><span class="codenumber">5.5</span> <span class="title">The Natural Base e</span></a></div>
@@ -326,15 +340,28 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_6-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">What Are Logarithms?</span></a></div>
-<ul id="ptx-toc-group-sec_6_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_1.html#ex_6_1" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_1.html#sec_6_1-4" class="internal"><span class="title">Graphs of Functions <span class="process-math">\(y=\log(x)\)</span> and <span class="process-math">\(y=\ln(x)\)</span></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_1.html#ex_6_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Properties of Logarithms, Solving Equations Using Logarithms</span></a></div>
-<ul id="ptx-toc-group-sec_6_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_2.html#ex_6_2" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-4" class="internal"><span class="title">Algebraic Properties of Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-5" class="internal"><span class="title">Solving Equations Using Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-6" class="internal"><span class="title">The Change of Base Formula for Logarithms</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_2.html#ex_6_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_3.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Logarithms in Applications</span></a></div>
-<ul id="ptx-toc-group-sec_6_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_3.html#ex_6_3" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-4" class="internal"><span class="title">Converting Between <span class="process-math">\(Q = A \cdot b^t\)</span> and <span class="process-math">\(Q = A \cdot e^{kt}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-5" class="internal"><span class="title">Calculating the Doubling Time and the Half-Life</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-6" class="internal"><span class="title">The Acidity of a Liquid</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_3.html#ex_6_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -344,11 +371,21 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_7-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec_7_1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Vertical and Horizontal Shifts</span></a></div>
-<ul class="structural toc-item-list active" id="ptx-toc-group-sec_7_1"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_1.html#ex_7_1" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec_7_1">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-3" class="internal"><span class="title">Vertical Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-4" class="internal"><span class="title">Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-5" class="internal"><span class="title">Combining Vertical and Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_1.html#ex_7_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Vertical and Horizontal Scaling</span></a></div>
-<ul id="ptx-toc-group-sec_7_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_2.html#ex_7_2" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-3" class="internal"><span class="title">Vertical Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-4" class="internal"><span class="title">Horizontal Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-5" class="internal"><span class="title">Combining Shifts, Scaling, and Reflections</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_2.html#ex_7_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Composing and Decomposing Functions</span></a></div>
@@ -356,7 +393,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Inverse Functions</span></a></div>
-<ul id="ptx-toc-group-sec_7_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_4.html#ex_7_4" class="internal"><span class="codenumber">7.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_4.html#sec_7_4-4" class="internal"><span class="title">Finding Inverse Functions Algebraically</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_4.html#ex_7_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -370,7 +410,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Angles Using the Unit Circle, Radian Measure</span></a></div>
-<ul id="ptx-toc-group-sec_8_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_2.html#ex_8_2" class="internal"><span class="codenumber">8.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_2.html#sec_8_2-4" class="internal"><span class="title">Definition of Radian Measure</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_2.html#ex_8_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Values of Sine and Cosine for Angles on the Unit Circle</span></a></div>
@@ -378,11 +421,25 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Sine and Cosine Functions</span></a></div>
-<ul id="ptx-toc-group-sec_8_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_4.html#ex_8_4" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-4" class="internal"><span class="title">Graphs of Sine and Cosine Functions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5" class="internal"><span class="title">Transforming Sine and Cosine Functions—Basic Ideas</span></a></div>
+<ul id="ptx-toc-group-sec_8_4-5" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-3" class="internal"><span class="title">Changing the Amplitude</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-4" class="internal"><span class="title">Changing the Midline</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-5" class="internal"><span class="title">Changing the Period</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_4.html#ex_8_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Families of Sine and Cosine Functions, Modeling</span></a></div>
-<ul id="ptx-toc-group-sec_8_5" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_5.html#ex_8_5" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_5" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_5.html#sec_8_5-4" class="internal"><span class="title">Modeling Periodic Processes</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_5.html#ex_8_5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -406,47 +463,352 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <ol class="decimal" id="sec_7_1-2-2">
 <li id="sec_7_1-2-2-1">
-<div class="para" id="sec_7_1-2-2-1-1">First objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_7_1-2-2-1-1">Determine the effect of adding or subtracting a constant to the output of a function and identify the resulting vertical shift.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 7.1.1"><a tabindex="-1" href="#sec_7_1-2-2-1" title="Copy heading and permalink for Objective 7.1.1" aria-label="Copy heading and permalink for Objective 7.1.1">🔗</a></div>
 </li>
 <li id="sec_7_1-2-2-2">
-<div class="para" id="sec_7_1-2-2-2-1">Second objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_7_1-2-2-2-1">Determine the effect of adding or subtracting a constant to the input of a function and identify the resulting horizontal shift.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 7.1.2"><a tabindex="-1" href="#sec_7_1-2-2-2" title="Copy heading and permalink for Objective 7.1.2" aria-label="Copy heading and permalink for Objective 7.1.2">🔗</a></div>
 </li>
 <li id="sec_7_1-2-2-3">
-<div class="para" id="sec_7_1-2-2-3-1">Third objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_7_1-2-2-3-1">Combine vertical and horizontal shifts to describe or write the formula for a transformed function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 7.1.3"><a tabindex="-1" href="#sec_7_1-2-2-3" title="Copy heading and permalink for Objective 7.1.3" aria-label="Copy heading and permalink for Objective 7.1.3">🔗</a></div>
 </li>
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Objectives 7.1"><a tabindex="-1" href="#sec_7_1-2" title="Copy heading and permalink for Objectives 7.1" aria-label="Copy heading and permalink for Objectives 7.1">🔗</a></div>
 </article>
-<figure class="figure figure-like" id="fig_7_1_vert_shift"><div class="interactive-iframe-container"><iframe id="fig_7_1_vert_shift-1" style="width:360px; height:360px; display: block; " src="fig_7_1_vert_shift-1-if.html"></iframe></div>
-<div class="interactive-iframe-container__opener"><a href="fig_7_1_vert_shift-1.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
-<div class="instructions interactive__instructions">
-<details id="fig_7_1_vert_shift-1-2" class="solution-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Instructions<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2></summary>
-<div class="solution-like knowl__content">
-<div class="para" id="fig_7_1_vert_shift-1-2-1">Drag the dot to see the effect of vertical shifts on <span class="process-math">\(f(x) = x^2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_7_1_vert_shift-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="subsection" id="sec_7_1-3">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vertical Shifts</span>
+</h2>
+<div class="para" id="sec_7_1-3-2">What happens if we change the function <span class="process-math">\(f(x) = x^2\)</span> by adding or subtracting a number from it? For instance, what would the graphs of <span class="process-math">\(g(x) = x^2 + 1\)</span> and <span class="process-math">\(h(x) = x^2 - 3\)</span> look like? In this case, the graph of <span class="process-math">\(g(x) = x^2 + 1\)</span> is the graph of <span class="process-math">\(f(x) = x^2\)</span> <em class="emphasis">shifted up one unit</em> and the graph of <span class="process-math">\(h(x) = x^2 - 3\)</span> is the graph of <span class="process-math">\(f(x) = x^2\)</span> <em class="emphasis">shifted down 3 units</em>.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Instructions"><a tabindex="-1" href="#fig_7_1_vert_shift-1-2" title="Copy heading and permalink for Instructions" aria-label="Copy heading and permalink for Instructions">🔗</a></div>
+<div class="para" id="sec_7_1-3-3">In general, if we begin with the graph of a function <span class="process-math">\(y = f(x)\text{,}\)</span> then the function <span class="process-math">\(g(x) = f(x) + k\)</span> can be given by the formula <span class="process-math">\(g(x) = y + k\text{.}\)</span> That is, the <span class="process-math">\(y\)</span>-values of <span class="process-math">\(g(x)\)</span> are the <span class="process-math">\(y\)</span>-values of <span class="process-math">\(f(x)\)</span> adjusted by the addition of the number <span class="process-math">\(k\text{.}\)</span> Hence, the graph of <span class="process-math">\(g(x) = f(x) + k\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted either upward or downward depending upon the value of <span class="process-math">\(k\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig_7_1_vert_shift"><div class="interactive-iframe-container"><iframe id="fig_7_1_vert_shift-2" style="width:360px; height:360px; display: block; " src="fig_7_1_vert_shift-2-if.html"></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="fig_7_1_vert_shift-2.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="instructions interactive__instructions">
+<details id="fig_7_1_vert_shift-2-2" class="solution-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Instructions<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<div class="solution-like knowl__content">
+<div class="para" id="fig_7_1_vert_shift-2-2-1">Drag the dot to see the effect of vertical shifts on <span class="process-math">\(f(x) = x^2\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_7_1_vert_shift-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Instructions"><a tabindex="-1" href="#fig_7_1_vert_shift-2-2" title="Copy heading and permalink for Instructions" aria-label="Copy heading and permalink for Instructions">🔗</a></div>
 </div></details>
 </div>
 <figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Figure 7.1.1"><a tabindex="-1" href="#fig_7_1_vert_shift" title="Copy heading and permalink for Figure 7.1.1" aria-label="Copy heading and permalink for Figure 7.1.1">🔗</a></div></figcaption>
 </figure>
-<figure class="figure figure-like" id="fig_7_1_hor_shift"><div class="interactive-iframe-container"><iframe id="fig_7_1_hor_shift-1" style="width:360px; height:360px; display: block; " src="fig_7_1_hor_shift-1-if.html"></iframe></div>
-<div class="interactive-iframe-container__opener"><a href="fig_7_1_hor_shift-1.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
-<div class="instructions interactive__instructions">
-<details id="fig_7_1_hor_shift-1-2" class="solution-like born-hidden-knowl"><summary class="knowl__link"><h2 class="heading"><span class="type">Instructions<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h2></summary>
-<div class="solution-like knowl__content">
-<div class="para" id="fig_7_1_hor_shift-1-2-1">Drag the dot to see the effect of horizontal shifts on <span class="process-math">\(f(x) = \sqrt{x}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_7_1_hor_shift-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="definition definition-like" id="sec_7_1-3-5"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Vertical Shift.</span>
+</h3>
+<div class="para" id="sec_7_1-3-5-2-1">Given a function <span class="process-math">\(f(x)\)</span> and a constant <span class="process-math">\(k\text{,}\)</span> <span class="process-math">\(g(x) = f(x) + k\)</span> is a <em class="emphasis">vertical shift</em> of the graph of <span class="process-math">\(f(x)\text{.}\)</span> If <span class="process-math">\(k\)</span> is positive, then:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_7_1-3-5-2-2">
+<ul class="disc" id="sec_7_1-3-5-2-2-1">
+<li id="sec_7_1-3-5-2-2-1-1">
+<div class="para" id="p-derived-sec_7_1-3-5-2-2-1-1">the graph of <span class="process-math">\(g(x) = f(x) + k\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted <em class="alert">UP</em> <span class="process-math">\(k\)</span> units.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_7_1-3-5-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_7_1-3-5-2-2-1-2">
+<div class="para" id="p-derived-sec_7_1-3-5-2-2-1-2">the graph of <span class="process-math">\(g(x) = f(x) - k\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted <em class="alert">DOWN</em> <span class="process-math">\(k\)</span> units.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_7_1-3-5-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-3-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Instructions"><a tabindex="-1" href="#fig_7_1_hor_shift-1-2" title="Copy heading and permalink for Instructions" aria-label="Copy heading and permalink for Instructions">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 7.1.2: Vertical Shift"><a tabindex="-1" href="#sec_7_1-3-5" title="Copy heading and permalink for Definition 7.1.2: Vertical Shift" aria-label="Copy heading and permalink for Definition 7.1.2: Vertical Shift">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_7_1-3-6"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_7_1-3-6-1-1">The graph of a function <span class="process-math">\(f(t)\)</span> is given below. Plot <span class="process-math">\(G(t) = f(t) - 4\)</span> and <span class="process-math">\(H(t) = f(t) + 1.5\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/7_1_1_fig.svg" role="img" class="contained"></div>
+<div class="solutions">
+<details id="sec_7_1-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sec_7_1-3-6-2-1">The graph of <span class="process-math">\(G(t) = f(t) - 4\)</span> is the graph of <span class="process-math">\(f(t)\)</span> shifted down 4 units while the graph of <span class="process-math">\(H(t) = f(t) + 1.5\)</span> is the graph of <span class="process-math">\(f(t)\)</span> shifted up 1.5 units. Hence, we have the following.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/7_1_2_fig.svg" role="img" class="contained"></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.3.1"><a tabindex="-1" href="#sec_7_1-3-6-2" title="Copy heading and permalink for Solution 7.1.3.1" aria-label="Copy heading and permalink for Solution 7.1.3.1">🔗</a></div>
 </div></details>
 </div>
-<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Figure 7.1.2"><a tabindex="-1" href="#fig_7_1_hor_shift" title="Copy heading and permalink for Figure 7.1.2" aria-label="Copy heading and permalink for Figure 7.1.2">🔗</a></div></figcaption>
+<div class="autopermalink" aria-hidden="true" data-description="Example 7.1.3"><a tabindex="-1" href="#sec_7_1-3-6" title="Copy heading and permalink for Example 7.1.3" aria-label="Copy heading and permalink for Example 7.1.3">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_7_1-3-7"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_7_1-3-7-1-1">The total monthly cost <span class="process-math">\(C\)</span> to operate a company depends upon the fixed costs for facility rental and equipment as well as the number of units, <span class="process-math">\(p\text{,}\)</span> that the company produces that month. The table below shows this relationship for a typical month.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(p\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(10\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(20\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(30\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(C\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2500\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2650\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2800\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2950\)</span></td>
+</tr>
+</table></div> 
+<div class="para" id="sec_7_1-3-7-1-3">Suppose the rent on the facility went up by <span class="process-math">\(\$200\)</span> per month. Create a table for the resulting total monthly cost function <span class="process-math">\(S\)</span> as a function of the number of units produced, <span class="process-math">\(p\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-3-7-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_7_1-3-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sec_7_1-3-7-2-1">The outputs in the original table give the original total monthly cost as a function of the number of units produced, <span class="process-math">\(p\text{.}\)</span> If the rent were to go up by <span class="process-math">\(\$200\)</span> per month, then the resulting total monthly cost function would be <span class="process-math">\(S = C + 200\text{.}\)</span> This is a vertical shift of the original cost function <span class="process-math">\(C\text{,}\)</span> and values for it can be obtained by adding 200 to each of the outputs in the original table, as can be seen below.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-3-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(p\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(10\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(20\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(30\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(S\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2700\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2850\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3000\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3150\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.4.1"><a tabindex="-1" href="#sec_7_1-3-7-2" title="Copy heading and permalink for Solution 7.1.4.1" aria-label="Copy heading and permalink for Solution 7.1.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 7.1.4"><a tabindex="-1" href="#sec_7_1-3-7" title="Copy heading and permalink for Example 7.1.4" aria-label="Copy heading and permalink for Example 7.1.4">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Vertical Shifts"><a tabindex="-1" href="#sec_7_1-3" title="Copy heading and permalink for Subsection: Vertical Shifts" aria-label="Copy heading and permalink for Subsection: Vertical Shifts">🔗</a></div>
+</section>
+<section class="subsection" id="sec_7_1-4">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Horizontal Shifts</span>
+</h2>
+<div class="para" id="sec_7_1-4-2">We saw that adding or subtracting a number from the output of a function results in a vertical shift. What happens if we add or subtract a number from the <em class="emphasis">input</em> of a function instead?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_7_1-4-3">For instance, we know that <span class="process-math">\(y = \sqrt{x} + 2\)</span> would result in shifting the function <span class="process-math">\(f(x) = \sqrt{x}\)</span> up two units. But what if we added or subtracted a number <em class="emphasis">under</em> the square root instead—that is, from the <em class="emphasis">input</em> of the function rather than the output?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_7_1-4-4">To illustrate, we will consider the functions <span class="process-math">\(g(x) = \sqrt{x + 2}\)</span> and <span class="process-math">\(h(x) = \sqrt{x - 3}\text{.}\)</span> The graph of <span class="process-math">\(g(x) = \sqrt{x + 2}\)</span> is the graph of <span class="process-math">\(f(x) = \sqrt{x}\)</span> shifted <em class="emphasis">left</em> two units while <span class="process-math">\(h(x) = \sqrt{x - 3}\)</span> is the graph of <span class="process-math">\(f(x) = \sqrt{x}\)</span> shifted <em class="emphasis">right</em> 3 units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_7_1-4-5">
+<div class="para">To help explain why this is the case, notice that the formula <span class="process-math">\(f(x) = \sqrt{x} = y\)</span> is solved for <span class="process-math">\(y\)</span> and not <span class="process-math">\(x\text{.}\)</span> We can change this by squaring both sides of <span class="process-math">\(\sqrt{x} = y\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_7_1-4-5-5">
+\begin{equation*}
+x = y^2.
+\end{equation*}
+</div>
+<div class="para">If we were then to solve the formula <span class="process-math">\(g(x) = \sqrt{x + 2} = y\)</span> for <span class="process-math">\(x\text{,}\)</span> we would square both sides of <span class="process-math">\(\sqrt{x+2} = y\)</span> and then subtract 2:</div>
+<div class="displaymath process-math" id="sec_7_1-4-5-9">
+\begin{align*}
+x + 2 \amp= y^2\\
+x + 2 \textcolor{blue}{-2} \amp= y^2 \textcolor{blue}{-2}\\
+x \amp= y^2 - 2.
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_7_1-4-6">Notice that the formula for the <span class="process-math">\(x\)</span>-values of <span class="process-math">\(g(x) = \sqrt{x + 2}\)</span> involves <em class="emphasis">subtracting</em> <span class="process-math">\(2\)</span> from the formula for the <span class="process-math">\(x\)</span>-values of the original function <span class="process-math">\(f(x) = \sqrt{x}\text{.}\)</span> This means that for each specific <span class="process-math">\(y\)</span>-value, the corresponding <span class="process-math">\(x\)</span>-value of <span class="process-math">\(g(x) = \sqrt{x + 2}\)</span> is two units in the <em class="emphasis">negative direction</em> from that of the original function <span class="process-math">\(f(x) = \sqrt{x}\text{;}\)</span> that is, two units to the left.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig_7_1_hor_shift"><div class="interactive-iframe-container"><iframe id="fig_7_1_hor_shift-2" style="width:360px; height:360px; display: block; " src="fig_7_1_hor_shift-2-if.html"></iframe></div>
+<div class="interactive-iframe-container__opener"><a href="fig_7_1_hor_shift-2.html" title="Open in new tab" aria-label="Open in new tab" target="_blank"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe89e;</span></a></div>
+<div class="instructions interactive__instructions">
+<details id="fig_7_1_hor_shift-2-2" class="solution-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">Instructions<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3></summary>
+<div class="solution-like knowl__content">
+<div class="para" id="fig_7_1_hor_shift-2-2-1">Drag the dot to see the effect of horizontal shifts on <span class="process-math">\(f(x) = \sqrt{x}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#fig_7_1_hor_shift-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Instructions"><a tabindex="-1" href="#fig_7_1_hor_shift-2-2" title="Copy heading and permalink for Instructions" aria-label="Copy heading and permalink for Instructions">🔗</a></div>
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Figure 7.1.5"><a tabindex="-1" href="#fig_7_1_hor_shift" title="Copy heading and permalink for Figure 7.1.5" aria-label="Copy heading and permalink for Figure 7.1.5">🔗</a></div></figcaption>
 </figure>
+<article class="definition definition-like" id="sec_7_1-4-8"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Horizontal Shifts.</span>
+</h3>
+<div class="para" id="sec_7_1-4-8-2-1">Given a function <span class="process-math">\(f(x)\)</span> and a constant <span class="process-math">\(h\text{,}\)</span> <span class="process-math">\(g(x) = f(x + h)\)</span> is a <em class="emphasis">horizontal shift</em> of the graph of <span class="process-math">\(f(x)\text{.}\)</span> If <span class="process-math">\(h\)</span> is positive, then<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_7_1-4-8-2-2">
+<ul class="disc" id="sec_7_1-4-8-2-2-1">
+<li id="sec_7_1-4-8-2-2-1-1">
+<div class="para" id="p-derived-sec_7_1-4-8-2-2-1-1">the graph of <span class="process-math">\(g(x) = f(x + h)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted <em class="alert">LEFT</em> <span class="process-math">\(h\)</span> units.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_7_1-4-8-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_7_1-4-8-2-2-1-2">
+<div class="para" id="p-derived-sec_7_1-4-8-2-2-1-2">the graph of <span class="process-math">\(g(x) = f(x - h)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted <em class="alert">RIGHT</em> <span class="process-math">\(h\)</span> units.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_7_1-4-8-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 7.1.6: Horizontal Shifts"><a tabindex="-1" href="#sec_7_1-4-8" title="Copy heading and permalink for Definition 7.1.6: Horizontal Shifts" aria-label="Copy heading and permalink for Definition 7.1.6: Horizontal Shifts">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_7_1-4-9"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_7_1-4-9-1-1">In an effort to save on heating costs, the thermostat in a professor’s home has been programmed to keep his house at 65 degrees while he is home from 4pm to 8am the following day and to drop the temperature to 55 degrees while he is at work from 8am to 4pm each day. This is illustrated in the graph below, where <span class="process-math">\(t\)</span> corresponds to hours past since midnight and <span class="process-math">\(S\)</span> corresponds to the thermostat setting.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/7_1_3_fig.svg" role="img" class="contained"></div> 
+<div class="para" id="sec_7_1-4-9-1-3">Due to a schedule change requiring him to teach a night class, the professor needs to shift his entire work schedule later by four hours and hence adjust his thermostat setting accordingly. Sketch a graph reflecting this change.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-9-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_7_1-4-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sec_7_1-4-9-2-1">Shifting his entire work schedule forward by 4 hours is equivalent to moving it forward in time by 4 hours. This corresponds to a horizontal shift to the <em class="emphasis">right</em> 4 units. This means that we must graph the corresponding horizontal shift <span class="process-math">\(S(t - 4)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/7_1_4_fig.svg" role="img" class="contained"></div>
+<div class="para" id="sec_7_1-4-9-2-3">Note that the original graph shows a thermostat setting of 55 degrees between times <span class="process-math">\(t = 8\)</span> and <span class="process-math">\(t = 16\text{,}\)</span> corresponding to a work day stretching from 8am to 4pm. The shifted graph shows a thermostat setting of 55 degrees between times <span class="process-math">\(t = 12\)</span> and <span class="process-math">\(t = 20\text{,}\)</span> corresponding to a work day stretching from 12pm to 8pm (pushed back 4 hours, as it was intended).<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-9-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.7.1"><a tabindex="-1" href="#sec_7_1-4-9-2" title="Copy heading and permalink for Solution 7.1.7.1" aria-label="Copy heading and permalink for Solution 7.1.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 7.1.7"><a tabindex="-1" href="#sec_7_1-4-9" title="Copy heading and permalink for Example 7.1.7" aria-label="Copy heading and permalink for Example 7.1.7">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_7_1-4-10"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_7_1-4-10-1-1">Consider the function <span class="process-math">\(f(x)\)</span> given in the table below. Construct a table of values for <span class="process-math">\(g(x) = f(x + 6.2)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(0\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(5\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(10\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(15\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(f(x)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(6\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(-16.5\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(7.3\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(10.4\)</span></td>
+</tr>
+</table></div>
+<div class="solutions">
+<details id="sec_7_1-4-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sec_7_1-4-10-2-1">The function <span class="process-math">\(g(x) = f(x + 6.2)\)</span> is a horizontal shift of <span class="process-math">\(f(x)\text{;}\)</span> its graph would be the graph of <span class="process-math">\(f(x)\)</span> shifted to the left <span class="process-math">\(6.2\)</span> units. This means that to construct a table for <span class="process-math">\(g(x)\text{,}\)</span> we should take the table for <span class="process-math">\(f(x)\)</span> and subtract <span class="process-math">\(6.2\)</span> from each of the inputs while leaving the outputs unchanged.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-4-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(x\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(-6.2\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(-1.2\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(3.8\)</span></td>
+<td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(8.8\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(g(x)\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(6\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(-16.5\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(7.3\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(10.4\)</span></td>
+</tr>
+</table></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.8.1"><a tabindex="-1" href="#sec_7_1-4-10-2" title="Copy heading and permalink for Solution 7.1.8.1" aria-label="Copy heading and permalink for Solution 7.1.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 7.1.8"><a tabindex="-1" href="#sec_7_1-4-10" title="Copy heading and permalink for Example 7.1.8" aria-label="Copy heading and permalink for Example 7.1.8">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Horizontal Shifts"><a tabindex="-1" href="#sec_7_1-4" title="Copy heading and permalink for Subsection: Horizontal Shifts" aria-label="Copy heading and permalink for Subsection: Horizontal Shifts">🔗</a></div>
+</section>
+<section class="subsection" id="sec_7_1-5">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Combining Vertical and Horizontal Shifts</span>
+</h2>
+<div class="para" id="sec_7_1-5-2">Shifting vertically and shifting horizontally are two illustrations of <em class="emphasis">transformations</em> of functions; they take an original function and transform (or change) it by shifting it in some way. Multiple transformations may be applied to an original function; for instance, both a vertical and a horizontal shift can be applied to an original function: The graph of the function <span class="process-math">\(y = (x + 2)^2 - 7\)</span> is obtained by shifting the graph of <span class="process-math">\(f(x) = x^2\)</span> down <span class="process-math">\(7\)</span> units and left <span class="process-math">\(2\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec_7_1-5-3"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_7_1-5-3-1-1">For each of the following, identify the function being transformed and describe the transformations being applied to it.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_7_1-5-3-1-2">
+<ol class="decimal" id="sec_7_1-5-3-1-2-1">
+<li id="sec_7_1-5-3-1-2-1-1">
+<div class="para" id="sec_7_1-5-3-1-2-1-1-1">
+<span class="process-math">\(\displaystyle y = (x - 10)^5 + 4\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-3-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_7_1-5-3-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_7_1-5-3-1-2-1-2">
+<div class="para" id="sec_7_1-5-3-1-2-1-2-1">
+<span class="process-math">\(\displaystyle y = 2^{t + 1} + 3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-3-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_7_1-5-3-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_7_1-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_7_1-5-3-2-1">
+<ol class="decimal" id="sec_7_1-5-3-2-1-1">
+<li id="sec_7_1-5-3-2-1-1-1">
+<div class="para" id="sec_7_1-5-3-2-1-1-1-1">The original function is <span class="process-math">\(f(x) = x^5\text{.}\)</span> Since <span class="process-math">\(4\)</span> is being added on the end, the vertical shift is up <span class="process-math">\(4\)</span> units. Since <span class="process-math">\(10\)</span> is being subtracted from the input variable <span class="process-math">\(x\text{,}\)</span> the horizontal shift is right <span class="process-math">\(10\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-3-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_7_1-5-3-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_7_1-5-3-2-1-1-2">
+<div class="para" id="sec_7_1-5-3-2-1-1-2-1">The original function is <span class="process-math">\(f(t) = {2}^{t}\text{.}\)</span> Since <span class="process-math">\(3\)</span> is being added on the end, the vertical shift is up <span class="process-math">\(3\)</span> units. Since <span class="process-math">\(1\)</span> is being added to the input variable <span class="process-math">\(t\text{,}\)</span> the horizontal shift is left <span class="process-math">\(1\)</span> unit.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-3-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_7_1-5-3-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.9.1"><a tabindex="-1" href="#sec_7_1-5-3-2" title="Copy heading and permalink for Solution 7.1.9.1" aria-label="Copy heading and permalink for Solution 7.1.9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 7.1.9"><a tabindex="-1" href="#sec_7_1-5-3" title="Copy heading and permalink for Example 7.1.9" aria-label="Copy heading and permalink for Example 7.1.9">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_7_1-5-4"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">7.1.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_7_1-5-4-1-1">Write the formula for the function obtained when <span class="process-math">\(\dots\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_7_1-5-4-1-2">
+<ol class="decimal" id="sec_7_1-5-4-1-2-1">
+<li id="sec_7_1-5-4-1-2-1-1">
+<div class="para" id="sec_7_1-5-4-1-2-1-1-1">the graph of <span class="process-math">\(f(t) = 10(0.5)^t\)</span> is shifted up <span class="process-math">\(1\)</span> unit and to the left <span class="process-math">\(4\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-4-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_7_1-5-4-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_7_1-5-4-1-2-1-2">
+<div class="para" id="sec_7_1-5-4-1-2-1-2-1">the graph of <span class="process-math">\(g(x) = \sqrt[3]{x}\)</span> is shifted down <span class="process-math">\(4\)</span> units and to the right <span class="process-math">\(3\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-4-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_7_1-5-4-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_7_1-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_7_1-5-4-2-1">
+<ol class="decimal" id="sec_7_1-5-4-2-1-1">
+<li id="sec_7_1-5-4-2-1-1-1">
+<div class="para" id="sec_7_1-5-4-2-1-1-1-1">To shift up <span class="process-math">\(1\)</span> unit, we add <span class="process-math">\(1\)</span> to the whole function and to shift to the left <span class="process-math">\(4\)</span> units we add <span class="process-math">\(4\)</span> to the input variable <span class="process-math">\(t\)</span> in the exponent. Hence, the new function will have formula <span class="process-math">\(y = 10{(0.5)}^{t + 4} + 1\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-4-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_7_1-5-4-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_7_1-5-4-2-1-1-2">
+<div class="para" id="sec_7_1-5-4-2-1-1-2-1">To shift down <span class="process-math">\(4\)</span> units, we subtract <span class="process-math">\(4\)</span> from the whole function and to shift to the right <span class="process-math">\(3\)</span> units we subtract <span class="process-math">\(3\)</span> from the input variable <span class="process-math">\(x\)</span> under the cube root. Hence, the new function will have the formula <span class="process-math">\(y = \sqrt[3]{x - 3} - 4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-4-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_7_1-5-4-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_7_1-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.10.1"><a tabindex="-1" href="#sec_7_1-5-4-2" title="Copy heading and permalink for Solution 7.1.10.1" aria-label="Copy heading and permalink for Solution 7.1.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 7.1.10"><a tabindex="-1" href="#sec_7_1-5-4" title="Copy heading and permalink for Example 7.1.10" aria-label="Copy heading and permalink for Example 7.1.10">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Combining Vertical and Horizontal Shifts"><a tabindex="-1" href="#sec_7_1-5" title="Copy heading and permalink for Subsection: Combining Vertical and Horizontal Shifts" aria-label="Copy heading and permalink for Subsection: Combining Vertical and Horizontal Shifts">🔗</a></div>
+</section>
 <section class="exercises" id="ex_7_1">
 <h2 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
@@ -467,94 +829,94 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-7_1_1-2-1">
 <span class="process-math">\(g(x)=f(x)-7\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-7_1_1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.1.1"><a tabindex="-1" href="#exercise-7_1_1-2" title="Copy heading and permalink for Solution 7.1.1.1" aria-label="Copy heading and permalink for Solution 7.1.1.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#exercise-7_1_1-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.1"><a tabindex="-1" href="#exercise-7_1_1" title="Copy heading and permalink for Exercise 7.1.1" aria-label="Copy heading and permalink for Exercise 7.1.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1"><a tabindex="-1" href="#exercise-7_1_1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-1-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-1-4-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted up <span class="process-math">\(1.5\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_2-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted up <span class="process-math">\(1.5\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-1-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-1-4-2-1">
-<span class="process-math">\(g(x)=f(x)+1.5\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_2-2-1">
+<span class="process-math">\(g(x)=f(x)+1.5\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.2.1"><a tabindex="-1" href="#ex_7_1-1-4-2" title="Copy heading and permalink for Solution 7.1.2.1" aria-label="Copy heading and permalink for Solution 7.1.2.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#exercise_7_1_2-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.2"><a tabindex="-1" href="#ex_7_1-1-4" title="Copy heading and permalink for Exercise 7.1.2" aria-label="Copy heading and permalink for Exercise 7.1.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#exercise_7_1_2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-1-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-1-5-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted right <span class="process-math">\(2\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_3-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted right <span class="process-math">\(2\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-1-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-1-5-2-1">
-<span class="process-math">\(g(x)=f(x-2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_3-2-1">
+<span class="process-math">\(g(x)=f(x-2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.3.1"><a tabindex="-1" href="#ex_7_1-1-5-2" title="Copy heading and permalink for Solution 7.1.3.1" aria-label="Copy heading and permalink for Solution 7.1.3.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#exercise_7_1_3-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.3"><a tabindex="-1" href="#ex_7_1-1-5" title="Copy heading and permalink for Exercise 7.1.3" aria-label="Copy heading and permalink for Exercise 7.1.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3"><a tabindex="-1" href="#exercise_7_1_3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-1-6"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-1-6-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted left <span class="process-math">\(3\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_4-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted left <span class="process-math">\(3\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-1-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-1-6-2-1">
-<span class="process-math">\(g(x)=f(x+3)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_4-2-1">
+<span class="process-math">\(g(x)=f(x+3)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.4.1"><a tabindex="-1" href="#ex_7_1-1-6-2" title="Copy heading and permalink for Solution 7.1.4.1" aria-label="Copy heading and permalink for Solution 7.1.4.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#exercise_7_1_4-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.4"><a tabindex="-1" href="#ex_7_1-1-6" title="Copy heading and permalink for Exercise 7.1.4" aria-label="Copy heading and permalink for Exercise 7.1.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 4"><a tabindex="-1" href="#exercise_7_1_4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-1-7"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-1-7-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted up <span class="process-math">\(2.3\)</span> units and shifted right <span class="process-math">\(6\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_5-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted up <span class="process-math">\(2.3\)</span> units and shifted right <span class="process-math">\(6\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-1-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-1-7-2-1">
-<span class="process-math">\(g(x)=f(x-6)+2.3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_5-2-1">
+<span class="process-math">\(g(x)=f(x-6)+2.3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.5.1"><a tabindex="-1" href="#ex_7_1-1-7-2" title="Copy heading and permalink for Solution 7.1.5.1" aria-label="Copy heading and permalink for Solution 7.1.5.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.1"><a tabindex="-1" href="#exercise_7_1_5-2" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.5"><a tabindex="-1" href="#ex_7_1-1-7" title="Copy heading and permalink for Exercise 7.1.5" aria-label="Copy heading and permalink for Exercise 7.1.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 5"><a tabindex="-1" href="#exercise_7_1_5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-1-8"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-1-8-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted down <span class="process-math">\(1.63\)</span> units and right <span class="process-math">\(0.5\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_6-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted down <span class="process-math">\(1.63\)</span> units and right <span class="process-math">\(0.5\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-1-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-1-8-2-1">
-<span class="process-math">\(g(x)=f(x-0.5)-1.63\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_6-2-1">
+<span class="process-math">\(g(x)=f(x-0.5)-1.63\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.6.1"><a tabindex="-1" href="#ex_7_1-1-8-2" title="Copy heading and permalink for Solution 7.1.6.1" aria-label="Copy heading and permalink for Solution 7.1.6.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.1"><a tabindex="-1" href="#exercise_7_1_6-2" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.6"><a tabindex="-1" href="#ex_7_1-1-8" title="Copy heading and permalink for Exercise 7.1.6" aria-label="Copy heading and permalink for Exercise 7.1.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 6"><a tabindex="-1" href="#exercise_7_1_6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-1-9"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-1-9-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted up <span class="process-math">\(12\)</span> units and right <span class="process-math">\(10\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_7-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted up <span class="process-math">\(12\)</span> units and right <span class="process-math">\(10\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-1-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-1-9-2-1">
-<span class="process-math">\(g(x)=f(x-10)+12\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-1-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_7-2-1">
+<span class="process-math">\(g(x)=f(x-10)+12\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.7.1"><a tabindex="-1" href="#ex_7_1-1-9-2" title="Copy heading and permalink for Solution 7.1.7.1" aria-label="Copy heading and permalink for Solution 7.1.7.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1"><a tabindex="-1" href="#exercise_7_1_7-2" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.7"><a tabindex="-1" href="#ex_7_1-1-9" title="Copy heading and permalink for Exercise 7.1.7" aria-label="Copy heading and permalink for Exercise 7.1.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 7"><a tabindex="-1" href="#exercise_7_1_7" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-7_1_8"><h4 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-7_1_8-1-1">The graph of <span class="process-math">\(g(x)\)</span> is the graph of <span class="process-math">\(f(x)\)</span> shifted down <span class="process-math">\(3.2\)</span> units and left <span class="process-math">\(7.1\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-7_1_8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -565,13 +927,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-7_1_8-2-1">
 <span class="process-math">\(g(x)=f(x+7.1)-3.2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-7_1_8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.8.1"><a tabindex="-1" href="#exercise-7_1_8-2" title="Copy heading and permalink for Solution 7.1.8.1" aria-label="Copy heading and permalink for Solution 7.1.8.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.1"><a tabindex="-1" href="#exercise-7_1_8-2" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.8"><a tabindex="-1" href="#exercise-7_1_8" title="Copy heading and permalink for Exercise 7.1.8" aria-label="Copy heading and permalink for Exercise 7.1.8">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 8"><a tabindex="-1" href="#exercise-7_1_8" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 7.1.1–8: Translating Functions"><a tabindex="-1" href="#ex_7_1-1" title="Copy heading and permalink for Exercise Group 7.1.1–8: Translating Functions" aria-label="Copy heading and permalink for Exercise Group 7.1.1–8: Translating Functions">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1–8: Translating Functions"><a tabindex="-1" href="#ex_7_1-1" title="Copy heading and permalink for Exercise Group 1–8: Translating Functions" aria-label="Copy heading and permalink for Exercise Group 1–8: Translating Functions">🔗</a></div>
 </div>
 <div class="exercisegroup" id="ex_7_1-2">
 <h3 class="heading"><span class="title">Identifying Transformations.</span></h3>
@@ -589,38 +951,38 @@ eBookConfig.enable_chatcodes =  false;
 <div class="solution solution-like knowl__content">
 <div class="para" id="exercise-7_1_9-2-1">The graph of <span class="process-math">\(f(x)\)</span> is the graph of <span class="process-math">\(y=x^2\)</span> shifted left <span class="process-math">\(4\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-7_1_9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.9.1"><a tabindex="-1" href="#exercise-7_1_9-2" title="Copy heading and permalink for Solution 7.1.9.1" aria-label="Copy heading and permalink for Solution 7.1.9.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 9.1"><a tabindex="-1" href="#exercise-7_1_9-2" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.9"><a tabindex="-1" href="#exercise-7_1_9" title="Copy heading and permalink for Exercise 7.1.9" aria-label="Copy heading and permalink for Exercise 7.1.9">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 9"><a tabindex="-1" href="#exercise-7_1_9" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-2-4"><h4 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-2-4-1-1">
-<span class="process-math">\(g(t)=e^{t}-3.2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_10"><h4 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_10-1-1">
+<span class="process-math">\(g(t)=e^{t}-3.2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-2-4-2-1">The graph of <span class="process-math">\(g(t)\)</span> is the graph of <span class="process-math">\(y=e^t\)</span> shifted down <span class="process-math">\(3.2\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_10-2-1">The graph of <span class="process-math">\(g(t)\)</span> is the graph of <span class="process-math">\(y=e^t\)</span> shifted down <span class="process-math">\(3.2\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.10.1"><a tabindex="-1" href="#ex_7_1-2-4-2" title="Copy heading and permalink for Solution 7.1.10.1" aria-label="Copy heading and permalink for Solution 7.1.10.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.1"><a tabindex="-1" href="#exercise_7_1_10-2" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.10"><a tabindex="-1" href="#ex_7_1-2-4" title="Copy heading and permalink for Exercise 7.1.10" aria-label="Copy heading and permalink for Exercise 7.1.10">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 10"><a tabindex="-1" href="#exercise_7_1_10" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-2-5"><h4 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-2-5-1-1">
-<span class="process-math">\(h(w)=\sqrt{w-4.1}+5.2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_11"><h4 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_11-1-1">
+<span class="process-math">\(h(w)=\sqrt{w-4.1}+5.2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-2-5-2-1">The graph of <span class="process-math">\(h(w)\)</span> is the graph of <span class="process-math">\(y=\sqrt{w}\)</span> shifted right <span class="process-math">\(4.1\)</span> units and up <span class="process-math">\(5.2\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_11-2-1">The graph of <span class="process-math">\(h(w)\)</span> is the graph of <span class="process-math">\(y=\sqrt{w}\)</span> shifted right <span class="process-math">\(4.1\)</span> units and up <span class="process-math">\(5.2\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.11.1"><a tabindex="-1" href="#ex_7_1-2-5-2" title="Copy heading and permalink for Solution 7.1.11.1" aria-label="Copy heading and permalink for Solution 7.1.11.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 11.1"><a tabindex="-1" href="#exercise_7_1_11-2" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.11"><a tabindex="-1" href="#ex_7_1-2-5" title="Copy heading and permalink for Exercise 7.1.11" aria-label="Copy heading and permalink for Exercise 7.1.11">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 11"><a tabindex="-1" href="#exercise_7_1_11" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-7_1_12"><h4 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-7_1_12-1-1">
@@ -631,13 +993,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="solution solution-like knowl__content">
 <div class="para" id="exercise-7_1_12-2-1">The graph of <span class="process-math">\(y\)</span> is the graph of <span class="process-math">\(f(t)=(0.9)^t\)</span> shifted left <span class="process-math">\(1\)</span> unit and down <span class="process-math">\(3\)</span> units.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-7_1_12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.12.1"><a tabindex="-1" href="#exercise-7_1_12-2" title="Copy heading and permalink for Solution 7.1.12.1" aria-label="Copy heading and permalink for Solution 7.1.12.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 12.1"><a tabindex="-1" href="#exercise-7_1_12-2" title="Copy heading and permalink for Solution 12.1" aria-label="Copy heading and permalink for Solution 12.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.12"><a tabindex="-1" href="#exercise-7_1_12" title="Copy heading and permalink for Exercise 7.1.12" aria-label="Copy heading and permalink for Exercise 7.1.12">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 12"><a tabindex="-1" href="#exercise-7_1_12" title="Copy heading and permalink for Exercise 12" aria-label="Copy heading and permalink for Exercise 12">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 7.1.9–12: Identifying Transformations"><a tabindex="-1" href="#ex_7_1-2" title="Copy heading and permalink for Exercise Group 7.1.9–12: Identifying Transformations" aria-label="Copy heading and permalink for Exercise Group 7.1.9–12: Identifying Transformations">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 9–12: Identifying Transformations"><a tabindex="-1" href="#ex_7_1-2" title="Copy heading and permalink for Exercise Group 9–12: Identifying Transformations" aria-label="Copy heading and permalink for Exercise Group 9–12: Identifying Transformations">🔗</a></div>
 </div>
 <div class="exercisegroup" id="ex_7_1-3">
 <h3 class="heading"><span class="title">Sketching Graphs.</span></h3>
@@ -655,36 +1017,36 @@ eBookConfig.enable_chatcodes =  false;
 <details id="exercise-7_1_13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/ex_7_1_2_fig.svg" role="img" class="contained"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.13.1"><a tabindex="-1" href="#exercise-7_1_13-2" title="Copy heading and permalink for Solution 7.1.13.1" aria-label="Copy heading and permalink for Solution 7.1.13.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 13.1"><a tabindex="-1" href="#exercise-7_1_13-2" title="Copy heading and permalink for Solution 13.1" aria-label="Copy heading and permalink for Solution 13.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.13"><a tabindex="-1" href="#exercise-7_1_13" title="Copy heading and permalink for Exercise 7.1.13" aria-label="Copy heading and permalink for Exercise 7.1.13">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 13"><a tabindex="-1" href="#exercise-7_1_13" title="Copy heading and permalink for Exercise 13" aria-label="Copy heading and permalink for Exercise 13">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-3-4"><h4 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-3-4-1-1">
-<span class="process-math">\(y=f(x-2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_14"><h4 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_14-1-1">
+<span class="process-math">\(y=f(x-2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/ex_7_1_3_fig.svg" role="img" class="contained"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.14.1"><a tabindex="-1" href="#ex_7_1-3-4-2" title="Copy heading and permalink for Solution 7.1.14.1" aria-label="Copy heading and permalink for Solution 7.1.14.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 14.1"><a tabindex="-1" href="#exercise_7_1_14-2" title="Copy heading and permalink for Solution 14.1" aria-label="Copy heading and permalink for Solution 14.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.14"><a tabindex="-1" href="#ex_7_1-3-4" title="Copy heading and permalink for Exercise 7.1.14" aria-label="Copy heading and permalink for Exercise 7.1.14">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 14"><a tabindex="-1" href="#exercise_7_1_14" title="Copy heading and permalink for Exercise 14" aria-label="Copy heading and permalink for Exercise 14">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-3-5"><h4 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-3-5-1-1">
-<span class="process-math">\(y=f(x+1)-2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_15"><h4 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_15-1-1">
+<span class="process-math">\(y=f(x+1)-2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/ex_7_1_4_fig.svg" role="img" class="contained"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.15.1"><a tabindex="-1" href="#ex_7_1-3-5-2" title="Copy heading and permalink for Solution 7.1.15.1" aria-label="Copy heading and permalink for Solution 7.1.15.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 15.1"><a tabindex="-1" href="#exercise_7_1_15-2" title="Copy heading and permalink for Solution 15.1" aria-label="Copy heading and permalink for Solution 15.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.15"><a tabindex="-1" href="#ex_7_1-3-5" title="Copy heading and permalink for Exercise 7.1.15" aria-label="Copy heading and permalink for Exercise 7.1.15">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 15"><a tabindex="-1" href="#exercise_7_1_15" title="Copy heading and permalink for Exercise 15" aria-label="Copy heading and permalink for Exercise 15">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-7_1_16"><h4 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-7_1_16-1-1">
@@ -694,13 +1056,13 @@ eBookConfig.enable_chatcodes =  false;
 <details id="exercise-7_1_16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/ex_7_1_5_fig.svg" role="img" class="contained"></div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.16.1"><a tabindex="-1" href="#exercise-7_1_16-2" title="Copy heading and permalink for Solution 7.1.16.1" aria-label="Copy heading and permalink for Solution 7.1.16.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 16.1"><a tabindex="-1" href="#exercise-7_1_16-2" title="Copy heading and permalink for Solution 16.1" aria-label="Copy heading and permalink for Solution 16.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.16"><a tabindex="-1" href="#exercise-7_1_16" title="Copy heading and permalink for Exercise 7.1.16" aria-label="Copy heading and permalink for Exercise 7.1.16">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 16"><a tabindex="-1" href="#exercise-7_1_16" title="Copy heading and permalink for Exercise 16" aria-label="Copy heading and permalink for Exercise 16">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 7.1.13–16: Sketching Graphs"><a tabindex="-1" href="#ex_7_1-3" title="Copy heading and permalink for Exercise Group 7.1.13–16: Sketching Graphs" aria-label="Copy heading and permalink for Exercise Group 7.1.13–16: Sketching Graphs">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 13–16: Sketching Graphs"><a tabindex="-1" href="#ex_7_1-3" title="Copy heading and permalink for Exercise Group 13–16: Sketching Graphs" aria-label="Copy heading and permalink for Exercise Group 13–16: Sketching Graphs">🔗</a></div>
 </div>
 <div class="exercisegroup" id="ex_7_1-4">
 <h3 class="heading"><span class="title">Transformations done Numerically.</span></h3>
@@ -748,17 +1110,17 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0.8\)</span></td>
 </tr>
 </table></div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.17.1"><a tabindex="-1" href="#exercise-7_1_17-2" title="Copy heading and permalink for Solution 7.1.17.1" aria-label="Copy heading and permalink for Solution 7.1.17.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 17.1"><a tabindex="-1" href="#exercise-7_1_17-2" title="Copy heading and permalink for Solution 17.1" aria-label="Copy heading and permalink for Solution 17.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.17"><a tabindex="-1" href="#exercise-7_1_17" title="Copy heading and permalink for Exercise 7.1.17" aria-label="Copy heading and permalink for Exercise 7.1.17">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 17"><a tabindex="-1" href="#exercise-7_1_17" title="Copy heading and permalink for Exercise 17" aria-label="Copy heading and permalink for Exercise 17">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-4-4"><h4 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-4-4-1-1">
-<span class="process-math">\(y=f(t)-2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_18"><h4 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_18-1-1">
+<span class="process-math">\(y=f(t)-2\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_18-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_18-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="tabular-box natural-width"><table class="tabular">
 <tr>
@@ -776,17 +1138,17 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(-1.2\)</span></td>
 </tr>
 </table></div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.18.1"><a tabindex="-1" href="#ex_7_1-4-4-2" title="Copy heading and permalink for Solution 7.1.18.1" aria-label="Copy heading and permalink for Solution 7.1.18.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 18.1"><a tabindex="-1" href="#exercise_7_1_18-2" title="Copy heading and permalink for Solution 18.1" aria-label="Copy heading and permalink for Solution 18.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.18"><a tabindex="-1" href="#ex_7_1-4-4" title="Copy heading and permalink for Exercise 7.1.18" aria-label="Copy heading and permalink for Exercise 7.1.18">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 18"><a tabindex="-1" href="#exercise_7_1_18" title="Copy heading and permalink for Exercise 18" aria-label="Copy heading and permalink for Exercise 18">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-4-5"><h4 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_7_1-4-5-1-1">
-<span class="process-math">\(y=f(t-2)+6\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_19"><h4 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_7_1_19-1-1">
+<span class="process-math">\(y=f(t-2)+6\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-4-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_19-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
 <div class="tabular-box natural-width"><table class="tabular">
 <tr>
@@ -804,10 +1166,10 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(6.8\)</span></td>
 </tr>
 </table></div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.19.1"><a tabindex="-1" href="#ex_7_1-4-5-2" title="Copy heading and permalink for Solution 7.1.19.1" aria-label="Copy heading and permalink for Solution 7.1.19.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 19.1"><a tabindex="-1" href="#exercise_7_1_19-2" title="Copy heading and permalink for Solution 19.1" aria-label="Copy heading and permalink for Solution 19.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.19"><a tabindex="-1" href="#ex_7_1-4-5" title="Copy heading and permalink for Exercise 7.1.19" aria-label="Copy heading and permalink for Exercise 7.1.19">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 19"><a tabindex="-1" href="#exercise_7_1_19" title="Copy heading and permalink for Exercise 19" aria-label="Copy heading and permalink for Exercise 19">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-7_1_20"><h4 class="heading"><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-7_1_20-1-1">
@@ -832,62 +1194,62 @@ eBookConfig.enable_chatcodes =  false;
 <td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(1.9\)</span></td>
 </tr>
 </table></div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.20.1"><a tabindex="-1" href="#exercise-7_1_20-2" title="Copy heading and permalink for Solution 7.1.20.1" aria-label="Copy heading and permalink for Solution 7.1.20.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 20.1"><a tabindex="-1" href="#exercise-7_1_20-2" title="Copy heading and permalink for Solution 20.1" aria-label="Copy heading and permalink for Solution 20.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.20"><a tabindex="-1" href="#exercise-7_1_20" title="Copy heading and permalink for Exercise 7.1.20" aria-label="Copy heading and permalink for Exercise 7.1.20">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 20"><a tabindex="-1" href="#exercise-7_1_20" title="Copy heading and permalink for Exercise 20" aria-label="Copy heading and permalink for Exercise 20">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 7.1.17–20: Transformations done Numerically"><a tabindex="-1" href="#ex_7_1-4" title="Copy heading and permalink for Exercise Group 7.1.17–20: Transformations done Numerically" aria-label="Copy heading and permalink for Exercise Group 7.1.17–20: Transformations done Numerically">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 17–20: Transformations done Numerically"><a tabindex="-1" href="#ex_7_1-4" title="Copy heading and permalink for Exercise Group 17–20: Transformations done Numerically" aria-label="Copy heading and permalink for Exercise Group 17–20: Transformations done Numerically">🔗</a></div>
 </div>
-<article class="exercise exercise-like" id="ex_7_1-5"><h3 class="heading"><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="ex_7_1-5-1">
-<div class="para" id="ex_7_1-5-1-1">The function <span class="process-math">\(H=f(t)\)</span> gives the temperature (in degrees Fahrenheit) of the water in a spa <span class="process-math">\(t\)</span> minutes after the spa heater has been turned on.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_21"><h3 class="heading"><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exercise_7_1_21-1">
+<div class="para" id="exercise_7_1_21-1-1">The function <span class="process-math">\(H=f(t)\)</span> gives the temperature (in degrees Fahrenheit) of the water in a spa <span class="process-math">\(t\)</span> minutes after the spa heater has been turned on.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="ex_7_1-5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ex_7_1-5-2-1-1">Write the formula for a function <span class="process-math">\(g(t)\)</span> that represents the temperature (in degrees Fahrenheit) of the water in the spa if the spa heater is turned on <span class="process-math">\(15\)</span> minutes earlier.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_7_1_21-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exercise_7_1_21-2-1-1">Write the formula for a function <span class="process-math">\(g(t)\)</span> that represents the temperature (in degrees Fahrenheit) of the water in the spa if the spa heater is turned on <span class="process-math">\(15\)</span> minutes earlier.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_21-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_21-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-5-2-2-1">
-<span class="process-math">\(g(t)=f(t+15)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_21-2-2-1">
+<span class="process-math">\(g(t)=f(t+15)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_21-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.21.a.1"><a tabindex="-1" href="#ex_7_1-5-2-2" title="Copy heading and permalink for Solution 7.1.21.a.1" aria-label="Copy heading and permalink for Solution 7.1.21.a.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 21.a.1"><a tabindex="-1" href="#exercise_7_1_21-2-2" title="Copy heading and permalink for Solution 21.a.1" aria-label="Copy heading and permalink for Solution 21.a.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 7.1.21.a"><a tabindex="-1" href="#ex_7_1-5-2" title="Copy heading and permalink for Task 7.1.21.a" aria-label="Copy heading and permalink for Task 7.1.21.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 21.a"><a tabindex="-1" href="#exercise_7_1_21-2" title="Copy heading and permalink for Task 21.a" aria-label="Copy heading and permalink for Task 21.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ex_7_1-5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ex_7_1-5-3-1-1">Write a formula for the function <span class="process-math">\(h(t)\)</span> that represents the temperature (in degrees Fahrenheit) of the water in the spa if the temperature of the water in the spa were <span class="process-math">\(5\)</span> degrees warmer at the time that the heater was turned on.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_7_1_21-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exercise_7_1_21-3-1-1">Write a formula for the function <span class="process-math">\(h(t)\)</span> that represents the temperature (in degrees Fahrenheit) of the water in the spa if the temperature of the water in the spa were <span class="process-math">\(5\)</span> degrees warmer at the time that the heater was turned on.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_21-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_21-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-5-3-2-1">
-<span class="process-math">\(h(t)=f(t)+5\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_21-3-2-1">
+<span class="process-math">\(h(t)=f(t)+5\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_21-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.21.b.1"><a tabindex="-1" href="#ex_7_1-5-3-2" title="Copy heading and permalink for Solution 7.1.21.b.1" aria-label="Copy heading and permalink for Solution 7.1.21.b.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 21.b.1"><a tabindex="-1" href="#exercise_7_1_21-3-2" title="Copy heading and permalink for Solution 21.b.1" aria-label="Copy heading and permalink for Solution 21.b.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 7.1.21.b"><a tabindex="-1" href="#ex_7_1-5-3" title="Copy heading and permalink for Task 7.1.21.b" aria-label="Copy heading and permalink for Task 7.1.21.b">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.21"><a tabindex="-1" href="#ex_7_1-5" title="Copy heading and permalink for Exercise 7.1.21" aria-label="Copy heading and permalink for Exercise 7.1.21">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 21.b"><a tabindex="-1" href="#exercise_7_1_21-3" title="Copy heading and permalink for Task 21.b" aria-label="Copy heading and permalink for Task 21.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 21"><a tabindex="-1" href="#exercise_7_1_21" title="Copy heading and permalink for Exercise 21" aria-label="Copy heading and permalink for Exercise 21">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_7_1-6"><h3 class="heading"><span class="codenumber">22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="ex_7_1-6-1-1">The function <span class="process-math">\(C(t)\)</span> gives the concentration (in nanograms per milliliter) of a certain medication in a patient’s bloodstream <span class="process-math">\(t\)</span> minutes after a dose of the medication has been administered to a patient, assuming that the patient has <span class="process-math">\(0\)</span> nanograms per milliliter in their bloodstream at time <span class="process-math">\(t=0\text{.}\)</span> Write the formula for the function <span class="process-math">\(g(t)\)</span> that supposes that at time <span class="process-math">\(t=0\)</span> the patient had <span class="process-math">\(2.3\)</span> nanograms per milliliter of the medication in their bloodstream.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_7_1_22"><h3 class="heading"><span class="codenumber">22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercise_7_1_22-1-1">The function <span class="process-math">\(C(t)\)</span> gives the concentration (in nanograms per milliliter) of a certain medication in a patient’s bloodstream <span class="process-math">\(t\)</span> minutes after a dose of the medication has been administered to a patient, assuming that the patient has <span class="process-math">\(0\)</span> nanograms per milliliter in their bloodstream at time <span class="process-math">\(t=0\text{.}\)</span> Write the formula for the function <span class="process-math">\(g(t)\)</span> that supposes that at time <span class="process-math">\(t=0\)</span> the patient had <span class="process-math">\(2.3\)</span> nanograms per milliliter of the medication in their bloodstream.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_22-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_7_1-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_7_1_22-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_7_1-6-2-1">
-<span class="process-math">\(g(t)=C(t)+2.3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_7_1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_7_1_22-2-1">
+<span class="process-math">\(g(t)=C(t)+2.3\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_7_1_22-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1.22.1"><a tabindex="-1" href="#ex_7_1-6-2" title="Copy heading and permalink for Solution 7.1.22.1" aria-label="Copy heading and permalink for Solution 7.1.22.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 22.1"><a tabindex="-1" href="#exercise_7_1_22-2" title="Copy heading and permalink for Solution 22.1" aria-label="Copy heading and permalink for Solution 22.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 7.1.22"><a tabindex="-1" href="#ex_7_1-6" title="Copy heading and permalink for Exercise 7.1.22" aria-label="Copy heading and permalink for Exercise 7.1.22">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercises 7.1"><a tabindex="-1" href="#ex_7_1" title="Copy heading and permalink for Exercises 7.1" aria-label="Copy heading and permalink for Exercises 7.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 22"><a tabindex="-1" href="#exercise_7_1_22" title="Copy heading and permalink for Exercise 22" aria-label="Copy heading and permalink for Exercise 22">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercises"><a tabindex="-1" href="#ex_7_1" title="Copy heading and permalink for Exercises" aria-label="Copy heading and permalink for Exercises">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 7.1: Vertical and Horizontal Shifts"><a tabindex="-1" href="#sec_7_1" title="Copy heading and permalink for Section 7.1: Vertical and Horizontal Shifts" aria-label="Copy heading and permalink for Section 7.1: Vertical and Horizontal Shifts">🔗</a></div>
 </section>
 </div>

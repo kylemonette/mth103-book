@@ -19,7 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-1 { system: extends lower-alpha; prefix: ''; suffix: '. '; }
+</style>
 <link rel="stylesheet" type="text/css" href="external/custom.css">
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
@@ -38,7 +40,7 @@ lang: "en-US",
 <meta name="twitter:description" content="As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.">
 <meta property="og:description" content="As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.51"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.51"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -60,16 +62,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.3';
+eBookConfig.runestone_version = '8.2.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.40bd1420d3277749.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f00d2d175c91fc71.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
-<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="applied-precalculus" class="pretext book ignore-math">
@@ -270,25 +272,25 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Algebra of Powers: Fractional Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_2" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-3" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-5" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_2.html#ex_4_2" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Power Functions: Positive Integral Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_3" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-3" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-4" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_3.html#ex_4_3" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Power Functions: Fractional and Negative Integral Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_4" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-3" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-7" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_4.html#ex_4_4" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
@@ -300,7 +302,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_5-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Exponential Functions: Practical Meaning</span></a></div>
-<ul id="ptx-toc-group-sec_5_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_1.html#ex_5_1" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_1.html#sec_5_1-4" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_1.html#sec_5_1-5" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_1.html#ex_5_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Graphs of Exponential Functions</span></a></div>
@@ -308,11 +314,19 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Functions Numerically, Modeling</span></a></div>
-<ul id="ptx-toc-group-sec_5_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_3.html#ex_5_3" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_3.html#sec_5_3-4" class="internal"><span class="title">Modeling: The Population of Mozambique</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_3.html#ex_5_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Doubling Time and Half-Life</span></a></div>
-<ul id="ptx-toc-group-sec_5_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_4.html#ex_5_4" class="internal"><span class="codenumber">5.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-4" class="internal"><span class="title">The Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-5" class="internal"><span class="title">The Half-Life</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-6" class="internal"><span class="title">Additional Observations and Examples</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_4.html#ex_5_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_5.html" class="internal"><span class="codenumber">5.5</span> <span class="title">The Natural Base e</span></a></div>
@@ -326,15 +340,28 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_6-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">What Are Logarithms?</span></a></div>
-<ul id="ptx-toc-group-sec_6_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_1.html#ex_6_1" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_1.html#sec_6_1-4" class="internal"><span class="title">Graphs of Functions <span class="process-math">\(y=\log(x)\)</span> and <span class="process-math">\(y=\ln(x)\)</span></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_1.html#ex_6_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Properties of Logarithms, Solving Equations Using Logarithms</span></a></div>
-<ul id="ptx-toc-group-sec_6_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_2.html#ex_6_2" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-4" class="internal"><span class="title">Algebraic Properties of Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-5" class="internal"><span class="title">Solving Equations Using Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-6" class="internal"><span class="title">The Change of Base Formula for Logarithms</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_2.html#ex_6_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_3.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Logarithms in Applications</span></a></div>
-<ul id="ptx-toc-group-sec_6_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_3.html#ex_6_3" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-4" class="internal"><span class="title">Converting Between <span class="process-math">\(Q = A \cdot b^t\)</span> and <span class="process-math">\(Q = A \cdot e^{kt}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-5" class="internal"><span class="title">Calculating the Doubling Time and the Half-Life</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-6" class="internal"><span class="title">The Acidity of a Liquid</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_3.html#ex_6_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -344,11 +371,21 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_7-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Vertical and Horizontal Shifts</span></a></div>
-<ul id="ptx-toc-group-sec_7_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_1.html#ex_7_1" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-3" class="internal"><span class="title">Vertical Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-4" class="internal"><span class="title">Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-5" class="internal"><span class="title">Combining Vertical and Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_1.html#ex_7_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Vertical and Horizontal Scaling</span></a></div>
-<ul id="ptx-toc-group-sec_7_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_2.html#ex_7_2" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-3" class="internal"><span class="title">Vertical Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-4" class="internal"><span class="title">Horizontal Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-5" class="internal"><span class="title">Combining Shifts, Scaling, and Reflections</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_2.html#ex_7_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Composing and Decomposing Functions</span></a></div>
@@ -356,7 +393,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Inverse Functions</span></a></div>
-<ul id="ptx-toc-group-sec_7_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_4.html#ex_7_4" class="internal"><span class="codenumber">7.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_4.html#sec_7_4-4" class="internal"><span class="title">Finding Inverse Functions Algebraically</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_4.html#ex_7_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -370,7 +410,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec_8_2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Angles Using the Unit Circle, Radian Measure</span></a></div>
-<ul class="structural toc-item-list active" id="ptx-toc-group-sec_8_2"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_2.html#ex_8_2" class="internal"><span class="codenumber">8.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec_8_2">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_2.html#sec_8_2-4" class="internal"><span class="title">Definition of Radian Measure</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_2.html#ex_8_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Values of Sine and Cosine for Angles on the Unit Circle</span></a></div>
@@ -378,11 +421,25 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Sine and Cosine Functions</span></a></div>
-<ul id="ptx-toc-group-sec_8_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_4.html#ex_8_4" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-4" class="internal"><span class="title">Graphs of Sine and Cosine Functions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5" class="internal"><span class="title">Transforming Sine and Cosine Functions—Basic Ideas</span></a></div>
+<ul id="ptx-toc-group-sec_8_4-5" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-3" class="internal"><span class="title">Changing the Amplitude</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-4" class="internal"><span class="title">Changing the Midline</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-5" class="internal"><span class="title">Changing the Period</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_4.html#ex_8_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Families of Sine and Cosine Functions, Modeling</span></a></div>
-<ul id="ptx-toc-group-sec_8_5" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_5.html#ex_8_5" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_5" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_5.html#sec_8_5-4" class="internal"><span class="title">Modeling Periodic Processes</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_5.html#ex_8_5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -406,23 +463,388 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <ol class="decimal" id="sec_8_2-2-2">
 <li id="sec_8_2-2-2-1">
-<div class="para" id="sec_8_2-2-2-1-1">First objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_8_2-2-2-1-1">Identify positive and negative angles in standard position and describe an angle in terms of its initial and terminal sides.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 8.2.1"><a tabindex="-1" href="#sec_8_2-2-2-1" title="Copy heading and permalink for Objective 8.2.1" aria-label="Copy heading and permalink for Objective 8.2.1">🔗</a></div>
 </li>
 <li id="sec_8_2-2-2-2">
-<div class="para" id="sec_8_2-2-2-2-1">Second objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_8_2-2-2-2-1">State the definition of radian measure and convert an angle between degrees and radians.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 8.2.2"><a tabindex="-1" href="#sec_8_2-2-2-2" title="Copy heading and permalink for Objective 8.2.2" aria-label="Copy heading and permalink for Objective 8.2.2">🔗</a></div>
 </li>
 <li id="sec_8_2-2-2-3">
-<div class="para" id="sec_8_2-2-2-3-1">Third objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_8_2-2-2-3-1">Determine the quadrant containing the terminal side of an angle given in radians and compute the arc length spanned by an angle on a circle of a given radius.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 8.2.3"><a tabindex="-1" href="#sec_8_2-2-2-3" title="Copy heading and permalink for Objective 8.2.3" aria-label="Copy heading and permalink for Objective 8.2.3">🔗</a></div>
 </li>
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Objectives 8.2"><a tabindex="-1" href="#sec_8_2-2" title="Copy heading and permalink for Objectives 8.2" aria-label="Copy heading and permalink for Objectives 8.2">🔗</a></div>
 </article>
+<section class="introduction" id="sec_8_2-3">
+<div class="para" id="sec_8_2-3-1">We are working toward defining the two important trigonometric functions <span class="process-math">\(f(t) = \sin(t)\)</span> and <span class="process-math">\(f(t) = \cos(t)\text{.}\)</span> These functions, referred to as the sine function and the cosine function respectively, are periodic functions which are commonly used in applied sciences to model periodic processes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_8_2-3-2">The first step is to define the trigonometric ratios <span class="process-math">\(\sin(\alpha)\)</span> and <span class="process-math">\(\cos(\alpha)\)</span> for any angle <span class="process-math">\(\alpha\text{,}\)</span> positive or negative. We also have to learn how to measure angles in radians rather than in degrees. In this section we define positive and negative angles of any size and radian measure.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_8_2-3-3">For a given angle, we designate one side as the <em class="emphasis">initial side</em> and the other as the <em class="emphasis">terminal side</em>. We imagine the angle being swept out starting from the initial side and ending at the terminal side, as shown below. When the rotation from the initial side to terminal side is counterclockwise, we say that the angle is positive; when the rotation is clockwise, we say that the angle is negative.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:40% 40%;column-gap:20%;">
+<div class="sbspanel sbspanel--middle middle" style="">
+<figure class="figure figure-like" id="fig_8_2_angle1"><div class="image-box"><img src="generated/latex-image/8_2_1_fig.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The angle <span class="process-math">\(\theta = 45^\circ\text{,}\)</span> positive as rotation is counterclockwise.<div class="autopermalink" aria-hidden="true" data-description="Figure 8.2.1"><a tabindex="-1" href="#fig_8_2_angle1" title="Copy heading and permalink for Figure 8.2.1" aria-label="Copy heading and permalink for Figure 8.2.1">🔗</a></div></figcaption>
+</figure>
+</div>
+<div class="sbspanel sbspanel--middle middle" style="">
+<figure class="figure figure-like" id="fig_8_2_angle2"><div class="image-box"><img src="generated/latex-image/8_2_2_fig.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The angle <span class="process-math">\(\theta = -45^\circ\text{,}\)</span> negative as rotation is clockwise.<div class="autopermalink" aria-hidden="true" data-description="Figure 8.2.2"><a tabindex="-1" href="#fig_8_2_angle2" title="Copy heading and permalink for Figure 8.2.2" aria-label="Copy heading and permalink for Figure 8.2.2">🔗</a></div></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="para" id="sec_8_2-3-5">We say that an angle is in <em class="emphasis">standard position</em> if it is located on the <span class="process-math">\(xy\)</span>-plane with the vertex at the origin <span class="process-math">\((0, 0)\)</span> and initial side aligned with the positive <span class="process-math">\(x\)</span>-axis. Again, counterclockwise rotations generate positive angles while clockwise rotations yield negative angles:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:48% 48%;column-gap:4%;">
+<div class="sbspanel sbspanel--middle middle" style="">
+<figure class="figure figure-like" id="fig_8_2_angle3"><div class="image-box"><img src="generated/latex-image/8_2_3_fig.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The angle <span class="process-math">\(\alpha = 60^\circ\)</span> in standard position<div class="autopermalink" aria-hidden="true" data-description="Figure 8.2.3"><a tabindex="-1" href="#fig_8_2_angle3" title="Copy heading and permalink for Figure 8.2.3" aria-label="Copy heading and permalink for Figure 8.2.3">🔗</a></div></figcaption>
+</figure>
+</div>
+<div class="sbspanel sbspanel--middle middle" style="">
+<figure class="figure figure-like" id="fig_8_2_angle4"><div class="image-box"><img src="generated/latex-image/8_2_4_fig.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The angle <span class="process-math">\(\beta = -210^\circ\)</span> in standard position<div class="autopermalink" aria-hidden="true" data-description="Figure 8.2.4"><a tabindex="-1" href="#fig_8_2_angle4" title="Copy heading and permalink for Figure 8.2.4" aria-label="Copy heading and permalink for Figure 8.2.4">🔗</a></div></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="para" id="sec_8_2-3-7">We can rotate around the origin as many times as we want and obtain angles greater than <span class="process-math">\(360^{\circ}\)</span> and smaller than <span class="process-math">\(-360^{\circ}\text{:}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="sidebyside">
+<div class="sbsrow" style="margin-left:0%;margin-right:0%;grid-template-columns:48% 48%;column-gap:4%;">
+<div class="sbspanel sbspanel--middle middle" style="">
+<figure class="figure figure-like" id="fig_8_2_angle5"><div class="image-box"><img src="generated/latex-image/8_2_5_fig.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The angle <span class="process-math">\(\theta = 600^\circ\)</span> in standard position<div class="autopermalink" aria-hidden="true" data-description="Figure 8.2.5"><a tabindex="-1" href="#fig_8_2_angle5" title="Copy heading and permalink for Figure 8.2.5" aria-label="Copy heading and permalink for Figure 8.2.5">🔗</a></div></figcaption>
+</figure>
+</div>
+<div class="sbspanel sbspanel--middle middle" style="">
+<figure class="figure figure-like" id="fig_8_2_angle6"><div class="image-box"><img src="generated/latex-image/8_2_6_fig.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>The angle <span class="process-math">\(\gamma = -760^\circ\)</span> in standard position<div class="autopermalink" aria-hidden="true" data-description="Figure 8.2.6"><a tabindex="-1" href="#fig_8_2_angle6" title="Copy heading and permalink for Figure 8.2.6" aria-label="Copy heading and permalink for Figure 8.2.6">🔗</a></div></figcaption>
+</figure>
+</div>
+</div>
+</div></section>
+<section class="subsection" id="sec_8_2-4">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Definition of Radian Measure</span>
+</h2>
+<div class="para" id="sec_8_2-4-2">The <em class="emphasis">radian measure</em> of a positive angle <span class="process-math">\(\alpha\)</span> is equal to the length of the arc spanned by the angle on the circle of radius <span class="process-math">\(1\)</span> centered at the vertex of the angle:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/8_2_7_fig.svg" role="img" class="contained"></div>
+<div class="para" id="sec_8_2-4-4">The radian measure of a negative angle is equal to minus the length of the arc spanned by the angle.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_8_2-4-5">Recall that the <em class="emphasis">unit circle</em> on the <span class="process-math">\(xy\)</span>-plane is the circle of radius <span class="process-math">\(1\)</span> centered at the origin <span class="process-math">\((0, 0)\text{.}\)</span> Here is the precise definition of one radian.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sec_8_2-4-6"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Radian Measure.</span>
+</h3>
+<div class="para logical" id="sec_8_2-4-6-2-1">
+<ul class="disc" id="sec_8_2-4-6-2-1-1">
+<li id="sec_8_2-4-6-2-1-1-1">
+<div class="para" id="p-derived-sec_8_2-4-6-2-1-1-1">An angle of <em class="alert">1 radian</em> is the angle in standard position, in the counterclockwise direction, which spans the arc of length <span class="process-math">\(1\)</span> on the unit circle.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_8_2-4-6-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_8_2-4-6-2-1-1-2">
+<div class="para" id="p-derived-sec_8_2-4-6-2-1-1-2">An angle of <em class="alert"><span class="process-math">\(-1\)</span> radian</em> is the angle in standard position, in the clockwise direction, which spans the arc of length <span class="process-math">\(1\)</span> on the unit circle.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_8_2-4-6-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para" id="sec_8_2-4-6-2-2">The radius and the arc must be measured in the same units of length.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Definition 8.2.7: Radian Measure"><a tabindex="-1" href="#sec_8_2-4-6" title="Copy heading and permalink for Definition 8.2.7: Radian Measure" aria-label="Copy heading and permalink for Definition 8.2.7: Radian Measure">🔗</a></div>
+</article>
+<div class="para" id="sec_8_2-4-7">The angle of <span class="process-math">\(1\)</span> radian spans the arc of length <span class="process-math">\(1\)</span> on the unit circle—the length of the arc and the length of the radius are the same. Imagine “picking up” the radius of the unit circle like a yardstick and wrapping it over a piece of the circle to obtain the arc of the same length as the radius. If you measure the arc of length equal to twice the radius, the arc will correspond to the angle of <span class="process-math">\(2\)</span> radians, and so on:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/8_2_8_fig.svg" role="img" class="contained"></div>
+<div class="para logical" id="sec_8_2-4-9">
+<div class="para">The first thing we notice is that the angle of <span class="process-math">\(1\)</span> radian, denoted by <span class="process-math">\(1\)</span> rad, is a relatively large angle while the angle of <span class="process-math">\(1^{\circ}\)</span> is a very small angle. To understand why this is, let’s look at the full angle of <span class="process-math">\(360^{\circ}\)</span> in terms of radians. The circumference of a circle of radius <span class="process-math">\(r\)</span> is <span class="process-math">\(C = 2\pi r\text{.}\)</span> That means the circumference of the unit circle is simply <span class="process-math">\(C = 2\pi\text{.}\)</span> Therefore, the angle that spans the whole circle—one complete counterclockwise revolution—is the angle of <span class="process-math">\(2\pi\)</span> radians, or <span class="process-math">\(360^{\circ}\text{.}\)</span> Hence, we have the following relationship between degrees and radians:</div>
+<div class="displaymath process-math" id="sec_8_2-4-9-12">
+\begin{equation*}
+360^{\circ} = 2\pi \text{ radians}.
+\end{equation*}
+</div>
+<div class="para">This gives the following <em class="alert">conversion formulas</em>:</div>
+<div class="displaymath process-math" id="sec_8_2-4-9-14">
+\begin{equation*}
+1^\circ = \frac{\pi}{180} \text{ radians},  \quad 1 \text{ radian} = \frac{180}{\pi}^\circ.
+\end{equation*}
+</div>
+<div class="para">Note that <span class="process-math">\(1^{\circ} \approx 0.0175\)</span> rad and 1 rad <span class="process-math">\(\approx 57.296^{\circ}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec_8_2-4-10"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_8_2-4-10-1-1">Convert the following angles from degrees to radians.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_8_2-4-10-1-2">
+<ol class="decimal" id="sec_8_2-4-10-1-2-1">
+<li id="sec_8_2-4-10-1-2-1-1">
+<div class="para" id="sec_8_2-4-10-1-2-1-1-1">
+<span class="process-math">\(\displaystyle 45^{\circ}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_8_2-4-10-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_8_2-4-10-1-2-1-2">
+<div class="para" id="sec_8_2-4-10-1-2-1-2-1">
+<span class="process-math">\(\displaystyle 90^{\circ}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_8_2-4-10-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_8_2-4-10-1-2-1-3">
+<div class="para" id="sec_8_2-4-10-1-2-1-3-1">
+<span class="process-math">\(\displaystyle 180^{\circ}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_8_2-4-10-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec_8_2-4-10-1-2-1-4">
+<div class="para" id="sec_8_2-4-10-1-2-1-4-1">
+<span class="process-math">\(\displaystyle 17^{\circ}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#sec_8_2-4-10-1-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_8_2-4-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sec_8_2-4-10-2-1">We use conversion formulas:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_8_2-4-10-2-2">
+<ol class="decimal" id="sec_8_2-4-10-2-2-1">
+<li id="sec_8_2-4-10-2-2-1-1">
+<div class="para" id="sec_8_2-4-10-2-2-1-1-1">
+<span class="process-math">\(45^{\circ} = 45 \cdot \frac{\pi}{180} = \frac{\pi}{4} \approx 0.785\)</span> rad.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_8_2-4-10-2-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_8_2-4-10-2-2-1-2">
+<div class="para" id="sec_8_2-4-10-2-2-1-2-1">
+<span class="process-math">\(90^{\circ} = 90 \cdot \frac{\pi}{180} = \frac{\pi}{2} \approx 1.57\)</span> rad.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_8_2-4-10-2-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_8_2-4-10-2-2-1-3">
+<div class="para" id="sec_8_2-4-10-2-2-1-3-1">
+<span class="process-math">\(180^{\circ} = 180 \cdot \frac{\pi}{180} = \pi \approx 3.142\)</span> rad.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_8_2-4-10-2-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec_8_2-4-10-2-2-1-4">
+<div class="para" id="sec_8_2-4-10-2-2-1-4-1">
+<span class="process-math">\(17^{\circ} = 17 \cdot \frac{\pi}{180} \approx 0.297\)</span> rad.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#sec_8_2-4-10-2-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-10-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.8.1"><a tabindex="-1" href="#sec_8_2-4-10-2" title="Copy heading and permalink for Solution 8.2.8.1" aria-label="Copy heading and permalink for Solution 8.2.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 8.2.8"><a tabindex="-1" href="#sec_8_2-4-10" title="Copy heading and permalink for Example 8.2.8" aria-label="Copy heading and permalink for Example 8.2.8">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_8_2-4-11"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_8_2-4-11-1-1">Convert the following angles from radians to degrees.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_8_2-4-11-1-2">
+<ol class="decimal" id="sec_8_2-4-11-1-2-1">
+<li id="sec_8_2-4-11-1-2-1-1">
+<div class="para" id="sec_8_2-4-11-1-2-1-1-1">
+<span class="process-math">\(-\frac{\pi}{3}\)</span> rad<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_8_2-4-11-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_8_2-4-11-1-2-1-2">
+<div class="para" id="sec_8_2-4-11-1-2-1-2-1">
+<span class="process-math">\(\frac{\pi}{6}\)</span> rad<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_8_2-4-11-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_8_2-4-11-1-2-1-3">
+<div class="para" id="sec_8_2-4-11-1-2-1-3-1">
+<span class="process-math">\(\frac{3\pi}{2}\)</span> rad<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_8_2-4-11-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec_8_2-4-11-1-2-1-4">
+<div class="para" id="sec_8_2-4-11-1-2-1-4-1">
+<span class="process-math">\(-2.5\)</span> rad<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#sec_8_2-4-11-1-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_8_2-4-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sec_8_2-4-11-2-1">We use conversion formulas:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_8_2-4-11-2-2">
+<ol class="decimal" id="sec_8_2-4-11-2-2-1">
+<li id="sec_8_2-4-11-2-2-1-1">
+<div class="para" id="sec_8_2-4-11-2-2-1-1-1">
+<span class="process-math">\(-\frac{\pi}{3}\)</span> rad <span class="process-math">\(= -\frac{\pi}{3} \cdot \frac{180}{\pi} = -60^{\circ}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_8_2-4-11-2-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_8_2-4-11-2-2-1-2">
+<div class="para" id="sec_8_2-4-11-2-2-1-2-1">
+<span class="process-math">\(\frac{\pi}{6}\)</span> rad <span class="process-math">\(= \frac{\pi}{6} \cdot \frac{180}{\pi} = 30^{\circ}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_8_2-4-11-2-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_8_2-4-11-2-2-1-3">
+<div class="para" id="sec_8_2-4-11-2-2-1-3-1">
+<span class="process-math">\(\frac{3\pi}{2}\)</span> rad <span class="process-math">\(= \frac{3\pi}{2} \cdot \frac{180}{\pi} = 270^{\circ}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_8_2-4-11-2-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sec_8_2-4-11-2-2-1-4">
+<div class="para" id="sec_8_2-4-11-2-2-1-4-1">
+<span class="process-math">\(-2.5\)</span> rad <span class="process-math">\(= -2.5 \cdot \frac{180}{\pi} \approx -143.24^{\circ}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#sec_8_2-4-11-2-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-11-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.9.1"><a tabindex="-1" href="#sec_8_2-4-11-2" title="Copy heading and permalink for Solution 8.2.9.1" aria-label="Copy heading and permalink for Solution 8.2.9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 8.2.9"><a tabindex="-1" href="#sec_8_2-4-11" title="Copy heading and permalink for Example 8.2.9" aria-label="Copy heading and permalink for Example 8.2.9">🔗</a></div>
+</article>
+<div class="para" id="sec_8_2-4-12">Here is a list of some frequently used angles and their measure in degrees and in radians.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l1 t1 lines"><em class="alert">Degrees</em></td>
+<td class="c m b1 r1 l0 t1 lines"><em class="alert">Radians</em></td>
+<td class="c m b1 r1 l0 t1 lines"><em class="alert">Radians Approx.</em></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(30^{\circ}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{\pi}{6}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0.52\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(45^{\circ}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{\pi}{4}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(0.79\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(60^{\circ}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{\pi}{3}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(1.05\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(90^{\circ}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{\pi}{2}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(1.57\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(135^{\circ}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{3\pi}{4}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2.36\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(180^{\circ}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\pi\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3.14\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(225^{\circ}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{5\pi}{4}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(3.93\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(270^{\circ}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{3\pi}{2}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(4.71\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(315^{\circ}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\frac{7\pi}{4}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(5.50\)</span></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l1 t0 lines"><span class="process-math">\(360^{\circ}\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(2\pi\)</span></td>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(6.28\)</span></td>
+</tr>
+</table></div>
+<div class="para" id="sec_8_2-4-14">The figure below shows a few angles on the unit circle together with their radian measure. From now on, you should try to get used to radian measure and think about angles in terms of radians rather than degrees.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<figure class="figure figure-like" id="fig_8_2_9"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/latex-image/8_2_9_fig.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><div class="autopermalink" aria-hidden="true" data-description="Figure 8.2.10"><a tabindex="-1" href="#fig_8_2_9" title="Copy heading and permalink for Figure 8.2.10" aria-label="Copy heading and permalink for Figure 8.2.10">🔗</a></div></figcaption>
+</figure>
+<article class="example example-like" id="sec_8_2-4-16"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_8_2-4-16-1-1">In which quadrant is the angle of <span class="process-math">\(2\)</span> radians? An angle of <span class="process-math">\(5\)</span> radians? (In other words, in which quadrants are the terminal sides of these angles?)<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-16-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_8_2-4-16-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sec_8_2-4-16-2-1">Refer to <a href="sec_8_2.html#fig_8_2_9" class="internal" title="Figure 8.2.10">Figure 8.2.10</a>. The second quadrant includes angles between <span class="process-math">\(\pi/2 \approx 1.57\)</span> radians and <span class="process-math">\(\pi \approx 3.14\)</span> radians. The angle of <span class="process-math">\(2\)</span> radians must lie in the second quadrant. The angle of <span class="process-math">\(5\)</span> radians is between <span class="process-math">\(3\pi/2 \approx 4.71\)</span> and <span class="process-math">\(2\pi \approx 6.28\)</span> radians, so <span class="process-math">\(5\)</span> radians is in the fourth quadrant.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-16-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.11.1"><a tabindex="-1" href="#sec_8_2-4-16-2" title="Copy heading and permalink for Solution 8.2.11.1" aria-label="Copy heading and permalink for Solution 8.2.11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 8.2.11"><a tabindex="-1" href="#sec_8_2-4-16" title="Copy heading and permalink for Example 8.2.11" aria-label="Copy heading and permalink for Example 8.2.11">🔗</a></div>
+</article>
+<div class="para" id="sec_8_2-4-17">An angle of <span class="process-math">\(p\)</span> radians spans an arc of length <span class="process-math">\(p\)</span> on the unit circle. By similarity of circular sectors, the same angle of <span class="process-math">\(p\)</span> radians spans the arc of length <span class="process-math">\(p \cdot r\)</span> on the circle of radius <span class="process-math">\(r\text{:}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-17" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/8_2_10_fig.svg" role="img" class="contained"></div>
+<div class="para logical" id="sec_8_2-4-19">
+<div class="para">The length, <span class="process-math">\(s\text{,}\)</span> of the arc spanned in a circle of radius <span class="process-math">\(r\)</span> by an angle of <span class="process-math">\(p\)</span> radians is:</div>
+<div class="displaymath process-math" id="sec_8_2-4-19-4">
+\begin{equation*}
+s = p \cdot r.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec_8_2-4-20"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.2.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_8_2-4-20-1-1">Find the arc length <span class="process-math">\(s\)</span> spanned by an angle of <span class="process-math">\(\pi/2\)</span> radians on the circle of radius 5 centimeters.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_8_2-4-20-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_8_2-4-20-2-1">
+<div class="para">According to the formula above,</div>
+<div class="displaymath process-math" id="sec_8_2-4-20-2-1-1">
+\begin{equation*}
+s = (\pi/2) \cdot 5 \approx 7.854
+\end{equation*}
+</div>
+<div class="para">centimeters. Remember: The units of radius and arc length are the same.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_8_2-4-20-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.12.1"><a tabindex="-1" href="#sec_8_2-4-20-2" title="Copy heading and permalink for Solution 8.2.12.1" aria-label="Copy heading and permalink for Solution 8.2.12.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 8.2.12"><a tabindex="-1" href="#sec_8_2-4-20" title="Copy heading and permalink for Example 8.2.12" aria-label="Copy heading and permalink for Example 8.2.12">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Definition of Radian Measure"><a tabindex="-1" href="#sec_8_2-4" title="Copy heading and permalink for Subsection: Definition of Radian Measure" aria-label="Copy heading and permalink for Subsection: Definition of Radian Measure">🔗</a></div>
+</section>
 <section class="exercises" id="ex_8_2">
 <h2 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
@@ -444,40 +866,40 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-8_2_1-2-1">
 <span class="process-math">\(\frac{3\pi}{20}\approx0.471\)</span> radians; Quadrant I<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-8_2_1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.1.1"><a tabindex="-1" href="#exercise-8_2_1-2" title="Copy heading and permalink for Solution 8.2.1.1" aria-label="Copy heading and permalink for Solution 8.2.1.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#exercise-8_2_1-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 8.2.1"><a tabindex="-1" href="#exercise-8_2_1" title="Copy heading and permalink for Exercise 8.2.1" aria-label="Copy heading and permalink for Exercise 8.2.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1"><a tabindex="-1" href="#exercise-8_2_1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_8_2-1-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_8_2-1-4-1-1">
-<span class="process-math">\(-10^{\circ}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_8_2_2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_8_2_2-1-1">
+<span class="process-math">\(-10^{\circ}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_8_2-1-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_8_2_2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_8_2-1-4-2-1">
-<span class="process-math">\(-\frac{\pi}{18}\approx-0.175\)</span> radians; Quadrant IV<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_8_2_2-2-1">
+<span class="process-math">\(-\frac{\pi}{18}\approx-0.175\)</span> radians; Quadrant IV<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.2.1"><a tabindex="-1" href="#ex_8_2-1-4-2" title="Copy heading and permalink for Solution 8.2.2.1" aria-label="Copy heading and permalink for Solution 8.2.2.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#exercise_8_2_2-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 8.2.2"><a tabindex="-1" href="#ex_8_2-1-4" title="Copy heading and permalink for Exercise 8.2.2" aria-label="Copy heading and permalink for Exercise 8.2.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#exercise_8_2_2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_8_2-1-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_8_2-1-5-1-1">
-<span class="process-math">\(600^{\circ}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_8_2_3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_8_2_3-1-1">
+<span class="process-math">\(600^{\circ}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_8_2-1-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_8_2_3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_8_2-1-5-2-1">
-<span class="process-math">\(\frac{10\pi}{3}\approx10.472\)</span> radians; Quadrant III<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_8_2_3-2-1">
+<span class="process-math">\(\frac{10\pi}{3}\approx10.472\)</span> radians; Quadrant III<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.3.1"><a tabindex="-1" href="#ex_8_2-1-5-2" title="Copy heading and permalink for Solution 8.2.3.1" aria-label="Copy heading and permalink for Solution 8.2.3.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#exercise_8_2_3-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 8.2.3"><a tabindex="-1" href="#ex_8_2-1-5" title="Copy heading and permalink for Exercise 8.2.3" aria-label="Copy heading and permalink for Exercise 8.2.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3"><a tabindex="-1" href="#exercise_8_2_3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-8_2_4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-8_2_4-1-1">
@@ -489,13 +911,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-8_2_4-2-1">
 <span class="process-math">\(-\frac{281\pi}{90}\approx-9.809\)</span> radians; Quadrant II<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-8_2_4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.4.1"><a tabindex="-1" href="#exercise-8_2_4-2" title="Copy heading and permalink for Solution 8.2.4.1" aria-label="Copy heading and permalink for Solution 8.2.4.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#exercise-8_2_4-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 8.2.4"><a tabindex="-1" href="#exercise-8_2_4" title="Copy heading and permalink for Exercise 8.2.4" aria-label="Copy heading and permalink for Exercise 8.2.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 4"><a tabindex="-1" href="#exercise-8_2_4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 8.2.1–4: Converting to Radians"><a tabindex="-1" href="#ex_8_2-1" title="Copy heading and permalink for Exercise Group 8.2.1–4: Converting to Radians" aria-label="Copy heading and permalink for Exercise Group 8.2.1–4: Converting to Radians">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1–4: Converting to Radians"><a tabindex="-1" href="#ex_8_2-1" title="Copy heading and permalink for Exercise Group 1–4: Converting to Radians" aria-label="Copy heading and permalink for Exercise Group 1–4: Converting to Radians">🔗</a></div>
 </div>
 <div class="exercisegroup" id="ex_8_2-2">
 <h3 class="heading"><span class="title">Computing to Degrees.</span></h3>
@@ -514,40 +936,40 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-8_2_5-2-1">
 <span class="process-math">\(10^{\circ}\text{;}\)</span> Quadrant I<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-8_2_5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.5.1"><a tabindex="-1" href="#exercise-8_2_5-2" title="Copy heading and permalink for Solution 8.2.5.1" aria-label="Copy heading and permalink for Solution 8.2.5.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.1"><a tabindex="-1" href="#exercise-8_2_5-2" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 8.2.5"><a tabindex="-1" href="#exercise-8_2_5" title="Copy heading and permalink for Exercise 8.2.5" aria-label="Copy heading and permalink for Exercise 8.2.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 5"><a tabindex="-1" href="#exercise-8_2_5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_8_2-2-4"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_8_2-2-4-1-1">
-<span class="process-math">\(-\frac{\pi}{10}\)</span> radians<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_8_2_6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_8_2_6-1-1">
+<span class="process-math">\(-\frac{\pi}{10}\)</span> radians<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_8_2-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_8_2_6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_8_2-2-4-2-1">
-<span class="process-math">\(-18^{\circ}\text{;}\)</span> Quadrant IV<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_8_2_6-2-1">
+<span class="process-math">\(-18^{\circ}\text{;}\)</span> Quadrant IV<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.6.1"><a tabindex="-1" href="#ex_8_2-2-4-2" title="Copy heading and permalink for Solution 8.2.6.1" aria-label="Copy heading and permalink for Solution 8.2.6.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.1"><a tabindex="-1" href="#exercise_8_2_6-2" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 8.2.6"><a tabindex="-1" href="#ex_8_2-2-4" title="Copy heading and permalink for Exercise 8.2.6" aria-label="Copy heading and permalink for Exercise 8.2.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 6"><a tabindex="-1" href="#exercise_8_2_6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_8_2-2-5"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_8_2-2-5-1-1">
-<span class="process-math">\(8\)</span> radians<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_8_2_7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_8_2_7-1-1">
+<span class="process-math">\(8\)</span> radians<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_8_2-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_8_2_7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_8_2-2-5-2-1">
-<span class="process-math">\(\frac{1440}{\pi}\approx458.366^{\circ}\text{;}\)</span> Quadrant II<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_8_2_7-2-1">
+<span class="process-math">\(\frac{1440}{\pi}\approx458.366^{\circ}\text{;}\)</span> Quadrant II<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.7.1"><a tabindex="-1" href="#ex_8_2-2-5-2" title="Copy heading and permalink for Solution 8.2.7.1" aria-label="Copy heading and permalink for Solution 8.2.7.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1"><a tabindex="-1" href="#exercise_8_2_7-2" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 8.2.7"><a tabindex="-1" href="#ex_8_2-2-5" title="Copy heading and permalink for Exercise 8.2.7" aria-label="Copy heading and permalink for Exercise 8.2.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 7"><a tabindex="-1" href="#exercise_8_2_7" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-8_2_8"><h4 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-8_2_8-1-1">
@@ -559,42 +981,42 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-8_2_8-2-1">
 <span class="process-math">\(216^{\circ}\text{;}\)</span> Quadrant III<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-8_2_8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.8.1"><a tabindex="-1" href="#exercise-8_2_8-2" title="Copy heading and permalink for Solution 8.2.8.1" aria-label="Copy heading and permalink for Solution 8.2.8.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.1"><a tabindex="-1" href="#exercise-8_2_8-2" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 8.2.8"><a tabindex="-1" href="#exercise-8_2_8" title="Copy heading and permalink for Exercise 8.2.8" aria-label="Copy heading and permalink for Exercise 8.2.8">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 8"><a tabindex="-1" href="#exercise-8_2_8" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 8.2.5–8: Computing to Degrees"><a tabindex="-1" href="#ex_8_2-2" title="Copy heading and permalink for Exercise Group 8.2.5–8: Computing to Degrees" aria-label="Copy heading and permalink for Exercise Group 8.2.5–8: Computing to Degrees">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 5–8: Computing to Degrees"><a tabindex="-1" href="#ex_8_2-2" title="Copy heading and permalink for Exercise Group 5–8: Computing to Degrees" aria-label="Copy heading and permalink for Exercise Group 5–8: Computing to Degrees">🔗</a></div>
 </div>
-<article class="exercise exercise-like" id="ex_8_2-3"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="ex_8_2-3-1-1">What is the arc length spanned by the angle <span class="process-math">\(\frac{3\pi}{4}\)</span> radians on the circle of radius <span class="process-math">\(4\)</span> inches?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_8_2_9"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercise_8_2_9-1-1">What is the arc length spanned by the angle <span class="process-math">\(\frac{3\pi}{4}\)</span> radians on the circle of radius <span class="process-math">\(4\)</span> inches?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_8_2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_8_2_9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_8_2-3-2-1">
-<span class="process-math">\(3\pi\approx9.425\)</span> inches<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_8_2_9-2-1">
+<span class="process-math">\(3\pi\approx9.425\)</span> inches<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.9.1"><a tabindex="-1" href="#ex_8_2-3-2" title="Copy heading and permalink for Solution 8.2.9.1" aria-label="Copy heading and permalink for Solution 8.2.9.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 9.1"><a tabindex="-1" href="#exercise_8_2_9-2" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 8.2.9"><a tabindex="-1" href="#ex_8_2-3" title="Copy heading and permalink for Exercise 8.2.9" aria-label="Copy heading and permalink for Exercise 8.2.9">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 9"><a tabindex="-1" href="#exercise_8_2_9" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_8_2-4"><h3 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="ex_8_2-4-1-1">What is the arc length spanned by the angle <span class="process-math">\(300^{\circ}\)</span> on the circle of radius <span class="process-math">\(2\)</span> centimeters?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_8_2_10"><h3 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercise_8_2_10-1-1">What is the arc length spanned by the angle <span class="process-math">\(300^{\circ}\)</span> on the circle of radius <span class="process-math">\(2\)</span> centimeters?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_8_2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_8_2_10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_8_2-4-2-1">
-<span class="process-math">\(\frac{10\pi}{3}\approx10.472\)</span> centimeters<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_8_2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_8_2_10-2-1">
+<span class="process-math">\(\frac{10\pi}{3}\approx10.472\)</span> centimeters<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_8_2_10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 8.2.10.1"><a tabindex="-1" href="#ex_8_2-4-2" title="Copy heading and permalink for Solution 8.2.10.1" aria-label="Copy heading and permalink for Solution 8.2.10.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.1"><a tabindex="-1" href="#exercise_8_2_10-2" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 8.2.10"><a tabindex="-1" href="#ex_8_2-4" title="Copy heading and permalink for Exercise 8.2.10" aria-label="Copy heading and permalink for Exercise 8.2.10">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercises 8.2"><a tabindex="-1" href="#ex_8_2" title="Copy heading and permalink for Exercises 8.2" aria-label="Copy heading and permalink for Exercises 8.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 10"><a tabindex="-1" href="#exercise_8_2_10" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercises"><a tabindex="-1" href="#ex_8_2" title="Copy heading and permalink for Exercises" aria-label="Copy heading and permalink for Exercises">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 8.2: Angles Using the Unit Circle, Radian Measure"><a tabindex="-1" href="#sec_8_2" title="Copy heading and permalink for Section 8.2: Angles Using the Unit Circle, Radian Measure" aria-label="Copy heading and permalink for Section 8.2: Angles Using the Unit Circle, Radian Measure">🔗</a></div>
 </section>
 </div>

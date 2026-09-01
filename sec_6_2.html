@@ -19,7 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-1 { system: extends lower-alpha; prefix: ''; suffix: '. '; }
+</style>
 <link rel="stylesheet" type="text/css" href="external/custom.css">
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
@@ -38,7 +40,7 @@ lang: "en-US",
 <meta name="twitter:description" content="As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.">
 <meta property="og:description" content="As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.51"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.51"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -60,16 +62,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.3';
+eBookConfig.runestone_version = '8.2.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.40bd1420d3277749.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f00d2d175c91fc71.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
-<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="applied-precalculus" class="pretext book ignore-math">
@@ -270,25 +272,25 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Algebra of Powers: Fractional Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_2" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-3" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-5" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_2.html#ex_4_2" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Power Functions: Positive Integral Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_3" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-3" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-4" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_3.html#ex_4_3" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Power Functions: Fractional and Negative Integral Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_4" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-3" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-7" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_4.html#ex_4_4" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
@@ -300,7 +302,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_5-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Exponential Functions: Practical Meaning</span></a></div>
-<ul id="ptx-toc-group-sec_5_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_1.html#ex_5_1" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_1.html#sec_5_1-4" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_1.html#sec_5_1-5" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_1.html#ex_5_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Graphs of Exponential Functions</span></a></div>
@@ -308,11 +314,19 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Functions Numerically, Modeling</span></a></div>
-<ul id="ptx-toc-group-sec_5_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_3.html#ex_5_3" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_3.html#sec_5_3-4" class="internal"><span class="title">Modeling: The Population of Mozambique</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_3.html#ex_5_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Doubling Time and Half-Life</span></a></div>
-<ul id="ptx-toc-group-sec_5_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_4.html#ex_5_4" class="internal"><span class="codenumber">5.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-4" class="internal"><span class="title">The Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-5" class="internal"><span class="title">The Half-Life</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-6" class="internal"><span class="title">Additional Observations and Examples</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_4.html#ex_5_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_5.html" class="internal"><span class="codenumber">5.5</span> <span class="title">The Natural Base e</span></a></div>
@@ -326,15 +340,28 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_6-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">What Are Logarithms?</span></a></div>
-<ul id="ptx-toc-group-sec_6_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_1.html#ex_6_1" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_1.html#sec_6_1-4" class="internal"><span class="title">Graphs of Functions <span class="process-math">\(y=\log(x)\)</span> and <span class="process-math">\(y=\ln(x)\)</span></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_1.html#ex_6_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec_6_2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Properties of Logarithms, Solving Equations Using Logarithms</span></a></div>
-<ul class="structural toc-item-list active" id="ptx-toc-group-sec_6_2"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_2.html#ex_6_2" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec_6_2">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-4" class="internal"><span class="title">Algebraic Properties of Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-5" class="internal"><span class="title">Solving Equations Using Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-6" class="internal"><span class="title">The Change of Base Formula for Logarithms</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_2.html#ex_6_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_3.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Logarithms in Applications</span></a></div>
-<ul id="ptx-toc-group-sec_6_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_3.html#ex_6_3" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-4" class="internal"><span class="title">Converting Between <span class="process-math">\(Q = A \cdot b^t\)</span> and <span class="process-math">\(Q = A \cdot e^{kt}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-5" class="internal"><span class="title">Calculating the Doubling Time and the Half-Life</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-6" class="internal"><span class="title">The Acidity of a Liquid</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_3.html#ex_6_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -344,11 +371,21 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_7-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Vertical and Horizontal Shifts</span></a></div>
-<ul id="ptx-toc-group-sec_7_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_1.html#ex_7_1" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-3" class="internal"><span class="title">Vertical Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-4" class="internal"><span class="title">Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-5" class="internal"><span class="title">Combining Vertical and Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_1.html#ex_7_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Vertical and Horizontal Scaling</span></a></div>
-<ul id="ptx-toc-group-sec_7_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_2.html#ex_7_2" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-3" class="internal"><span class="title">Vertical Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-4" class="internal"><span class="title">Horizontal Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-5" class="internal"><span class="title">Combining Shifts, Scaling, and Reflections</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_2.html#ex_7_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Composing and Decomposing Functions</span></a></div>
@@ -356,7 +393,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Inverse Functions</span></a></div>
-<ul id="ptx-toc-group-sec_7_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_4.html#ex_7_4" class="internal"><span class="codenumber">7.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_4.html#sec_7_4-4" class="internal"><span class="title">Finding Inverse Functions Algebraically</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_4.html#ex_7_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -370,7 +410,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Angles Using the Unit Circle, Radian Measure</span></a></div>
-<ul id="ptx-toc-group-sec_8_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_2.html#ex_8_2" class="internal"><span class="codenumber">8.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_2.html#sec_8_2-4" class="internal"><span class="title">Definition of Radian Measure</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_2.html#ex_8_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Values of Sine and Cosine for Angles on the Unit Circle</span></a></div>
@@ -378,11 +421,25 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Sine and Cosine Functions</span></a></div>
-<ul id="ptx-toc-group-sec_8_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_4.html#ex_8_4" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-4" class="internal"><span class="title">Graphs of Sine and Cosine Functions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5" class="internal"><span class="title">Transforming Sine and Cosine Functions—Basic Ideas</span></a></div>
+<ul id="ptx-toc-group-sec_8_4-5" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-3" class="internal"><span class="title">Changing the Amplitude</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-4" class="internal"><span class="title">Changing the Midline</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-5" class="internal"><span class="title">Changing the Period</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_4.html#ex_8_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Families of Sine and Cosine Functions, Modeling</span></a></div>
-<ul id="ptx-toc-group-sec_8_5" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_5.html#ex_8_5" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_5" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_5.html#sec_8_5-4" class="internal"><span class="title">Modeling Periodic Processes</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_5.html#ex_8_5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -406,23 +463,542 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <ol class="decimal" id="sec_6_2-2-2">
 <li id="sec_6_2-2-2-1">
-<div class="para" id="sec_6_2-2-2-1-1">First objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_6_2-2-2-1-1">State and apply the algebraic properties of the common logarithm and the natural logarithm.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 6.2.1"><a tabindex="-1" href="#sec_6_2-2-2-1" title="Copy heading and permalink for Objective 6.2.1" aria-label="Copy heading and permalink for Objective 6.2.1">🔗</a></div>
 </li>
 <li id="sec_6_2-2-2-2">
-<div class="para" id="sec_6_2-2-2-2-1">Second objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_6_2-2-2-2-1">Solve exponential equations by taking the logarithm of both sides.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 6.2.2"><a tabindex="-1" href="#sec_6_2-2-2-2" title="Copy heading and permalink for Objective 6.2.2" aria-label="Copy heading and permalink for Objective 6.2.2">🔗</a></div>
 </li>
 <li id="sec_6_2-2-2-3">
-<div class="para" id="sec_6_2-2-2-3-1">Third objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_6_2-2-2-3-1">Condense and expand logarithmic expressions, and use the change of base formula to evaluate a logarithm of any base.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 6.2.3"><a tabindex="-1" href="#sec_6_2-2-2-3" title="Copy heading and permalink for Objective 6.2.3" aria-label="Copy heading and permalink for Objective 6.2.3">🔗</a></div>
 </li>
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Objectives 6.2"><a tabindex="-1" href="#sec_6_2-2" title="Copy heading and permalink for Objectives 6.2" aria-label="Copy heading and permalink for Objectives 6.2">🔗</a></div>
 </article>
+<section class="introduction" id="sec_6_2-3">
+<div class="para" id="sec_6_2-3-1">Algebraic properties of logarithms are what make them useful in applications. These properties are similar for all logarithms base <span class="process-math">\(b\text{.}\)</span> For the sake of clarity, though, we will list and practice separately the properties of the common logarithm and the properties of the natural logarithm.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="sec_6_2-4">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Algebraic Properties of Logarithms</span>
+</h2>
+<div class="para" id="sec_6_2-4-2">We begin with the common logarithm.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="sec_6_2-4-3"><h3 class="heading">
+<span class="type">Result</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Properties of the Common Logarithm.</span>
+</h3>
+<div class="para" id="sec_6_2-4-3-2-1">For <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> positive numbers:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_6_2-4-3-2-2">
+<ol class="decimal" id="sec_6_2-4-3-2-2-1">
+<li id="com-log-prop-1">
+<div class="para" id="com-log-prop-1-1">
+<span class="process-math">\(\log(10^x) = x\)</span> for any <span class="process-math">\(x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#com-log-prop-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#com-log-prop-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="com-log-prop-2">
+<div class="para" id="com-log-prop-2-1">
+<span class="process-math">\(10^{\log x} = x\)</span> for positive <span class="process-math">\(x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#com-log-prop-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#com-log-prop-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="com-log-prop-3">
+<div class="para" id="com-log-prop-3-1">
+<span class="process-math">\(\displaystyle \log(A\cdot B) = \log A + \log B\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#com-log-prop-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#com-log-prop-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="com-log-prop-4">
+<div class="para" id="com-log-prop-4-1">
+<span class="process-math">\(\displaystyle \log(\frac{A}{B}) = \log A - \log B\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#com-log-prop-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#com-log-prop-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="com-log-prop-5">
+<div class="para" id="com-log-prop-5-1">
+<span class="process-math">\(\log(B^p) = p\log B\)</span> for any <span class="process-math">\(p\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#com-log-prop-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5"><a tabindex="-1" href="#com-log-prop-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-4-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Result 6.2.1: Properties of the Common Logarithm"><a tabindex="-1" href="#sec_6_2-4-3" title="Copy heading and permalink for Result 6.2.1: Properties of the Common Logarithm" aria-label="Copy heading and permalink for Result 6.2.1: Properties of the Common Logarithm">🔗</a></div>
+</article>
+<div class="para logical" id="sec_6_2-4-4">
+<div class="para">Properties <a href="sec_6_2.html#com-log-prop-1" class="internal" title="Item 1">1–2</a> follow from the definition of the logarithm base <span class="process-math">\(10\text{.}\)</span> For <a href="sec_6_2.html#com-log-prop-3" class="internal" title="Item 3">Property 3</a>, justification requires explaining why the logarithm of a product equals a sum of logarithms. From the definition of <span class="process-math">\(\log x = \log_{10} x\text{,}\)</span> then for any number (or expression) <span class="process-math">\(w\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/com-log-prop-3.html ./knowl/xref/com-log-prop-2.html " id="sec_6_2-4-4-6">
+\begin{equation*}
+\log (A\cdot B) =  w \quad \Leftrightarrow \quad 10^w = A\cdot B.
+\end{equation*}
+</div>
+<div class="para">Notice that from properties of exponential expressions,</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/com-log-prop-3.html ./knowl/xref/com-log-prop-2.html " id="sec_6_2-4-4-7">
+\begin{equation*}
+10^{\log A + \log B} = 10^{\log A}\cdot 10^{\log B}.
+\end{equation*}
+</div>
+<div class="para">Indeed, the sum of exponents corresponds to the product of the exponential expressions. From <a href="sec_6_2.html#com-log-prop-2" class="internal" title="Item 2">Property 2</a> of the common logarithm,</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/com-log-prop-3.html ./knowl/xref/com-log-prop-2.html " id="sec_6_2-4-4-9">
+\begin{equation*}
+10^{\log A} = A, \qquad 10^{\log B} = B.
+\end{equation*}
+</div>
+<div class="para">It follows that</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/com-log-prop-3.html ./knowl/xref/com-log-prop-2.html " id="sec_6_2-4-4-10">
+\begin{equation*}
+10^{\log A + \log B} = 10^{\log A}\cdot 10^{\log B} = A\cdot B.
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/xref/com-log-prop-3.html ./knowl/xref/com-log-prop-2.html " id="sec_6_2-4-4-11">
+\begin{equation*}
+\log (A\cdot B) = \log A + \log B  \quad \text{as} \quad 10^{\log A + \log B}  = A\cdot B.
+\end{equation*}
+</div>
+<div class="para">Similarly, Properties <a href="sec_6_2.html#com-log-prop-4" class="internal" title="Item 4">4–5</a> of the logarithm follow from the algebraic properties of exponential expressions.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_6_2-4-5">All logarithms have similar properties as those listed above for the common logarithm. In particular, similar properties hold for the natural logarithm.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="sec_6_2-4-6"><h3 class="heading">
+<span class="type">Result</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Properties of the Natural Logarithm.</span>
+</h3>
+<div class="para" id="sec_6_2-4-6-2-1">For <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> positive numbers:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-4-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_6_2-4-6-2-2">
+<ol class="decimal" id="sec_6_2-4-6-2-2-1">
+<li id="nat-log-prop-1">
+<div class="para" id="nat-log-prop-1-1">
+<span class="process-math">\(\ln(e^x) = x\)</span> for any <span class="process-math">\(x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#nat-log-prop-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#nat-log-prop-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="nat-log-prop-2">
+<div class="para" id="nat-log-prop-2-1">
+<span class="process-math">\(e^{\ln x} = x\)</span> for <span class="process-math">\(x\)</span> positive<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#nat-log-prop-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#nat-log-prop-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="nat-log-prop-3">
+<div class="para" id="nat-log-prop-3-1">
+<span class="process-math">\(\displaystyle \ln(A\cdot B) = \ln A + \ln B\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#nat-log-prop-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#nat-log-prop-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="nat-log-prop-4">
+<div class="para" id="nat-log-prop-4-1">
+<span class="process-math">\(\displaystyle \ln(\frac{A}{B}) = \ln A - \ln B\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#nat-log-prop-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 4"><a tabindex="-1" href="#nat-log-prop-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+<li id="nat-log-prop-5">
+<div class="para" id="nat-log-prop-5-1">
+<span class="process-math">\(\ln(B^p) = p\ln B\)</span> for any <span class="process-math">\(p\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#nat-log-prop-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 5"><a tabindex="-1" href="#nat-log-prop-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-4-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Result 6.2.2: Properties of the Natural Logarithm"><a tabindex="-1" href="#sec_6_2-4-6" title="Copy heading and permalink for Result 6.2.2: Properties of the Natural Logarithm" aria-label="Copy heading and permalink for Result 6.2.2: Properties of the Natural Logarithm">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Algebraic Properties of Logarithms"><a tabindex="-1" href="#sec_6_2-4" title="Copy heading and permalink for Subsection: Algebraic Properties of Logarithms" aria-label="Copy heading and permalink for Subsection: Algebraic Properties of Logarithms">🔗</a></div>
+</section>
+<section class="subsection" id="sec_6_2-5">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Equations Using Logarithms</span>
+</h2>
+<div class="para" id="sec_6_2-5-2">
+<a href="sec_6_2.html#com-log-prop-5" class="internal" title="Item 5">Property 5</a> of both logarithms is especially important and makes logarithms useful for solving equations in which the unknown is in the exponent.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec_6_2-5-3"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec_6_2-5-3-1-1">
+<div class="para">Solve the equation:</div>
+<div class="displaymath process-math" id="sec_6_2-5-3-1-1-1">
+\begin{equation*}
+3^x = 600.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_2-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_2-5-3-2-1">
+<div class="para">The unknown <span class="process-math">\(x\)</span> is in the exponent, so we apply a logarithm to both sides of the equation. Either the common logarithm or the natural logarithm will work equally well, but we use the common logarithm. Taking the logarithm of both sides of <span class="process-math">\(3^x = 600\)</span> gives us an equivalent equation:</div>
+<div class="displaymath process-math" id="sec_6_2-5-3-2-1-3">
+\begin{equation*}
+\log(3^x) = \log(600).
+\end{equation*}
+</div>
+<div class="para">
+<em class="alert">Note:</em> We took the logarithm of each side; which is <em class="alert">NOT</em> to be interpreted as “multiplying each side by <span class="process-math">\(\log\)</span>”. Similarly, we cannot <em class="emphasis">multiply</em> both sides of an equation by the radical “<span class="process-math">\(\sqrt{\quad}\)</span>”. We can, however, <em class="emphasis">take the radical</em> of both sides.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_6_2-5-3-2-2">
+<div class="para">
+<a href="sec_6_2.html#com-log-prop-5" class="internal" title="Item 5">Property 5</a> of the common logarithm takes the exponent out of the logarithm:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-5.html" id="sec_6_2-5-3-2-2-2">
+\begin{equation*}
+x\log(3) = \log(600).
+\end{equation*}
+</div>
+<div class="para">Note that <span class="process-math">\(\log(3)\)</span> and <span class="process-math">\(\log(600)\)</span> are just constants—you can calculate their approximate values using your calculator. The equation is then <span class="process-math">\(x\)</span> times a constant is equal to another constant. Divide both sides of the equation by <span class="process-math">\(\log(3)\)</span> to get the answer:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-5.html" id="sec_6_2-5-3-2-2-8">
+\begin{equation*}
+x = \frac{\log(600)}{\log(3)} \approx 5.823.
+\end{equation*}
+</div>
+<div class="para">You can check for yourself that you will get the same answer if you choose to take the natural logarithm of both sides rather than the common logarithm. The exact answers may look different, but the decimal approximation will show they are in fact the same.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.3.1"><a tabindex="-1" href="#sec_6_2-5-3-2" title="Copy heading and permalink for Solution 6.2.3.1" aria-label="Copy heading and permalink for Solution 6.2.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.2.3"><a tabindex="-1" href="#sec_6_2-5-3" title="Copy heading and permalink for Example 6.2.3" aria-label="Copy heading and permalink for Example 6.2.3">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_6_2-5-4"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec_6_2-5-4-1-1">
+<div class="para">Solve for <span class="process-math">\(t\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_6_2-5-4-1-1-2">
+\begin{equation*}
+1000\cdot 1.05^t = 2000.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_2-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_2-5-4-2-1">
+<div class="para">Before applying the logarithm to both sides, it is best to divide both sides by <span class="process-math">\(1000\text{:}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-5.html" id="sec_6_2-5-4-2-1-2">
+\begin{equation*}
+1.05^t = \frac{2000}{1000}.
+\end{equation*}
+</div>
+<div class="para">That is, <span class="process-math">\(1.05^t = 2\text{.}\)</span> Now, apply the logarithm to both sides and solve:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-5.html" id="sec_6_2-5-4-2-1-4">
+\begin{align*}
+\log(1.05^t) \amp = \log(2)\\
+t\log(1.05) \amp = \log(2) \amp\amp (\href{sec_6_2.html#com-log-prop-5}{\text{Property 5}})\\
+\frac{t \, \cancel{\log(1.05)}}{\cancel{\log(1.05)}} \amp = \frac{\log(2)}{\log (1.05)}\\
+t \amp = \frac{\log(2)}{\log(1.05)} \approx 14.207.
+\end{align*}
+</div>
+<div class="para">Notice that we also found the doubling time of the function <span class="process-math">\(y = 1000\cdot 1.05^t\)</span> with this calculation.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.4.1"><a tabindex="-1" href="#sec_6_2-5-4-2" title="Copy heading and permalink for Solution 6.2.4.1" aria-label="Copy heading and permalink for Solution 6.2.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.2.4"><a tabindex="-1" href="#sec_6_2-5-4" title="Copy heading and permalink for Example 6.2.4" aria-label="Copy heading and permalink for Example 6.2.4">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_6_2-5-5"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec_6_2-5-5-1-1">
+<div class="para">Solve for <span class="process-math">\(t\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_6_2-5-5-1-1-2">
+\begin{equation*}
+500e^{0.072t} = 1800
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_2-5-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_2-5-5-2-1">
+<div class="para">After dividing both sides by <span class="process-math">\(500\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/nat-log-prop-5.html ./knowl/xref/nat-log-prop-1.html" id="sec_6_2-5-5-2-1-2">
+\begin{equation*}
+e^{0.072t} = \frac{18}{5}.
+\end{equation*}
+</div>
+<div class="para">Since the base of the exponential expression is <span class="process-math">\(e\text{,}\)</span> it will be a bit easier to use the natural logarithm. Applying the natural logarithm to both sides gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/nat-log-prop-5.html ./knowl/xref/nat-log-prop-1.html" id="sec_6_2-5-5-2-1-4">
+\begin{equation*}
+\ln(e^{0.072t}) = \ln\left( \frac{18}{5} \right).
+\end{equation*}
+</div>
+<div class="para">There are two options at this time. The first is to use <a href="sec_6_2.html#nat-log-prop-5" class="internal" title="Item 5">Property 5</a> of the natural logarithm with <span class="process-math">\(p = 0.072t\)</span> and get:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/nat-log-prop-5.html ./knowl/xref/nat-log-prop-1.html" id="sec_6_2-5-5-2-1-7">
+\begin{equation*}
+\ln(e^{0.072t}) = 0.072t\ln(e) = 0.072t \quad \text{as} \quad \ln(e) = 1.
+\end{equation*}
+</div>
+<div class="para">Or, use <a href="sec_6_2.html#nat-log-prop-1" class="internal" title="Item 1">Property 1</a>, which says in essence that for any number or expression <span class="process-math">\(w\text{,}\)</span> <span class="process-math">\(\ln(e^{w}) = w\text{.}\)</span> Either way,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/nat-log-prop-5.html ./knowl/xref/nat-log-prop-1.html" id="sec_6_2-5-5-2-1-11">
+\begin{equation*}
+\ln(e^{0.072t}) = 0.072t
+\end{equation*}
+</div>
+<div class="para">and so</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/nat-log-prop-5.html ./knowl/xref/nat-log-prop-1.html" id="sec_6_2-5-5-2-1-12">
+\begin{equation*}
+0.072t = \ln \left(\frac{18}{5}\right).
+\end{equation*}
+</div>
+<div class="para">Dividing both sides by <span class="process-math">\(0.072\text{,}\)</span> the exact and approximate solutions are</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/nat-log-prop-5.html ./knowl/xref/nat-log-prop-1.html" id="sec_6_2-5-5-2-1-14">
+\begin{equation*}
+t = \frac{\ln(\frac{18}{5})}{0.072} \approx 17.79
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.5.1"><a tabindex="-1" href="#sec_6_2-5-5-2" title="Copy heading and permalink for Solution 6.2.5.1" aria-label="Copy heading and permalink for Solution 6.2.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.2.5"><a tabindex="-1" href="#sec_6_2-5-5" title="Copy heading and permalink for Example 6.2.5" aria-label="Copy heading and permalink for Example 6.2.5">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_6_2-5-6"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec_6_2-5-6-1-1">
+<div class="para">Solve for <span class="process-math">\(x\)</span> in the following equation. Give the exact answer as well as a decimal approximation.</div>
+<div class="displaymath process-math" id="sec_6_2-5-6-1-1-2">
+\begin{equation*}
+3\cdot 8^x = 5\cdot 6^x.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_2-5-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_2-5-6-2-1">
+<div class="para">The unknown <span class="process-math">\(x\)</span> appears in two exponential expressions. One approach is to combine those expressions into one by first dividing both sides of the equation by <span class="process-math">\(3\cdot 6^x\)</span> which will result in</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-5.html" id="sec_6_2-5-6-2-1-3">
+\begin{equation*}
+\frac{8^x}{6^x} = \frac{5}{3}.
+\end{equation*}
+</div>
+<div class="para">Now remember that the power of a quotient is the quotient of the corresponding powers: <span class="process-math">\(\dfrac{a^x}{b^x} = \left(\dfrac{a}{b}\right)^x\text{.}\)</span> Hence, the equation becomes:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-5.html" id="sec_6_2-5-6-2-1-5">
+\begin{equation*}
+\left(\frac{8}{6}\right)^x = \frac{5}{3}.
+\end{equation*}
+</div>
+<div class="para">Now, apply the common logarithm to both sides:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-5.html" id="sec_6_2-5-6-2-1-6">
+\begin{equation*}
+\log\left(\left(\frac{8}{6}\right)^x\right) = \log\left(\frac{5}{3}\right).
+\end{equation*}
+</div>
+<div class="para">By <a href="sec_6_2.html#com-log-prop-5" class="internal" title="Item 5">Property 5</a>, the left-hand side simplifies to the following:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-5.html" id="sec_6_2-5-6-2-1-8">
+\begin{equation*}
+x\log\left(\frac{8}{6}\right) = \log\left(\frac{5}{3}\right).
+\end{equation*}
+</div>
+<div class="para">Divide both sides by the constant <span class="process-math">\(\log\left(\frac{8}{6}\right)\text{,}\)</span> yielding the answer:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-5.html" id="sec_6_2-5-6-2-1-10">
+\begin{equation*}
+x = \dfrac{\log\left(\frac{5}{3}\right)}{\log\left(\frac{8}{6}\right)} \approx 1.776.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.6.1"><a tabindex="-1" href="#sec_6_2-5-6-2" title="Copy heading and permalink for Solution 6.2.6.1" aria-label="Copy heading and permalink for Solution 6.2.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.2.6"><a tabindex="-1" href="#sec_6_2-5-6" title="Copy heading and permalink for Example 6.2.6" aria-label="Copy heading and permalink for Example 6.2.6">🔗</a></div>
+</article>
+<div class="para logical" id="sec_6_2-5-7">
+<div class="para">What would happen if we didn’t simplify the equation <span class="process-math">\(3\cdot 8^x = 5\cdot 6^x\)</span> before applying the logarithm to both sides? Nothing much, except that the calculations would become a bit more complicated, since we would have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-3.html ./knowl/xref/com-log-prop-5.html ./knowl/xref/com-log-prop-4.html" id="sec_6_2-5-7-2">
+\begin{equation*}
+\log (3\cdot 8^x) = \log(5\cdot 6^x).
+\end{equation*}
+</div>
+<div class="para">This requires <a href="sec_6_2.html#com-log-prop-3" class="internal" title="Item 3">Property 3</a> to expand the logarithms on both sides as in:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-3.html ./knowl/xref/com-log-prop-5.html ./knowl/xref/com-log-prop-4.html" id="sec_6_2-5-7-4">
+\begin{equation*}
+\log(3) + \log (8^x) = \log(5) + \log (6^x).
+\end{equation*}
+</div>
+<div class="para">With <a href="sec_6_2.html#com-log-prop-5" class="internal" title="Item 5">Property 5</a>, the exponent <span class="process-math">\(x\)</span> can be pulled out and then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-3.html ./knowl/xref/com-log-prop-5.html ./knowl/xref/com-log-prop-4.html" id="sec_6_2-5-7-7">
+\begin{equation*}
+\log(3) + x\log( 8) = \log(5) + x\log (6).
+\end{equation*}
+</div>
+<div class="para">Notice that <span class="process-math">\(\log (3)\text{,}\)</span> <span class="process-math">\(\log (5)\text{,}\)</span> <span class="process-math">\(\log (6)\text{,}\)</span> <span class="process-math">\(\log (8)\)</span> are all constants and can be grouped on one side of the equation, and all terms involving <span class="process-math">\(x\)</span> appear on the other side:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-3.html ./knowl/xref/com-log-prop-5.html ./knowl/xref/com-log-prop-4.html" id="sec_6_2-5-7-13">
+\begin{equation*}
+x(\log(8) - \log(6)) = \log(5) - \log(3).
+\end{equation*}
+</div>
+<div class="para">Simplifying, the answer is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-3.html ./knowl/xref/com-log-prop-5.html ./knowl/xref/com-log-prop-4.html" id="sec_6_2-5-7-14">
+\begin{equation*}
+x = \frac{\log(5) - \log(3)}{\log(8) - \log(6)} = \dfrac{\log\left(\frac{5}{3}\right)}{\log\left(\frac{8}{6}\right)}.
+\end{equation*}
+</div>
+<div class="para">Indeed, the difference of logarithms corresponds to the logarithm of a quotient by <a href="sec_6_2.html#com-log-prop-4" class="internal" title="Item 4">Property 4</a> . Hence, we obtained the same answer as before, but getting there required more steps.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec_6_2-5-8"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_6_2-5-8-1-1">Rewrite the following expressions in terms of <span class="process-math">\(\log x\)</span> and <span class="process-math">\(\log y\text{,}\)</span> or state that this is not possible.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_6_2-5-8-1-2">
+<ol class="decimal" id="sec_6_2-5-8-1-2-1">
+<li id="sec_6_2-5-8-1-2-1-1">
+<div class="para" id="sec_6_2-5-8-1-2-1-1-1">
+<span class="process-math">\(\displaystyle \log\left(\dfrac{5y}{x}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-8-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_6_2-5-8-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6_2-5-8-1-2-1-2">
+<div class="para" id="sec_6_2-5-8-1-2-1-2-1">
+<span class="process-math">\(\displaystyle \log(x^2 - 5y)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-8-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_6_2-5-8-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_6_2-5-8-1-2-1-3">
+<div class="para" id="sec_6_2-5-8-1-2-1-3-1">
+<span class="process-math">\(\displaystyle \ln\left(7x^3y\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-8-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_6_2-5-8-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-8-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_2-5-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_2-5-8-2-1">
+<ol class="decimal" id="sec_6_2-5-8-2-1-1">
+<li id="sec_6_2-5-8-2-1-1-1">
+<div class="para logical" id="sec_6_2-5-8-2-1-1-1-1">
+<div class="para">
+<a href="sec_6_2.html#com-log-prop-4" class="internal" title="Item 4">Property 4</a> —the logarithm of a quotient is the difference of logarithms—to obtain</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/com-log-prop-4.html" id="sec_6_2-5-8-2-1-1-1-1-4">
+\begin{align*}
+\log\left(\dfrac{5y}{x}\right) \amp= \log(5y) - \log(x)\\
+\amp= \log(5) + \log(y) - \log(x)
+\end{align*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-8-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_6_2-5-8-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6_2-5-8-2-1-1-2">
+<div class="para" id="sec_6_2-5-8-2-1-1-2-1">Before we can do anything else, we have to deal with the logarithm of a difference. <em class="alert">There is no formula for the logarithm of a sum or a difference!</em> This expression cannot be simplified.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-8-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_6_2-5-8-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sec_6_2-5-8-2-1-1-3">
+<div class="para logical" id="sec_6_2-5-8-2-1-1-3-1">
+<div class="para">Using the properties listed above,</div>
+<div class="displaymath process-math" id="sec_6_2-5-8-2-1-1-3-1-1">
+\begin{equation*}
+\ln\left(7x^3y\right) = \ln(7) + \ln(x^3) + \ln(y) = \ln(7) + 3\ln(x) + \ln(y).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-8-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 3"><a tabindex="-1" href="#sec_6_2-5-8-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.7.1"><a tabindex="-1" href="#sec_6_2-5-8-2" title="Copy heading and permalink for Solution 6.2.7.1" aria-label="Copy heading and permalink for Solution 6.2.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.2.7"><a tabindex="-1" href="#sec_6_2-5-8" title="Copy heading and permalink for Example 6.2.7" aria-label="Copy heading and permalink for Example 6.2.7">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_6_2-5-9"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec_6_2-5-9-1-1">
+<div class="para">Condense the following expression into one logarithm:</div>
+<div class="displaymath process-math" id="sec_6_2-5-9-1-1-1">
+\begin{equation*}
+3\ln y + \frac{1}{2}\ln(x) - \ln z
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_2-5-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_2-5-9-2-1">
+<div class="para">Using properties of the natural logarithm,</div>
+<div class="displaymath process-math" id="sec_6_2-5-9-2-1-1">
+\begin{equation*}
+3\ln y + \frac{1}{2}\ln(x) - \ln z = \ln (y^3) + \ln (x^{\frac{1}{2}}) + \ln (z^{-1}) = \ln\left(\frac{y^3\sqrt{x}}{z}\right).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-5-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.8.1"><a tabindex="-1" href="#sec_6_2-5-9-2" title="Copy heading and permalink for Solution 6.2.8.1" aria-label="Copy heading and permalink for Solution 6.2.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.2.8"><a tabindex="-1" href="#sec_6_2-5-9" title="Copy heading and permalink for Example 6.2.8" aria-label="Copy heading and permalink for Example 6.2.8">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Solving Equations Using Logarithms"><a tabindex="-1" href="#sec_6_2-5" title="Copy heading and permalink for Subsection: Solving Equations Using Logarithms" aria-label="Copy heading and permalink for Subsection: Solving Equations Using Logarithms">🔗</a></div>
+</section>
+<section class="subsection" id="sec_6_2-6">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Change of Base Formula for Logarithms</span>
+</h2>
+<div class="para logical" id="sec_6_2-6-2">
+<div class="para">Even though many scientific and graphing calculators are only programmed to work with the common logarithm and the natural logarithm, you can calculate the value of any logarithm <span class="process-math">\(\log_b x\)</span> thanks to the following change of base formulas:</div>
+<div class="displaymath process-math" id="sec_6_2-6-2-2">
+\begin{equation*}
+\log_b x = \frac{\ln x}{\ln b}, \qquad \log_b x = \frac{\log x}{\log b}
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec_6_2-6-3"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.2.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_6_2-6-3-1-1">Use your calculator to find <span class="process-math">\(\log_2 5\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_2-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_2-6-3-2-1">
+<div class="para">Either change of base formula can be utilized here. Using the first one would give us</div>
+<div class="displaymath process-math" id="sec_6_2-6-3-2-1-1">
+\begin{equation*}
+\log_2 5 = \frac{\ln 5}{\ln 2} \approx 2.322,
+\end{equation*}
+</div>
+<div class="para">rounded to three decimal places. The answer is the same if we convert to the common logarithm:</div>
+<div class="displaymath process-math" id="sec_6_2-6-3-2-1-2">
+\begin{equation*}
+\log_2 5 = \frac{\log 5}{\log 2} \approx 2.322.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_2-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.9.1"><a tabindex="-1" href="#sec_6_2-6-3-2" title="Copy heading and permalink for Solution 6.2.9.1" aria-label="Copy heading and permalink for Solution 6.2.9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.2.9"><a tabindex="-1" href="#sec_6_2-6-3" title="Copy heading and permalink for Example 6.2.9" aria-label="Copy heading and permalink for Example 6.2.9">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: The Change of Base Formula for Logarithms"><a tabindex="-1" href="#sec_6_2-6" title="Copy heading and permalink for Subsection: The Change of Base Formula for Logarithms" aria-label="Copy heading and permalink for Subsection: The Change of Base Formula for Logarithms">🔗</a></div>
+</section>
 <section class="exercises" id="ex_6_2">
 <h2 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
@@ -444,98 +1020,98 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-6_2_1-2-1">
 <span class="process-math">\(\log(5)+\log(z)-\log(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_2_1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.1.1"><a tabindex="-1" href="#exercise-6_2_1-2" title="Copy heading and permalink for Solution 6.2.1.1" aria-label="Copy heading and permalink for Solution 6.2.1.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#exercise-6_2_1-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.1"><a tabindex="-1" href="#exercise-6_2_1" title="Copy heading and permalink for Exercise 6.2.1" aria-label="Copy heading and permalink for Exercise 6.2.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1"><a tabindex="-1" href="#exercise-6_2_1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-1-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-1-4-1-1">
-<span class="process-math">\(\displaystyle \log(x^5y^3z^2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_2-1-1">
+<span class="process-math">\(\displaystyle \log(x^5y^3z^2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-1-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-1-4-2-1">
-<span class="process-math">\(5\log(x)+3\log(y)+2\log(z)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_2-2-1">
+<span class="process-math">\(5\log(x)+3\log(y)+2\log(z)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.2.1"><a tabindex="-1" href="#ex_6_2-1-4-2" title="Copy heading and permalink for Solution 6.2.2.1" aria-label="Copy heading and permalink for Solution 6.2.2.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#exercise_6_2_2-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.2"><a tabindex="-1" href="#ex_6_2-1-4" title="Copy heading and permalink for Exercise 6.2.2" aria-label="Copy heading and permalink for Exercise 6.2.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#exercise_6_2_2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-1-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-1-5-1-1">
-<span class="process-math">\(\displaystyle \log\left(\frac{yz}{6x}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_3-1-1">
+<span class="process-math">\(\displaystyle \log\left(\frac{yz}{6x}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-1-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-1-5-2-1">
-<span class="process-math">\(\log(y)+\log(z)-\log(6)-\log(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_3-2-1">
+<span class="process-math">\(\log(y)+\log(z)-\log(6)-\log(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.3.1"><a tabindex="-1" href="#ex_6_2-1-5-2" title="Copy heading and permalink for Solution 6.2.3.1" aria-label="Copy heading and permalink for Solution 6.2.3.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#exercise_6_2_3-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.3"><a tabindex="-1" href="#ex_6_2-1-5" title="Copy heading and permalink for Exercise 6.2.3" aria-label="Copy heading and permalink for Exercise 6.2.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3"><a tabindex="-1" href="#exercise_6_2_3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-1-6"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-1-6-1-1">
-<span class="process-math">\(\displaystyle \log\left(\frac{y^2z^3}{\sqrt{4x}}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_4-1-1">
+<span class="process-math">\(\displaystyle \log\left(\frac{y^2z^3}{\sqrt{4x}}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-1-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-1-6-2-1">
-<span class="process-math">\(2\log(y)+3\log(z)-\frac{1}{2}\log(4)-\frac{1}{2}\log(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_4-2-1">
+<span class="process-math">\(2\log(y)+3\log(z)-\frac{1}{2}\log(4)-\frac{1}{2}\log(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.4.1"><a tabindex="-1" href="#ex_6_2-1-6-2" title="Copy heading and permalink for Solution 6.2.4.1" aria-label="Copy heading and permalink for Solution 6.2.4.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#exercise_6_2_4-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.4"><a tabindex="-1" href="#ex_6_2-1-6" title="Copy heading and permalink for Exercise 6.2.4" aria-label="Copy heading and permalink for Exercise 6.2.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 4"><a tabindex="-1" href="#exercise_6_2_4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-1-7"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-1-7-1-1">
-<span class="process-math">\(\displaystyle \log\left(\frac{y^2z}{x}-x^2\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_5-1-1">
+<span class="process-math">\(\displaystyle \log\left(\frac{y^2z}{x}-x^2\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-1-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-1-7-2-1">Cannot simplify.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_5-2-1">Cannot simplify.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.5.1"><a tabindex="-1" href="#ex_6_2-1-7-2" title="Copy heading and permalink for Solution 6.2.5.1" aria-label="Copy heading and permalink for Solution 6.2.5.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.1"><a tabindex="-1" href="#exercise_6_2_5-2" title="Copy heading and permalink for Solution 5.1" aria-label="Copy heading and permalink for Solution 5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.5"><a tabindex="-1" href="#ex_6_2-1-7" title="Copy heading and permalink for Exercise 6.2.5" aria-label="Copy heading and permalink for Exercise 6.2.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 5"><a tabindex="-1" href="#exercise_6_2_5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-1-8"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-1-8-1-1">
-<span class="process-math">\(\displaystyle \log(x^2+y^2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_6-1-1">
+<span class="process-math">\(\displaystyle \log(x^2+y^2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-1-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-1-8-2-1">Cannot simplify.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_6-2-1">Cannot simplify.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.6.1"><a tabindex="-1" href="#ex_6_2-1-8-2" title="Copy heading and permalink for Solution 6.2.6.1" aria-label="Copy heading and permalink for Solution 6.2.6.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.1"><a tabindex="-1" href="#exercise_6_2_6-2" title="Copy heading and permalink for Solution 6.1" aria-label="Copy heading and permalink for Solution 6.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.6"><a tabindex="-1" href="#ex_6_2-1-8" title="Copy heading and permalink for Exercise 6.2.6" aria-label="Copy heading and permalink for Exercise 6.2.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 6"><a tabindex="-1" href="#exercise_6_2_6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-1-9"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-1-9-1-1">
-<span class="process-math">\(\displaystyle \log(100y\sqrt{x})\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_7-1-1">
+<span class="process-math">\(\displaystyle \log(100y\sqrt{x})\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-1-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-1-9-2-1">
-<span class="process-math">\(2+\log(y)+\frac{1}{2}\log(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-1-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_7-2-1">
+<span class="process-math">\(2+\log(y)+\frac{1}{2}\log(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.7.1"><a tabindex="-1" href="#ex_6_2-1-9-2" title="Copy heading and permalink for Solution 6.2.7.1" aria-label="Copy heading and permalink for Solution 6.2.7.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.1"><a tabindex="-1" href="#exercise_6_2_7-2" title="Copy heading and permalink for Solution 7.1" aria-label="Copy heading and permalink for Solution 7.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.7"><a tabindex="-1" href="#ex_6_2-1-9" title="Copy heading and permalink for Exercise 6.2.7" aria-label="Copy heading and permalink for Exercise 6.2.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 7"><a tabindex="-1" href="#exercise_6_2_7" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-6_2_8"><h4 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-6_2_8-1-1">
@@ -547,13 +1123,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-6_2_8-2-1">
 <span class="process-math">\(1+\log(x)-\log(z)-\log(y)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_2_8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.8.1"><a tabindex="-1" href="#exercise-6_2_8-2" title="Copy heading and permalink for Solution 6.2.8.1" aria-label="Copy heading and permalink for Solution 6.2.8.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.1"><a tabindex="-1" href="#exercise-6_2_8-2" title="Copy heading and permalink for Solution 8.1" aria-label="Copy heading and permalink for Solution 8.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.8"><a tabindex="-1" href="#exercise-6_2_8" title="Copy heading and permalink for Exercise 6.2.8" aria-label="Copy heading and permalink for Exercise 6.2.8">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 8"><a tabindex="-1" href="#exercise-6_2_8" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 6.2.1–8: Properties of Logarithms"><a tabindex="-1" href="#ex_6_2-1" title="Copy heading and permalink for Exercise Group 6.2.1–8: Properties of Logarithms" aria-label="Copy heading and permalink for Exercise Group 6.2.1–8: Properties of Logarithms">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1–8: Properties of Logarithms"><a tabindex="-1" href="#ex_6_2-1" title="Copy heading and permalink for Exercise Group 1–8: Properties of Logarithms" aria-label="Copy heading and permalink for Exercise Group 1–8: Properties of Logarithms">🔗</a></div>
 </div>
 <div class="exercisegroup" id="ex_6_2-2">
 <h3 class="heading"><span class="title">Expanding Logarithms.</span></h3>
@@ -572,99 +1148,99 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-6_2_9-2-1">
 <span class="process-math">\(2\ln(z)-\ln(2)-\ln(x)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_2_9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.9.1"><a tabindex="-1" href="#exercise-6_2_9-2" title="Copy heading and permalink for Solution 6.2.9.1" aria-label="Copy heading and permalink for Solution 6.2.9.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 9.1"><a tabindex="-1" href="#exercise-6_2_9-2" title="Copy heading and permalink for Solution 9.1" aria-label="Copy heading and permalink for Solution 9.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.9"><a tabindex="-1" href="#exercise-6_2_9" title="Copy heading and permalink for Exercise 6.2.9" aria-label="Copy heading and permalink for Exercise 6.2.9">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 9"><a tabindex="-1" href="#exercise-6_2_9" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-2-4"><h4 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-2-4-1-1">
-<span class="process-math">\(\displaystyle \ln\left( \sqrt{(x^3y^3z)} \right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_10"><h4 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_10-1-1">
+<span class="process-math">\(\displaystyle \ln\left( \sqrt{(x^3y^3z)} \right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-2-4-2-1">
-<span class="process-math">\(\frac{3}{2}\ln(x)+\frac{3}{2}\ln(y)+\frac{1}{2}\ln(z)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_10-2-1">
+<span class="process-math">\(\frac{3}{2}\ln(x)+\frac{3}{2}\ln(y)+\frac{1}{2}\ln(z)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.10.1"><a tabindex="-1" href="#ex_6_2-2-4-2" title="Copy heading and permalink for Solution 6.2.10.1" aria-label="Copy heading and permalink for Solution 6.2.10.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.1"><a tabindex="-1" href="#exercise_6_2_10-2" title="Copy heading and permalink for Solution 10.1" aria-label="Copy heading and permalink for Solution 10.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.10"><a tabindex="-1" href="#ex_6_2-2-4" title="Copy heading and permalink for Exercise 6.2.10" aria-label="Copy heading and permalink for Exercise 6.2.10">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 10"><a tabindex="-1" href="#exercise_6_2_10" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-2-5"><h4 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-2-5-1-1">
-<span class="process-math">\(\displaystyle \ln(x+y^2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_11"><h4 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_11-1-1">
+<span class="process-math">\(\displaystyle \ln(x+y^2)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-2-5-2-1">Cannot simplify.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_11-2-1">Cannot simplify.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.11.1"><a tabindex="-1" href="#ex_6_2-2-5-2" title="Copy heading and permalink for Solution 6.2.11.1" aria-label="Copy heading and permalink for Solution 6.2.11.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 11.1"><a tabindex="-1" href="#exercise_6_2_11-2" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.11"><a tabindex="-1" href="#ex_6_2-2-5" title="Copy heading and permalink for Exercise 6.2.11" aria-label="Copy heading and permalink for Exercise 6.2.11">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 11"><a tabindex="-1" href="#exercise_6_2_11" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-2-6"><h4 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-2-6-1-1">
-<span class="process-math">\(\displaystyle \ln\left(\frac{exy}{3z}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_12"><h4 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_12-1-1">
+<span class="process-math">\(\displaystyle \ln\left(\frac{exy}{3z}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-2-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-2-6-2-1">
-<span class="process-math">\(1+\ln(x)+\ln(y)-\ln(3)-\ln(z)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_12-2-1">
+<span class="process-math">\(1+\ln(x)+\ln(y)-\ln(3)-\ln(z)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.12.1"><a tabindex="-1" href="#ex_6_2-2-6-2" title="Copy heading and permalink for Solution 6.2.12.1" aria-label="Copy heading and permalink for Solution 6.2.12.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 12.1"><a tabindex="-1" href="#exercise_6_2_12-2" title="Copy heading and permalink for Solution 12.1" aria-label="Copy heading and permalink for Solution 12.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.12"><a tabindex="-1" href="#ex_6_2-2-6" title="Copy heading and permalink for Exercise 6.2.12" aria-label="Copy heading and permalink for Exercise 6.2.12">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 12"><a tabindex="-1" href="#exercise_6_2_12" title="Copy heading and permalink for Exercise 12" aria-label="Copy heading and permalink for Exercise 12">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-2-7"><h4 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-2-7-1-1">
-<span class="process-math">\(\displaystyle \ln(e^2yz^{-3})\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_13"><h4 class="heading"><span class="codenumber">13<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_13-1-1">
+<span class="process-math">\(\displaystyle \ln(e^2yz^{-3})\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-2-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-2-7-2-1">
-<span class="process-math">\(2+\ln(y)-3\ln(z)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_13-2-1">
+<span class="process-math">\(2+\ln(y)-3\ln(z)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.13.1"><a tabindex="-1" href="#ex_6_2-2-7-2" title="Copy heading and permalink for Solution 6.2.13.1" aria-label="Copy heading and permalink for Solution 6.2.13.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 13.1"><a tabindex="-1" href="#exercise_6_2_13-2" title="Copy heading and permalink for Solution 13.1" aria-label="Copy heading and permalink for Solution 13.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.13"><a tabindex="-1" href="#ex_6_2-2-7" title="Copy heading and permalink for Exercise 6.2.13" aria-label="Copy heading and permalink for Exercise 6.2.13">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 13"><a tabindex="-1" href="#exercise_6_2_13" title="Copy heading and permalink for Exercise 13" aria-label="Copy heading and permalink for Exercise 13">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-2-8"><h4 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-2-8-1-1">
-<span class="process-math">\(\displaystyle \ln\left(\frac{x}{3e}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_14"><h4 class="heading"><span class="codenumber">14<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_14-1-1">
+<span class="process-math">\(\displaystyle \ln\left(\frac{x}{3e}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-2-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-2-8-2-1">
-<span class="process-math">\(\ln(x)-\ln(3)-1\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_14-2-1">
+<span class="process-math">\(\ln(x)-\ln(3)-1\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.14.1"><a tabindex="-1" href="#ex_6_2-2-8-2" title="Copy heading and permalink for Solution 6.2.14.1" aria-label="Copy heading and permalink for Solution 6.2.14.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 14.1"><a tabindex="-1" href="#exercise_6_2_14-2" title="Copy heading and permalink for Solution 14.1" aria-label="Copy heading and permalink for Solution 14.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.14"><a tabindex="-1" href="#ex_6_2-2-8" title="Copy heading and permalink for Exercise 6.2.14" aria-label="Copy heading and permalink for Exercise 6.2.14">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 14"><a tabindex="-1" href="#exercise_6_2_14" title="Copy heading and permalink for Exercise 14" aria-label="Copy heading and permalink for Exercise 14">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-2-9"><h4 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-2-9-1-1">
-<span class="process-math">\(\displaystyle \ln\left(\frac{1}{x^3y}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_15"><h4 class="heading"><span class="codenumber">15<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_15-1-1">
+<span class="process-math">\(\displaystyle \ln\left(\frac{1}{x^3y}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-2-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-2-9-2-1">
-<span class="process-math">\(-3\ln(x)-\ln(y)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-2-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_15-2-1">
+<span class="process-math">\(-3\ln(x)-\ln(y)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.15.1"><a tabindex="-1" href="#ex_6_2-2-9-2" title="Copy heading and permalink for Solution 6.2.15.1" aria-label="Copy heading and permalink for Solution 6.2.15.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 15.1"><a tabindex="-1" href="#exercise_6_2_15-2" title="Copy heading and permalink for Solution 15.1" aria-label="Copy heading and permalink for Solution 15.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.15"><a tabindex="-1" href="#ex_6_2-2-9" title="Copy heading and permalink for Exercise 6.2.15" aria-label="Copy heading and permalink for Exercise 6.2.15">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 15"><a tabindex="-1" href="#exercise_6_2_15" title="Copy heading and permalink for Exercise 15" aria-label="Copy heading and permalink for Exercise 15">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-6_2_16"><h4 class="heading"><span class="codenumber">16<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-6_2_16-1-1">
@@ -676,13 +1252,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-6_2_16-2-1">
 <span class="process-math">\(\frac{1}{2}-\ln(x)-\ln(z)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_2_16-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.16.1"><a tabindex="-1" href="#exercise-6_2_16-2" title="Copy heading and permalink for Solution 6.2.16.1" aria-label="Copy heading and permalink for Solution 6.2.16.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 16.1"><a tabindex="-1" href="#exercise-6_2_16-2" title="Copy heading and permalink for Solution 16.1" aria-label="Copy heading and permalink for Solution 16.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.16"><a tabindex="-1" href="#exercise-6_2_16" title="Copy heading and permalink for Exercise 6.2.16" aria-label="Copy heading and permalink for Exercise 6.2.16">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 16"><a tabindex="-1" href="#exercise-6_2_16" title="Copy heading and permalink for Exercise 16" aria-label="Copy heading and permalink for Exercise 16">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 6.2.9–16: Expanding Logarithms"><a tabindex="-1" href="#ex_6_2-2" title="Copy heading and permalink for Exercise Group 6.2.9–16: Expanding Logarithms" aria-label="Copy heading and permalink for Exercise Group 6.2.9–16: Expanding Logarithms">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 9–16: Expanding Logarithms"><a tabindex="-1" href="#ex_6_2-2" title="Copy heading and permalink for Exercise Group 9–16: Expanding Logarithms" aria-label="Copy heading and permalink for Exercise Group 9–16: Expanding Logarithms">🔗</a></div>
 </div>
 <div class="exercisegroup" id="ex_6_2-3">
 <h3 class="heading"><span class="title">Simplifying Logarithms.</span></h3>
@@ -700,69 +1276,69 @@ eBookConfig.enable_chatcodes =  false;
 <div class="solution solution-like knowl__content">
 <div class="para" id="exercise-6_2_17-2-1">Not possible.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_2_17-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.17.1"><a tabindex="-1" href="#exercise-6_2_17-2" title="Copy heading and permalink for Solution 6.2.17.1" aria-label="Copy heading and permalink for Solution 6.2.17.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 17.1"><a tabindex="-1" href="#exercise-6_2_17-2" title="Copy heading and permalink for Solution 17.1" aria-label="Copy heading and permalink for Solution 17.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.17"><a tabindex="-1" href="#exercise-6_2_17" title="Copy heading and permalink for Exercise 6.2.17" aria-label="Copy heading and permalink for Exercise 6.2.17">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 17"><a tabindex="-1" href="#exercise-6_2_17" title="Copy heading and permalink for Exercise 17" aria-label="Copy heading and permalink for Exercise 17">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-3-4"><h4 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-3-4-1-1">
-<span class="process-math">\(\displaystyle 2\log(A)-3\log(B)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_18"><h4 class="heading"><span class="codenumber">18<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_18-1-1">
+<span class="process-math">\(\displaystyle 2\log(A)-3\log(B)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_18-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-3-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_18-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-3-4-2-1">
-<span class="process-math">\(\log\left(\frac{A^2}{B^3}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-3-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_18-2-1">
+<span class="process-math">\(\log\left(\frac{A^2}{B^3}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.18.1"><a tabindex="-1" href="#ex_6_2-3-4-2" title="Copy heading and permalink for Solution 6.2.18.1" aria-label="Copy heading and permalink for Solution 6.2.18.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 18.1"><a tabindex="-1" href="#exercise_6_2_18-2" title="Copy heading and permalink for Solution 18.1" aria-label="Copy heading and permalink for Solution 18.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.18"><a tabindex="-1" href="#ex_6_2-3-4" title="Copy heading and permalink for Exercise 6.2.18" aria-label="Copy heading and permalink for Exercise 6.2.18">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 18"><a tabindex="-1" href="#exercise_6_2_18" title="Copy heading and permalink for Exercise 18" aria-label="Copy heading and permalink for Exercise 18">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-3-5"><h4 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-3-5-1-1">
-<span class="process-math">\(\displaystyle -3\ln(B)+\frac{1}{2}\ln(AB)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_19"><h4 class="heading"><span class="codenumber">19<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_19-1-1">
+<span class="process-math">\(\displaystyle -3\ln(B)+\frac{1}{2}\ln(AB)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_19-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_19-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-3-5-2-1">
-<span class="process-math">\(\ln\left(B^{-3}\sqrt{AB}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_19-2-1">
+<span class="process-math">\(\ln\left(B^{-3}\sqrt{AB}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_19-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.19.1"><a tabindex="-1" href="#ex_6_2-3-5-2" title="Copy heading and permalink for Solution 6.2.19.1" aria-label="Copy heading and permalink for Solution 6.2.19.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 19.1"><a tabindex="-1" href="#exercise_6_2_19-2" title="Copy heading and permalink for Solution 19.1" aria-label="Copy heading and permalink for Solution 19.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.19"><a tabindex="-1" href="#ex_6_2-3-5" title="Copy heading and permalink for Exercise 6.2.19" aria-label="Copy heading and permalink for Exercise 6.2.19">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 19"><a tabindex="-1" href="#exercise_6_2_19" title="Copy heading and permalink for Exercise 19" aria-label="Copy heading and permalink for Exercise 19">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-3-6"><h4 class="heading"><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-3-6-1-1">
-<span class="process-math">\(\displaystyle \log(A)\cdot \log(B)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_20"><h4 class="heading"><span class="codenumber">20<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_20-1-1">
+<span class="process-math">\(\displaystyle \log(A)\cdot \log(B)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_20-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_20-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-3-6-2-1">Not possible.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_20-2-1">Not possible.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_20-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.20.1"><a tabindex="-1" href="#ex_6_2-3-6-2" title="Copy heading and permalink for Solution 6.2.20.1" aria-label="Copy heading and permalink for Solution 6.2.20.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 20.1"><a tabindex="-1" href="#exercise_6_2_20-2" title="Copy heading and permalink for Solution 20.1" aria-label="Copy heading and permalink for Solution 20.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.20"><a tabindex="-1" href="#ex_6_2-3-6" title="Copy heading and permalink for Exercise 6.2.20" aria-label="Copy heading and permalink for Exercise 6.2.20">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 20"><a tabindex="-1" href="#exercise_6_2_20" title="Copy heading and permalink for Exercise 20" aria-label="Copy heading and permalink for Exercise 20">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-3-7"><h4 class="heading"><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-3-7-1-1">
-<span class="process-math">\(\displaystyle \frac{1}{3}\ln(A)+2\ln(B)-\ln(10)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_21"><h4 class="heading"><span class="codenumber">21<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_21-1-1">
+<span class="process-math">\(\displaystyle \frac{1}{3}\ln(A)+2\ln(B)-\ln(10)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_21-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-3-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_21-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-3-7-2-1">
-<span class="process-math">\(\ln\left(\frac{\sqrt[3]{A}B^2}{10}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-3-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_21-2-1">
+<span class="process-math">\(\ln\left(\frac{\sqrt[3]{A}B^2}{10}\right)\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_21-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.21.1"><a tabindex="-1" href="#ex_6_2-3-7-2" title="Copy heading and permalink for Solution 6.2.21.1" aria-label="Copy heading and permalink for Solution 6.2.21.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 21.1"><a tabindex="-1" href="#exercise_6_2_21-2" title="Copy heading and permalink for Solution 21.1" aria-label="Copy heading and permalink for Solution 21.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.21"><a tabindex="-1" href="#ex_6_2-3-7" title="Copy heading and permalink for Exercise 6.2.21" aria-label="Copy heading and permalink for Exercise 6.2.21">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 21"><a tabindex="-1" href="#exercise_6_2_21" title="Copy heading and permalink for Exercise 21" aria-label="Copy heading and permalink for Exercise 21">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-6_2_22"><h4 class="heading"><span class="codenumber">22<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-6_2_22-1-1">
@@ -773,13 +1349,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="solution solution-like knowl__content">
 <div class="para" id="exercise-6_2_22-2-1">Not possible.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_2_22-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.22.1"><a tabindex="-1" href="#exercise-6_2_22-2" title="Copy heading and permalink for Solution 6.2.22.1" aria-label="Copy heading and permalink for Solution 6.2.22.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 22.1"><a tabindex="-1" href="#exercise-6_2_22-2" title="Copy heading and permalink for Solution 22.1" aria-label="Copy heading and permalink for Solution 22.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.22"><a tabindex="-1" href="#exercise-6_2_22" title="Copy heading and permalink for Exercise 6.2.22" aria-label="Copy heading and permalink for Exercise 6.2.22">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 22"><a tabindex="-1" href="#exercise-6_2_22" title="Copy heading and permalink for Exercise 22" aria-label="Copy heading and permalink for Exercise 22">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 6.2.17–22: Simplifying Logarithms"><a tabindex="-1" href="#ex_6_2-3" title="Copy heading and permalink for Exercise Group 6.2.17–22: Simplifying Logarithms" aria-label="Copy heading and permalink for Exercise Group 6.2.17–22: Simplifying Logarithms">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 17–22: Simplifying Logarithms"><a tabindex="-1" href="#ex_6_2-3" title="Copy heading and permalink for Exercise Group 17–22: Simplifying Logarithms" aria-label="Copy heading and permalink for Exercise Group 17–22: Simplifying Logarithms">🔗</a></div>
 </div>
 <div class="exercisegroup" id="ex_6_2-4">
 <h3 class="heading"><span class="title">Solving Exponential Equations.</span></h3>
@@ -798,70 +1374,70 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-6_2_23-2-1">
 <span class="process-math">\(x=\dfrac{\log(500)}{\log(5)}\approx3.861\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_2_23-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.23.1"><a tabindex="-1" href="#exercise-6_2_23-2" title="Copy heading and permalink for Solution 6.2.23.1" aria-label="Copy heading and permalink for Solution 6.2.23.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 23.1"><a tabindex="-1" href="#exercise-6_2_23-2" title="Copy heading and permalink for Solution 23.1" aria-label="Copy heading and permalink for Solution 23.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.23"><a tabindex="-1" href="#exercise-6_2_23" title="Copy heading and permalink for Exercise 6.2.23" aria-label="Copy heading and permalink for Exercise 6.2.23">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 23"><a tabindex="-1" href="#exercise-6_2_23" title="Copy heading and permalink for Exercise 23" aria-label="Copy heading and permalink for Exercise 23">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-4-4"><h4 class="heading"><span class="codenumber">24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-4-4-1-1">
-<span class="process-math">\(\displaystyle 1200\cdot 1.15^t=2400\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-4-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_24"><h4 class="heading"><span class="codenumber">24<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_24-1-1">
+<span class="process-math">\(\displaystyle 1200\cdot 1.15^t=2400\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_24-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-4-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_24-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-4-4-2-1">
-<span class="process-math">\(t=\dfrac{\log(2)}{\log(1.15)}\approx 4.959\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_24-2-1">
+<span class="process-math">\(t=\dfrac{\log(2)}{\log(1.15)}\approx 4.959\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_24-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.24.1"><a tabindex="-1" href="#ex_6_2-4-4-2" title="Copy heading and permalink for Solution 6.2.24.1" aria-label="Copy heading and permalink for Solution 6.2.24.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 24.1"><a tabindex="-1" href="#exercise_6_2_24-2" title="Copy heading and permalink for Solution 24.1" aria-label="Copy heading and permalink for Solution 24.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.24"><a tabindex="-1" href="#ex_6_2-4-4" title="Copy heading and permalink for Exercise 6.2.24" aria-label="Copy heading and permalink for Exercise 6.2.24">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 24"><a tabindex="-1" href="#exercise_6_2_24" title="Copy heading and permalink for Exercise 24" aria-label="Copy heading and permalink for Exercise 24">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-4-5"><h4 class="heading"><span class="codenumber">25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-4-5-1-1">
-<span class="process-math">\(\displaystyle 250\cdot 0.81^t=125\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_25"><h4 class="heading"><span class="codenumber">25<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_25-1-1">
+<span class="process-math">\(\displaystyle 250\cdot 0.81^t=125\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_25-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-4-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_25-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-4-5-2-1">
-<span class="process-math">\(t=\dfrac{\log\left(\frac{1}{2}\right)}{\log(0.81)}\approx3.289\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-4-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_25-2-1">
+<span class="process-math">\(t=\dfrac{\log\left(\frac{1}{2}\right)}{\log(0.81)}\approx3.289\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_25-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.25.1"><a tabindex="-1" href="#ex_6_2-4-5-2" title="Copy heading and permalink for Solution 6.2.25.1" aria-label="Copy heading and permalink for Solution 6.2.25.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 25.1"><a tabindex="-1" href="#exercise_6_2_25-2" title="Copy heading and permalink for Solution 25.1" aria-label="Copy heading and permalink for Solution 25.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.25"><a tabindex="-1" href="#ex_6_2-4-5" title="Copy heading and permalink for Exercise 6.2.25" aria-label="Copy heading and permalink for Exercise 6.2.25">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 25"><a tabindex="-1" href="#exercise_6_2_25" title="Copy heading and permalink for Exercise 25" aria-label="Copy heading and permalink for Exercise 25">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-4-6"><h4 class="heading"><span class="codenumber">26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-4-6-1-1">
-<span class="process-math">\(\displaystyle 3\cdot 7^x=4\cdot 5^x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-4-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_26"><h4 class="heading"><span class="codenumber">26<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_26-1-1">
+<span class="process-math">\(\displaystyle 3\cdot 7^x=4\cdot 5^x\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_26-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-4-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_26-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-4-6-2-1">
-<span class="process-math">\(x=\dfrac{\log\left(\frac{4}{3}\right)}{\log\left(\frac{7}{5}\right)}\approx0.855\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-4-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_26-2-1">
+<span class="process-math">\(x=\dfrac{\log\left(\frac{4}{3}\right)}{\log\left(\frac{7}{5}\right)}\approx0.855\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_26-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.26.1"><a tabindex="-1" href="#ex_6_2-4-6-2" title="Copy heading and permalink for Solution 6.2.26.1" aria-label="Copy heading and permalink for Solution 6.2.26.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 26.1"><a tabindex="-1" href="#exercise_6_2_26-2" title="Copy heading and permalink for Solution 26.1" aria-label="Copy heading and permalink for Solution 26.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.26"><a tabindex="-1" href="#ex_6_2-4-6" title="Copy heading and permalink for Exercise 6.2.26" aria-label="Copy heading and permalink for Exercise 6.2.26">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 26"><a tabindex="-1" href="#exercise_6_2_26" title="Copy heading and permalink for Exercise 26" aria-label="Copy heading and permalink for Exercise 26">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_2-4-7"><h4 class="heading"><span class="codenumber">27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_2-4-7-1-1">
-<span class="process-math">\(\displaystyle 90(0.5)^{t/10}=40\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_2_27"><h4 class="heading"><span class="codenumber">27<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_2_27-1-1">
+<span class="process-math">\(\displaystyle 90(0.5)^{t/10}=40\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_27-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_2-4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_2_27-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_2-4-7-2-1">
-<span class="process-math">\(t=\dfrac{10\log\left(\frac{4}{9}\right)}{\log(0.5)}\approx11.69\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_2-4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_2_27-2-1">
+<span class="process-math">\(t=\dfrac{10\log\left(\frac{4}{9}\right)}{\log(0.5)}\approx11.69\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_2_27-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.27.1"><a tabindex="-1" href="#ex_6_2-4-7-2" title="Copy heading and permalink for Solution 6.2.27.1" aria-label="Copy heading and permalink for Solution 6.2.27.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 27.1"><a tabindex="-1" href="#exercise_6_2_27-2" title="Copy heading and permalink for Solution 27.1" aria-label="Copy heading and permalink for Solution 27.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.27"><a tabindex="-1" href="#ex_6_2-4-7" title="Copy heading and permalink for Exercise 6.2.27" aria-label="Copy heading and permalink for Exercise 6.2.27">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 27"><a tabindex="-1" href="#exercise_6_2_27" title="Copy heading and permalink for Exercise 27" aria-label="Copy heading and permalink for Exercise 27">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-6_2_28"><h4 class="heading"><span class="codenumber">28<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-6_2_28-1-1">
@@ -873,13 +1449,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-6_2_28-2-1">
 <span class="process-math">\(t=-\dfrac{\ln\left(\frac{10}{49}\right)}{0.098}\approx16.217\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_2_28-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.28.1"><a tabindex="-1" href="#exercise-6_2_28-2" title="Copy heading and permalink for Solution 6.2.28.1" aria-label="Copy heading and permalink for Solution 6.2.28.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 28.1"><a tabindex="-1" href="#exercise-6_2_28-2" title="Copy heading and permalink for Solution 28.1" aria-label="Copy heading and permalink for Solution 28.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.28"><a tabindex="-1" href="#exercise-6_2_28" title="Copy heading and permalink for Exercise 6.2.28" aria-label="Copy heading and permalink for Exercise 6.2.28">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 28"><a tabindex="-1" href="#exercise-6_2_28" title="Copy heading and permalink for Exercise 28" aria-label="Copy heading and permalink for Exercise 28">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 6.2.23–28: Solving Exponential Equations"><a tabindex="-1" href="#ex_6_2-4" title="Copy heading and permalink for Exercise Group 6.2.23–28: Solving Exponential Equations" aria-label="Copy heading and permalink for Exercise Group 6.2.23–28: Solving Exponential Equations">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 23–28: Solving Exponential Equations"><a tabindex="-1" href="#ex_6_2-4" title="Copy heading and permalink for Exercise Group 23–28: Solving Exponential Equations" aria-label="Copy heading and permalink for Exercise Group 23–28: Solving Exponential Equations">🔗</a></div>
 </div>
 <div class="exercisegroup" id="ex_6_2-5">
 <h3 class="heading"><span class="title">Using the Change of Base Formula.</span></h3>
@@ -898,10 +1474,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-6_2_29-2-1">
 <span class="process-math">\(\dfrac{\ln(8)}{\ln(5)}\approx1.292\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_2_29-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.29.1"><a tabindex="-1" href="#exercise-6_2_29-2" title="Copy heading and permalink for Solution 6.2.29.1" aria-label="Copy heading and permalink for Solution 6.2.29.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 29.1"><a tabindex="-1" href="#exercise-6_2_29-2" title="Copy heading and permalink for Solution 29.1" aria-label="Copy heading and permalink for Solution 29.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.29"><a tabindex="-1" href="#exercise-6_2_29" title="Copy heading and permalink for Exercise 6.2.29" aria-label="Copy heading and permalink for Exercise 6.2.29">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 29"><a tabindex="-1" href="#exercise-6_2_29" title="Copy heading and permalink for Exercise 29" aria-label="Copy heading and permalink for Exercise 29">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-6_2_30"><h4 class="heading"><span class="codenumber">30<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-6_2_30-1-1">
@@ -913,15 +1489,15 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-6_2_30-2-1">
 <span class="process-math">\(\dfrac{\ln(12)}{\ln(3)}\approx2.262\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_2_30-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.2.30.1"><a tabindex="-1" href="#exercise-6_2_30-2" title="Copy heading and permalink for Solution 6.2.30.1" aria-label="Copy heading and permalink for Solution 6.2.30.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 30.1"><a tabindex="-1" href="#exercise-6_2_30-2" title="Copy heading and permalink for Solution 30.1" aria-label="Copy heading and permalink for Solution 30.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.2.30"><a tabindex="-1" href="#exercise-6_2_30" title="Copy heading and permalink for Exercise 6.2.30" aria-label="Copy heading and permalink for Exercise 6.2.30">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 30"><a tabindex="-1" href="#exercise-6_2_30" title="Copy heading and permalink for Exercise 30" aria-label="Copy heading and permalink for Exercise 30">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 6.2.29–30: Using the Change of Base Formula"><a tabindex="-1" href="#ex_6_2-5" title="Copy heading and permalink for Exercise Group 6.2.29–30: Using the Change of Base Formula" aria-label="Copy heading and permalink for Exercise Group 6.2.29–30: Using the Change of Base Formula">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 29–30: Using the Change of Base Formula"><a tabindex="-1" href="#ex_6_2-5" title="Copy heading and permalink for Exercise Group 29–30: Using the Change of Base Formula" aria-label="Copy heading and permalink for Exercise Group 29–30: Using the Change of Base Formula">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercises 6.2"><a tabindex="-1" href="#ex_6_2" title="Copy heading and permalink for Exercises 6.2" aria-label="Copy heading and permalink for Exercises 6.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercises"><a tabindex="-1" href="#ex_6_2" title="Copy heading and permalink for Exercises" aria-label="Copy heading and permalink for Exercises">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 6.2: Properties of Logarithms, Solving Equations Using Logarithms"><a tabindex="-1" href="#sec_6_2" title="Copy heading and permalink for Section 6.2: Properties of Logarithms, Solving Equations Using Logarithms" aria-label="Copy heading and permalink for Section 6.2: Properties of Logarithms, Solving Equations Using Logarithms">🔗</a></div>
 </section>
 </div>

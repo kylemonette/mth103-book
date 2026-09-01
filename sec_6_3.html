@@ -19,7 +19,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-1 { system: extends lower-alpha; prefix: ''; suffix: '. '; }
+</style>
 <link rel="stylesheet" type="text/css" href="external/custom.css">
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
@@ -38,7 +40,7 @@ lang: "en-US",
 <meta name="twitter:description" content="As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.">
 <meta property="og:description" content="As the title of the book suggests, our emphasis is on the real-life meaning of precalculus concepts. We want our students to master the basic concepts of precalculus while building a solid understanding of those concepts in practical contexts and the skills to apply mathematical tools to real-life processes.">
 <meta name="twitter:card" content="summary">
-<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.47"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.47"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/dist/pretext-core.js?v=2.51"></script><script src="_static/pretext/js/dist/pretext-read-aloud.js?v=2.51"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
 <!--**     log level is 0, Runestone Services are disabled     **-->
@@ -60,16 +62,16 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.2.3';
+eBookConfig.runestone_version = '8.2.10';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.40bd1420d3277749.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.f00d2d175c91fc71.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8086b62682b271d1.css">
-<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+<script src="_static/prefix-runtime.e3f9706509fcf6f7.bundle.js"></script><script src="_static/prefix-926.5c7038c8ef173faf.bundle.js"></script><script src="_static/prefix-runestone.c5ba0ffa5f963084.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-926.229729d09512acc9.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.efe427683fc41f98.css">
+<script src="_static/pretext/js/dist/lti_iframe_resizer.js"></script><script src="_static/pretext/js/dist/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/dist/pretext_search.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
 <body id="applied-precalculus" class="pretext book ignore-math">
@@ -270,25 +272,25 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_2.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Algebra of Powers: Fractional Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_2" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-3" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-4" class="internal"><span class="title">Roots and Radicals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_2.html#sec_4_2-5" class="internal"><span class="title">Powers with Fractional Exponents and Arbitrary Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_2.html#ex_4_2" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_3.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Power Functions: Positive Integral Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_3" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-3" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_3.html#sec_4_3-4" class="internal"><span class="title">Graphs of Power Functions: Positive Integral Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_3.html#ex_4_3" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_4_4.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Power Functions: Fractional and Negative Integral Exponents</span></a></div>
 <ul id="ptx-toc-group-sec_4_4" class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-3" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-4" class="internal"><span class="title">Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-5" class="internal"><span class="title">Graphs of Power Functions: Negative Integral Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-6" class="internal"><span class="title">Fractional Exponents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_4_4.html#sec_4_4-7" class="internal"><span class="title">Graphs of Power Functions: Fractional Exponents</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_4_4.html#ex_4_4" class="internal"><span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
@@ -300,7 +302,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_5-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Exponential Functions: Practical Meaning</span></a></div>
-<ul id="ptx-toc-group-sec_5_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_1.html#ex_5_1" class="internal"><span class="codenumber">5.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_1.html#sec_5_1-4" class="internal"><span class="title">Exponential Growth</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_1.html#sec_5_1-5" class="internal"><span class="title">Exponential Decay</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_1.html#ex_5_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Graphs of Exponential Functions</span></a></div>
@@ -308,11 +314,19 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_3.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Exponential Functions Numerically, Modeling</span></a></div>
-<ul id="ptx-toc-group-sec_5_3" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_3.html#ex_5_3" class="internal"><span class="codenumber">5.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_3" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_3.html#sec_5_3-4" class="internal"><span class="title">Modeling: The Population of Mozambique</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_3.html#ex_5_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_4.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Doubling Time and Half-Life</span></a></div>
-<ul id="ptx-toc-group-sec_5_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_4.html#ex_5_4" class="internal"><span class="codenumber">5.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_5_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-4" class="internal"><span class="title">The Doubling Time</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-5" class="internal"><span class="title">The Half-Life</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_5_4.html#sec_5_4-6" class="internal"><span class="title">Additional Observations and Examples</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_5_4.html#ex_5_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_5_5.html" class="internal"><span class="codenumber">5.5</span> <span class="title">The Natural Base e</span></a></div>
@@ -326,15 +340,28 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_6-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_1.html" class="internal"><span class="codenumber">6.1</span> <span class="title">What Are Logarithms?</span></a></div>
-<ul id="ptx-toc-group-sec_6_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_1.html#ex_6_1" class="internal"><span class="codenumber">6.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_1.html#sec_6_1-4" class="internal"><span class="title">Graphs of Functions <span class="process-math">\(y=\log(x)\)</span> and <span class="process-math">\(y=\ln(x)\)</span></span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_1.html#ex_6_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_6_2.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Properties of Logarithms, Solving Equations Using Logarithms</span></a></div>
-<ul id="ptx-toc-group-sec_6_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_2.html#ex_6_2" class="internal"><span class="codenumber">6.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_6_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-4" class="internal"><span class="title">Algebraic Properties of Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-5" class="internal"><span class="title">Solving Equations Using Logarithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_2.html#sec_6_2-6" class="internal"><span class="title">The Change of Base Formula for Logarithms</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_2.html#ex_6_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec_6_3.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Logarithms in Applications</span></a></div>
-<ul class="structural toc-item-list active" id="ptx-toc-group-sec_6_3"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_3.html#ex_6_3" class="internal"><span class="codenumber">6.3</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul class="structural toc-item-list active" id="ptx-toc-group-sec_6_3">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-4" class="internal"><span class="title">Converting Between <span class="process-math">\(Q = A \cdot b^t\)</span> and <span class="process-math">\(Q = A \cdot e^{kt}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-5" class="internal"><span class="title">Calculating the Doubling Time and the Half-Life</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_6_3.html#sec_6_3-6" class="internal"><span class="title">The Acidity of a Liquid</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_6_3.html#ex_6_3" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -344,11 +371,21 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-introduction"><div class="toc-title-box"><a href="chapter_7-2.html" class="internal"><span class="title">Introduction</span></a></div></li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_1.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Vertical and Horizontal Shifts</span></a></div>
-<ul id="ptx-toc-group-sec_7_1" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_1.html#ex_7_1" class="internal"><span class="codenumber">7.1</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_1" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-3" class="internal"><span class="title">Vertical Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-4" class="internal"><span class="title">Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_1.html#sec_7_1-5" class="internal"><span class="title">Combining Vertical and Horizontal Shifts</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_1.html#ex_7_1" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_2.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Vertical and Horizontal Scaling</span></a></div>
-<ul id="ptx-toc-group-sec_7_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_2.html#ex_7_2" class="internal"><span class="codenumber">7.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-3" class="internal"><span class="title">Vertical Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-4" class="internal"><span class="title">Horizontal Scaling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_2.html#sec_7_2-5" class="internal"><span class="title">Combining Shifts, Scaling, and Reflections</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_2.html#ex_7_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_3.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Composing and Decomposing Functions</span></a></div>
@@ -356,7 +393,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_7_4.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Inverse Functions</span></a></div>
-<ul id="ptx-toc-group-sec_7_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_4.html#ex_7_4" class="internal"><span class="codenumber">7.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_7_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_7_4.html#sec_7_4-4" class="internal"><span class="title">Finding Inverse Functions Algebraically</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_7_4.html#ex_7_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -370,7 +410,10 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_2.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Angles Using the Unit Circle, Radian Measure</span></a></div>
-<ul id="ptx-toc-group-sec_8_2" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_2.html#ex_8_2" class="internal"><span class="codenumber">8.2</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_2" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_2.html#sec_8_2-4" class="internal"><span class="title">Definition of Radian Measure</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_2.html#ex_8_2" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_3.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Values of Sine and Cosine for Angles on the Unit Circle</span></a></div>
@@ -378,11 +421,25 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_4.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Sine and Cosine Functions</span></a></div>
-<ul id="ptx-toc-group-sec_8_4" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_4.html#ex_8_4" class="internal"><span class="codenumber">8.4</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_4" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-4" class="internal"><span class="title">Graphs of Sine and Cosine Functions</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5" class="internal"><span class="title">Transforming Sine and Cosine Functions—Basic Ideas</span></a></div>
+<ul id="ptx-toc-group-sec_8_4-5" class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-3" class="internal"><span class="title">Changing the Amplitude</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-4" class="internal"><span class="title">Changing the Midline</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sec_8_4.html#sec_8_4-5-5" class="internal"><span class="title">Changing the Period</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_4.html#ex_8_4" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec_8_5.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Families of Sine and Cosine Functions, Modeling</span></a></div>
-<ul id="ptx-toc-group-sec_8_5" class="structural toc-item-list"><li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_5.html#ex_8_5" class="internal"><span class="codenumber">8.5</span> <span class="title">Exercises</span></a></div></li></ul>
+<ul id="ptx-toc-group-sec_8_5" class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec_8_5.html#sec_8_5-4" class="internal"><span class="title">Modeling Periodic Processes</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec_8_5.html#ex_8_5" class="internal"><span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -406,23 +463,582 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <ol class="decimal" id="sec_6_3-2-2">
 <li id="sec_6_3-2-2-1">
-<div class="para" id="sec_6_3-2-2-1-1">First objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_6_3-2-2-1-1">Convert an exponential function between standard form <span class="process-math">\(Q = A \cdot b^t\)</span> and base-<span class="process-math">\(e\)</span> form <span class="process-math">\(Q = A \cdot e^{kt}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 6.3.1"><a tabindex="-1" href="#sec_6_3-2-2-1" title="Copy heading and permalink for Objective 6.3.1" aria-label="Copy heading and permalink for Objective 6.3.1">🔗</a></div>
 </li>
 <li id="sec_6_3-2-2-2">
-<div class="para" id="sec_6_3-2-2-2-1">Second objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_6_3-2-2-2-1">Use logarithms to calculate the doubling time and the half-life of an exponentially growing or decaying quantity.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 6.3.2"><a tabindex="-1" href="#sec_6_3-2-2-2" title="Copy heading and permalink for Objective 6.3.2" aria-label="Copy heading and permalink for Objective 6.3.2">🔗</a></div>
 </li>
 <li id="sec_6_3-2-2-3">
-<div class="para" id="sec_6_3-2-2-3-1">Third objective.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec_6_3-2-2-3-1">Apply logarithms to solve application problems involving exponential growth and decay, including pH calculations.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" aria-hidden="true" data-description="Objective 6.3.3"><a tabindex="-1" href="#sec_6_3-2-2-3" title="Copy heading and permalink for Objective 6.3.3" aria-label="Copy heading and permalink for Objective 6.3.3">🔗</a></div>
 </li>
 </ol>
 <div class="autopermalink" aria-hidden="true" data-description="Objectives 6.3"><a tabindex="-1" href="#sec_6_3-2" title="Copy heading and permalink for Objectives 6.3" aria-label="Copy heading and permalink for Objectives 6.3">🔗</a></div>
 </article>
+<section class="introduction" id="sec_6_3-3">
+<div class="para" id="sec_6_3-3-1">Logarithms appear in many applied problems. They are indispensable in the context of exponential growth and decay.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="sec_6_3-4">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Converting Between <span class="process-math">\(Q = A \cdot b^t\)</span> and <span class="process-math">\(Q = A \cdot e^{kt}\)</span></span>
+</h2>
+<div class="para logical" id="sec_6_3-4-2">
+<div class="para">In Chapter 5 we considered exponential functions in two forms: the standard form <span class="process-math">\(Q(t) = A \cdot b^t\)</span> and the base-<span class="process-math">\(e\)</span> form <span class="process-math">\(Q(t) = A \cdot e^{kt}\text{.}\)</span> Recall that we called <span class="process-math">\(k\)</span> the “continuous growth rate”. In Section 5.5, it was shown that you can convert an exponential function given in base-<span class="process-math">\(e\)</span> form to standard form by simply taking <span class="process-math">\(b = e^k\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_6_3-4-2-8">
+\begin{equation*}
+Q(t) = A \cdot e^{kt} = A \cdot (e^k)^t = A \cdot b^t.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_6_3-4-3">
+<div class="para">To convert an exponential function from standard form <span class="process-math">\(Q(t) = A \cdot b^t\)</span> to base-<span class="process-math">\(e\)</span> form, we have to find <span class="process-math">\(k\)</span> such that <span class="process-math">\(e^k = b\text{.}\)</span> If we have such a constant <span class="process-math">\(k\text{,}\)</span> we can easily rewrite <span class="process-math">\(Q(t)\)</span> in base-<span class="process-math">\(e\)</span> form:</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/nat-log-prop-5.html" id="sec_6_3-4-3-8">
+\begin{equation*}
+Q(t) = A \cdot b^t = A \cdot (e^k)^t = A \cdot e^{kt}.
+\end{equation*}
+</div>
+<div class="para">Therefore, we need the solution <span class="process-math">\(k\)</span> to the equation <span class="process-math">\(e^k = b\text{.}\)</span> Applying the natural logarithm to both sides gives <span class="process-math">\(\ln(e^k) = \ln(b)\text{,}\)</span> and then <a href="sec_6_2.html#nat-log-prop-5" class="internal" title="Item 5">Property 5</a> implies <span class="process-math">\(k \ln(e) = \ln(b)\text{.}\)</span> Since <span class="process-math">\(\ln(e) = 1\text{,}\)</span> the solution is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/nat-log-prop-5.html" id="sec_6_3-4-3-15">
+\begin{equation*}
+k = \ln(b).
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="sec_6_3-4-4"><h3 class="heading">
+<span class="type">Result</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Converting An Exponential Function To And From Base <span class="process-math">\(e\)</span>.</span>
+</h3>
+<div class="para" id="sec_6_3-4-4-2-1">Consider any arbitrary exponential function <span class="process-math">\(Q(t) = A \cdot e^{kt}\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_6_3-4-4-2-2">
+<ul class="disc" id="sec_6_3-4-4-2-2-1">
+<li id="sec_6_3-4-4-2-2-1-1">
+<div class="para" id="p-derived-sec_6_3-4-4-2-2-1-1">Using <span class="process-math">\(b = e^k\text{,}\)</span> then <span class="process-math">\(Q(t) = A \cdot b^t\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_6_3-4-4-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6_3-4-4-2-2-1-2">
+<div class="para" id="p-derived-sec_6_3-4-4-2-2-1-2">Using <span class="process-math">\(k = \ln b\text{,}\)</span> then <span class="process-math">\(Q(t) = A \cdot e^{kt}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_6_3-4-4-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6_3-4-4-2-2-1-3">
+<div class="para" id="p-derived-sec_6_3-4-4-2-2-1-3">If <span class="process-math">\(b \gt 1\text{,}\)</span> <span class="process-math">\(\ln(b) \gt 0\text{,}\)</span> so <span class="process-math">\(k \gt 0\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_6_3-4-4-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec_6_3-4-4-2-2-1-4">
+<div class="para" id="p-derived-sec_6_3-4-4-2-2-1-4">If <span class="process-math">\(0 \lt b \lt 1\text{,}\)</span> <span class="process-math">\(\ln(b) \lt 0\text{,}\)</span> so <span class="process-math">\(k \lt 0\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item"><a tabindex="-1" href="#sec_6_3-4-4-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Result 6.3.1: Converting An Exponential Function To And From Base e"><a tabindex="-1" href="#sec_6_3-4-4" title="Copy heading and permalink for Result 6.3.1: Converting An Exponential Function To And From Base e" aria-label="Copy heading and permalink for Result 6.3.1: Converting An Exponential Function To And From Base e">🔗</a></div>
+</article>
+<div class="para" id="sec_6_3-4-5">The last two bullet points follow from the properties of the natural logarithm function <span class="process-math">\(y = \ln(x)\text{.}\)</span> For inputs between <span class="process-math">\(0\)</span> and <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(\ln(x)\)</span> is negative. For inputs greater than <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(\ln(x)\)</span> is positive. Recall the graph of <span class="process-math">\(y = \ln(x)\text{:}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/6_3_1_fig.svg" role="img" class="contained"></div>
+<article class="example example-like" id="sec_6_3-4-7"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_6_3-4-7-1-1">Rewrite the following exponential functions in terms of the natural base:<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_6_3-4-7-1-2">
+<ol class="decimal" id="sec_6_3-4-7-1-2-1">
+<li id="sec_6_3-4-7-1-2-1-1">
+<div class="para" id="sec_6_3-4-7-1-2-1-1-1">
+<span class="process-math">\(\displaystyle P(t) = 200 \cdot 1.089^t\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-7-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_6_3-4-7-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6_3-4-7-1-2-1-2">
+<div class="para" id="sec_6_3-4-7-1-2-1-2-1">
+<span class="process-math">\(\displaystyle Q(t) = 1500 \cdot 0.72^t\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-7-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_6_3-4-7-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-7-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_3-4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_3-4-7-2-1">
+<ol class="decimal" id="sec_6_3-4-7-2-1-1">
+<li id="sec_6_3-4-7-2-1-1-1">
+<div class="para logical" id="sec_6_3-4-7-2-1-1-1-1">
+<div class="para">With the result above, we can rewrite <span class="process-math">\(P(t)\)</span> in the form <span class="process-math">\(P(t) = 200 e^{kt}\)</span> where <span class="process-math">\(k = \ln 1.089 \approx 0.085\text{.}\)</span> Therefore,</div>
+<div class="displaymath process-math" id="sec_6_3-4-7-2-1-1-1-1-4">
+\begin{equation*}
+P(t) = 200 e^{0.085t}
+\end{equation*}
+</div>
+<div class="para">and <span class="process-math">\(k\)</span> is positive as <span class="process-math">\(b = 1.089 \gt 1\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-7-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_6_3-4-7-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6_3-4-7-2-1-1-2">
+<div class="para logical" id="sec_6_3-4-7-2-1-1-2-1">
+<div class="para">Letting <span class="process-math">\(k = \ln 0.72 \approx -0.329\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="sec_6_3-4-7-2-1-1-2-1-2">
+\begin{equation*}
+Q(t) = 1500 e^{-0.329t}.
+\end{equation*}
+</div>
+<div class="para">Notice that <span class="process-math">\(k\)</span> is negative since the growth factor <span class="process-math">\(b = 0.72\)</span> is less than <span class="process-math">\(1\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-7-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_6_3-4-7-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.2.1"><a tabindex="-1" href="#sec_6_3-4-7-2" title="Copy heading and permalink for Solution 6.3.2.1" aria-label="Copy heading and permalink for Solution 6.3.2.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.3.2"><a tabindex="-1" href="#sec_6_3-4-7" title="Copy heading and permalink for Example 6.3.2" aria-label="Copy heading and permalink for Example 6.3.2">🔗</a></div>
+</article>
+<div class="para" id="sec_6_3-4-8">
+<em class="alert">Note:</em> Whenever you calculate <span class="process-math">\(k\)</span> or the growth factor <span class="process-math">\(b\text{,}\)</span> do not round off too crudely. Take at least three or four decimal places. Using too few decimal places to approximate <span class="process-math">\(k\)</span> or <span class="process-math">\(b\)</span> may lead to significant errors in the values of an exponential function.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="example-ch6-diazepam"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="example-ch6-diazepam-1-1">
+<div class="para">The common antianxiety medication Diazepam decays in a patient’s body after a dose is taken. Suppose a patient takes a single dose of <span class="process-math">\(10\)</span> mg of Diazepam. The amount <span class="process-math">\(D(t)\)</span> left after <span class="process-math">\(t\)</span> days is given by:</div>
+<div class="displaymath process-math" id="example-ch6-diazepam-1-1-4">
+\begin{equation*}
+D(t) = 10 (0.74)^t.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-ch6-diazepam-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="example-ch6-diazepam-1-2">
+<ol class="decimal" id="example-ch6-diazepam-1-2-1">
+<li id="example-ch6-diazepam-1-2-1-1">
+<div class="para" id="example-ch6-diazepam-1-2-1-1-1">What is the daily percent growth rate?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-ch6-diazepam-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#example-ch6-diazepam-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-ch6-diazepam-1-2-1-2">
+<div class="para" id="example-ch6-diazepam-1-2-1-2-1">Rewrite <span class="process-math">\(D(t)\)</span> in the form <span class="process-math">\(D(t) = 10 e^{kt}\)</span> and find the continuous daily growth rate.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-ch6-diazepam-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#example-ch6-diazepam-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-ch6-diazepam-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="example-ch6-diazepam-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="example-ch6-diazepam-2-1">
+<ol class="decimal" id="example-ch6-diazepam-2-1-1">
+<li id="example-ch6-diazepam-2-1-1-1">
+<div class="para" id="example-ch6-diazepam-2-1-1-1-1">The daily growth rate <span class="process-math">\(r\)</span> is given by <span class="process-math">\(r = b-1 = 0.74 - 1 = -0.26\text{,}\)</span> or <span class="process-math">\(-26\%\text{.}\)</span> It is negative since <span class="process-math">\(D(t)\)</span> is decreasing.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-ch6-diazepam-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#example-ch6-diazepam-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="example-ch6-diazepam-2-1-1-2">
+<div class="para logical" id="example-ch6-diazepam-2-1-1-2-1">
+<div class="para">The continuous growth rate is <span class="process-math">\(k = \ln (b) = \ln(0.74) \approx -0.301\)</span> or <span class="process-math">\(-30.1\%\text{.}\)</span> Using this, then <span class="process-math">\(D(t)\)</span> in terms of the natural base is</div>
+<div class="displaymath process-math" id="example-ch6-diazepam-2-1-1-2-1-4">
+\begin{equation*}
+D(t) = 10 e^{-0.301t}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-ch6-diazepam-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#example-ch6-diazepam-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#example-ch6-diazepam-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.3.1"><a tabindex="-1" href="#example-ch6-diazepam-2" title="Copy heading and permalink for Solution 6.3.3.1" aria-label="Copy heading and permalink for Solution 6.3.3.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.3.3"><a tabindex="-1" href="#example-ch6-diazepam" title="Copy heading and permalink for Example 6.3.3" aria-label="Copy heading and permalink for Example 6.3.3">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Converting Between Q = A \cdot b^t and Q = A \cdot e^{kt}"><a tabindex="-1" href="#sec_6_3-4" title="Copy heading and permalink for Subsection: Converting Between Q = A \cdot b^t and Q = A \cdot e^{kt}" aria-label="Copy heading and permalink for Subsection: Converting Between Q = A \cdot b^t and Q = A \cdot e^{kt}">🔗</a></div>
+</section>
+<section class="subsection" id="sec_6_3-5">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Calculating the Doubling Time and the Half-Life</span>
+</h2>
+<div class="para" id="sec_6_3-5-2">With logarithms, we can calculate algebraically the doubling time and the half-life of exponentially increasing or decreasing quantities.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec_6_3-5-3"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec_6_3-5-3-1-1">
+<div class="para">You deposit <span class="process-math">\(\$2,000\)</span> into a savings account that pays <span class="process-math">\(4.5\%\)</span> annually. Let <span class="process-math">\(B(t)\)</span> denote your balance after <span class="process-math">\(t\)</span> years, which is described by</div>
+<div class="displaymath process-math" id="sec_6_3-5-3-1-1-5">
+\begin{equation*}
+B(t) = 2000 \cdot 1.045^t.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_6_3-5-3-1-2">
+<ol class="decimal" id="sec_6_3-5-3-1-2-1">
+<li id="sec_6_3-5-3-1-2-1-1">
+<div class="para" id="sec_6_3-5-3-1-2-1-1-1">How long will it take for your money to double?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-3-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_6_3-5-3-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6_3-5-3-1-2-1-2">
+<div class="para" id="sec_6_3-5-3-1-2-1-2-1">Suppose you deposit <span class="process-math">\(\$5,000\)</span> instead of <span class="process-math">\(\$2,000\text{.}\)</span> How long will it take for your money to double?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-3-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_6_3-5-3-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_3-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_3-5-3-2-1">
+<ol class="decimal" id="sec_6_3-5-3-2-1-1">
+<li id="sec_6_3-5-3-2-1-1-1">
+<div class="para logical" id="sec_6_3-5-3-2-1-1-1-1">
+<div class="para">To find the doubling time we have to solve the following equation for <span class="process-math">\(t\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_6_3-5-3-2-1-1-1-1-2">
+\begin{equation*}
+2 \cdot 2000 = 2000 \cdot 1.045^t.
+\end{equation*}
+</div>
+<div class="para">Divide both sides of the equation by <span class="process-math">\(2000\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_6_3-5-3-2-1-1-1-1-4">
+\begin{equation*}
+2 = 1.045^t.
+\end{equation*}
+</div>
+<div class="para">The unknown is in the exponent, so either the common or the natural logarithm must be applied to both sides. Using the natural logarithm (as is customary in most applied sciences) gives us the following:</div>
+<div class="displaymath process-math" id="sec_6_3-5-3-2-1-1-1-1-5">
+\begin{align*}
+\ln(2) \amp= \ln(1.045^t)\\
+\ln(2) \amp= t \ln(1.045)\\
+t \amp= \frac{\ln(2)}{\ln(1.045)} \approx 15.75
+\end{align*}
+</div>
+<div class="para">It will take approximately <span class="process-math">\(15.75\)</span> years for your money to double.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-3-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_6_3-5-3-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6_3-5-3-2-1-1-2">
+<div class="para logical" id="sec_6_3-5-3-2-1-1-2-1">
+<div class="para">If the initial deposit is <span class="process-math">\(\$5,000\)</span> instead of <span class="process-math">\(\$2,000\text{,}\)</span> then <span class="process-math">\(B(t) = 5000 \cdot 1.045^t\text{.}\)</span> To find the doubling time of this function, solve the equation</div>
+<div class="displaymath process-math" id="sec_6_3-5-3-2-1-1-2-1-4">
+\begin{equation*}
+2 \cdot 5000 = 5000 \cdot 1.045^t.
+\end{equation*}
+</div>
+<div class="para">Dividing both sides by <span class="process-math">\(5000\)</span> gives the familiar equation</div>
+<div class="displaymath process-math" id="sec_6_3-5-3-2-1-1-2-1-6">
+\begin{equation*}
+2 = 1.045^t.
+\end{equation*}
+</div>
+<div class="para">This is the same equation as in the second step in part 1, so the solution is the same as before: <span class="process-math">\(t = \ln(2) / \ln(1.045)\text{.}\)</span> The doubling time <em class="emphasis">does not depend on the initial amount</em>—it depends <em class="emphasis">only</em> on the growth factor! That is, the initial amount is not needed to find the doubling time of an exponential function.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-3-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_6_3-5-3-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.4.1"><a tabindex="-1" href="#sec_6_3-5-3-2" title="Copy heading and permalink for Solution 6.3.4.1" aria-label="Copy heading and permalink for Solution 6.3.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.3.4"><a tabindex="-1" href="#sec_6_3-5-3" title="Copy heading and permalink for Example 6.3.4" aria-label="Copy heading and permalink for Example 6.3.4">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_6_3-5-4"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para logical" id="sec_6_3-5-4-1-1">
+<div class="para">As we saw in <a href="sec_6_3.html#example-ch6-diazepam" class="internal" title="Example 6.3.3">Example 6.3.3</a>, the amount of Diazepam, <span class="process-math">\(D(t)\text{,}\)</span> in mg, left in a patient’s system <span class="process-math">\(t\)</span> days after a <span class="process-math">\(10\)</span> mg dose is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/example-ch6-diazepam.html" id="sec_6_3-5-4-1-1-5">
+\begin{equation*}
+D(t) = 10 e^{-0.301t}.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_6_3-5-4-1-2">
+<ol class="decimal" id="sec_6_3-5-4-1-2-1">
+<li id="sec_6_3-5-4-1-2-1-1">
+<div class="para" id="sec_6_3-5-4-1-2-1-1-1">Find the half-life of Diazepam.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-4-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_6_3-5-4-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6_3-5-4-1-2-1-2">
+<div class="para" id="sec_6_3-5-4-1-2-1-2-1">How long will it take for the initial amount of Diazepam to be reduced to <span class="process-math">\(3\)</span> mg?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-4-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_6_3-5-4-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_3-5-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_3-5-4-2-1">
+<ol class="decimal" id="sec_6_3-5-4-2-1-1">
+<li id="sec_6_3-5-4-2-1-1-1">
+<div class="para logical" id="sec_6_3-5-4-2-1-1-1-1">
+<div class="para">To find the half-life, solve the following equation for <span class="process-math">\(t\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_6_3-5-4-2-1-1-1-1-2">
+\begin{equation*}
+10 e^{-0.301t} = \frac{1}{2} \cdot 10.
+\end{equation*}
+</div>
+<div class="para">Upon dividing by both sides by the initial value <span class="process-math">\(10\text{,}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_6_3-5-4-2-1-1-1-1-4">
+\begin{equation*}
+e^{-0.301t} = \frac{1}{2}.
+\end{equation*}
+</div>
+<div class="para">Just as the doubling time, the half-life does not depend on the initial amount. Applying the natural logarithm to both sides of the equation yields the following:</div>
+<div class="displaymath process-math" id="sec_6_3-5-4-2-1-1-1-1-5">
+\begin{align*}
+\ln(e^{-0.301t}) \amp = \ln \left(\frac{1}{2} \right)\\
+-0.301 t \amp = \ln\left(\frac{1}{2}\right)\\
+t \amp = \frac{\ln(1/2)}{-0.301} \approx 2.3.
+\end{align*}
+</div>
+<div class="para">The half-life of Diazepam is approximately <span class="process-math">\(2.3\)</span> days—it will take about <span class="process-math">\(2.3\)</span> days for the half of the initial dose to be eliminated from the body.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-4-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_6_3-5-4-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6_3-5-4-2-1-1-2">
+<div class="para logical" id="sec_6_3-5-4-2-1-1-2-1">
+<div class="para">We have to find <span class="process-math">\(t\)</span> for which <span class="process-math">\(D(t) = 3\text{,}\)</span> so we have to solve the equation:</div>
+<div class="displaymath process-math" id="sec_6_3-5-4-2-1-1-2-1-3">
+\begin{equation*}
+10 e^{-0.301t} = 3.
+\end{equation*}
+</div>
+<div class="para">Just like before, divide both sides by <span class="process-math">\(10\text{,}\)</span> apply the natural logarithm to both sides, and use properties of the natural logarithm to obtain:</div>
+<div class="displaymath process-math" id="sec_6_3-5-4-2-1-1-2-1-5">
+\begin{align*}
+e^{-0.301t} \amp= \frac{3}{10}\\
+\ln(e^{-0.301t}) \amp = \ln(\frac{3}{10})\\
+-0.301t \amp= \ln(\frac{3}{10})\\
+t \amp= \frac{\ln(\frac{3}{10})}{-0.301} \approx 4.
+\end{align*}
+</div>
+<div class="para">It will take about <span class="process-math">\(4\)</span> days for <span class="process-math">\(3\)</span> mg to be left in a patient’s system from the initial dose of <span class="process-math">\(10\)</span> mg.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-4-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec_6_3-5-4-2-1-1-2-2">Does this answer make sense? Let’s compare it to the half-life, which is <span class="process-math">\(2.3\)</span> days. This half-life means that <span class="process-math">\(10\)</span> mg will be reduced to <span class="process-math">\(5\)</span> mg after <span class="process-math">\(2.3\)</span> days and then the remaining <span class="process-math">\(5\)</span> mg will be reduced to <span class="process-math">\(2.5\)</span> mg after the next <span class="process-math">\(2.3\)</span> days. So, it seems reasonable that <span class="process-math">\(3\)</span> mg is left after <span class="process-math">\(4\)</span> days.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-4-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec_6_3-5-4-2-1-1-2-3">
+<div class="para">Of course, you can check your answer by substituting <span class="process-math">\(t = 4\)</span> into <span class="process-math">\(D(t)\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_6_3-5-4-2-1-1-2-3-3">
+\begin{equation*}
+D(4) = 10 e^{-0.301 \cdot 4} = 2.9999 \approx 3.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-4-2-1-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_6_3-5-4-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.5.1"><a tabindex="-1" href="#sec_6_3-5-4-2" title="Copy heading and permalink for Solution 6.3.5.1" aria-label="Copy heading and permalink for Solution 6.3.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.3.5"><a tabindex="-1" href="#sec_6_3-5-4" title="Copy heading and permalink for Example 6.3.5" aria-label="Copy heading and permalink for Example 6.3.5">🔗</a></div>
+</article>
+<details id="sec_6_3-5-5" class="aside aside-like born-hidden-knowl"><summary class="knowl__link"><h3 class="heading"><span class="type">By the way...</span></h3></summary>
+<aside class="aside aside-like knowl__content">
+<div class="para" id="sec_6_3-5-5-1">In the previous example, notice that the answer in part 2 clearly depends on the initial amount <span class="process-math">\(10\)</span> mg, unlike the answer in part 1. If the initial dose is, say, <span class="process-math">\(100\)</span> mg, it will take much longer before only <span class="process-math">\(3\)</span> mg remain; however, the half-life is still the same!<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</aside></details>
+<article class="example example-like" id="sec_6_3-5-6"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_6_3-5-6-1-1">During the 1986 Chernobyl disaster, radioactive Strontium-90 was released into the atmosphere<details class="ptx-footnote" aria-live="polite" id="sec_6_3-5-6-1-1-1"><summary class="ptx-footnote__number" title="Footnote 6.3.1"><sup> 1 </sup></summary>
+<div class="ptx-footnote__contents" id="sec_6_3-5-6-1-1-1">https://semspub.epa.gov/work/HQ/175430.pdf, accessed: 5/24/2020
+</div></details>. Strontium-90 contaminated the nearby region and accumulated in people’s bones. (Incidentally, the isotope is often referred to as a “bone seeker”.) The half-life of Strontium-90 is <span class="process-math">\(29\)</span> years.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="sec_6_3-5-6-1-2">
+<ol class="decimal" id="sec_6_3-5-6-1-2-1">
+<li id="sec_6_3-5-6-1-2-1-1">
+<div class="para" id="sec_6_3-5-6-1-2-1-1-1">Find the percentage of the original amount of Strontium-90 absorbed that is still left in people’s bones in 2020.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-6-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_6_3-5-6-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6_3-5-6-1-2-1-2">
+<div class="para" id="sec_6_3-5-6-1-2-1-2-1">How many years will it take for <span class="process-math">\(10\%\)</span> of the original amount of Strontium-90 to be left?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-6-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_6_3-5-6-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-6-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_3-5-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_3-5-6-2-1">
+<ol class="decimal" id="sec_6_3-5-6-2-1-1">
+<li id="sec_6_3-5-6-2-1-1-1">
+<div class="para logical" id="sec_6_3-5-6-2-1-1-1-1">
+<div class="para">Let <span class="process-math">\(S(t)\)</span> be the amount of Strontium-90 remaining in an affected person’s bones <span class="process-math">\(t\)</span> years after the disaster. Denote by <span class="process-math">\(S_0\)</span> the initial amount absorbed. The goal is to find a formula for <span class="process-math">\(S(t)\)</span> in terms of the natural base:</div>
+<div class="displaymath process-math" id="sec_6_3-5-6-2-1-1-1-1-5">
+\begin{equation*}
+S(t) = S_0 e^{kt}.
+\end{equation*}
+</div>
+<div class="para">To find <span class="process-math">\(k\text{,}\)</span> we use the half-life and set up an equation for <span class="process-math">\(k\text{.}\)</span> At <span class="process-math">\(t = 29\text{,}\)</span> half of <span class="process-math">\(S_0\)</span> is left; that is, <span class="process-math">\(S(29) = \frac{1}{2} \cdot S_0\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_6_3-5-6-2-1-1-1-1-11">
+\begin{equation*}
+S_0 e^{k \cdot 29} = \frac{1}{2} \cdot S_0.
+\end{equation*}
+</div>
+<div class="para">Divide both sides by <span class="process-math">\(S_0\)</span> so that</div>
+<div class="displaymath process-math" id="sec_6_3-5-6-2-1-1-1-1-13">
+\begin{equation*}
+e^{k \cdot 29} = \frac{1}{2}.
+\end{equation*}
+</div>
+<div class="para">Use the natural logarithm to solve for <span class="process-math">\(k\text{:}\)</span>
+</div>
+<div class="displaymath process-math" id="sec_6_3-5-6-2-1-1-1-1-15">
+\begin{align*}
+\ln(e^{k \cdot 29}) \amp= \ln \left(\frac{1}{2}\right)\\
+k \cdot 29 \amp= \ln\left(\frac{1}{2}\right)\\
+k \amp= \frac{\ln(\frac{1}{2})}{29} \approx -0.0239.
+\end{align*}
+</div>
+<div class="para">Given this value of <span class="process-math">\(k\text{,}\)</span> a formula for <span class="process-math">\(S(t)\)</span> is</div>
+<div class="displaymath process-math" id="sec_6_3-5-6-2-1-1-1-1-18">
+\begin{equation*}
+S(t) = S_0 e^{-0.0239t}.
+\end{equation*}
+</div>
+<div class="para">To answer the question, all that is left is to evaluate <span class="process-math">\(S\)</span> at <span class="process-math">\(t = 34\text{,}\)</span> which corresponds to the year 2020. That is,</div>
+<div class="displaymath process-math" id="sec_6_3-5-6-2-1-1-1-1-21">
+\begin{equation*}
+S(34)  = S_0 e^{-0.0239 \cdot 34} = S_0 \cdot 0.4437
+\end{equation*}
+</div>
+<div class="para">In 2020, about <span class="process-math">\(44\%\)</span> of the original amount absorbed remains in people’s bones. Note that the <em class="emphasis">percentage</em> of Strontium-90 left does not depend on the initial amount <span class="process-math">\(S_0\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-6-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 1"><a tabindex="-1" href="#sec_6_3-5-6-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sec_6_3-5-6-2-1-1-2">
+<div class="para logical" id="sec_6_3-5-6-2-1-1-2-1">
+<div class="para">We are looking for <span class="process-math">\(t\)</span> such that <span class="process-math">\(S(t) = 0.10 \cdot S_0\text{.}\)</span> That is, for solutions to</div>
+<div class="displaymath process-math" id="sec_6_3-5-6-2-1-1-2-1-3">
+\begin{equation*}
+S_0 e^{-0.0239t} = 0.10 \cdot S_0.
+\end{equation*}
+</div>
+<div class="para">As before, divide both sides by <span class="process-math">\(S_0\text{,}\)</span> apply the natural logarithm and use properties of the logarithm to obtain</div>
+<div class="displaymath process-math" id="sec_6_3-5-6-2-1-1-2-1-5">
+\begin{equation*}
+t = \frac{\ln(0.10)}{-0.0239} \approx 96.34.
+\end{equation*}
+</div>
+<div class="para">Therefore, it will take approximately <span class="process-math">\(96\)</span> years before <span class="process-math">\(10\%\)</span> of the original amount remains.</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-6-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Item 2"><a tabindex="-1" href="#sec_6_3-5-6-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.6.1"><a tabindex="-1" href="#sec_6_3-5-6-2" title="Copy heading and permalink for Solution 6.3.6.1" aria-label="Copy heading and permalink for Solution 6.3.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.3.6"><a tabindex="-1" href="#sec_6_3-5-6" title="Copy heading and permalink for Example 6.3.6" aria-label="Copy heading and permalink for Example 6.3.6">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: Calculating the Doubling Time and the Half-Life"><a tabindex="-1" href="#sec_6_3-5" title="Copy heading and permalink for Subsection: Calculating the Doubling Time and the Half-Life" aria-label="Copy heading and permalink for Subsection: Calculating the Doubling Time and the Half-Life">🔗</a></div>
+</section>
+<section class="subsection" id="sec_6_3-6">
+<h2 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Acidity of a Liquid</span>
+</h2>
+<div class="para logical" id="sec_6_3-6-2">
+<div class="para">In chemistry, the acidity of a liquid is measured on the <span class="process-math">\(\text{pH}\)</span> scale<details class="ptx-footnote" aria-live="polite" id="sec_6_3-6-2-2"><summary class="ptx-footnote__number" title="Footnote 6.3.2"><sup> 2 </sup></summary>
+<div class="ptx-footnote__contents" id="sec_6_3-6-2-2">http://chemistry.elmhurst.edu/vchembook/184ph.html, accessed: 5/25/2020
+</div></details>. The acidity depends on the hydrogen ion concentration in the liquid, denoted by <span class="process-math">\([\text{H}^{+}]\)</span> and measured in <span class="process-math">\(\dfrac{\text{mol}}{\text{L}}\)</span> (moles per liter). The <span class="process-math">\(\text{pH}\)</span> is defined as:</div>
+<div class="displaymath process-math" id="sec_6_3-6-2-6">
+\begin{equation*}
+\text{pH} = -\log[\text{H}^+]
+\end{equation*}
+</div>
+<div class="para">(The logarithm in the formula is the <em class="alert">common</em> logarithm.)</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sec_6_3-6-3"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_6_3-6-3-1-1">The hydrogen ion concentration of lemon juice is <span class="process-math">\([\text{H}^+] = 0.01\)</span> <span class="process-math">\(\dfrac{\text{mol}}{\text{L}}\text{.}\)</span> Find the <span class="process-math">\(\text{pH}\)</span> of lemon juice.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_3-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_3-6-3-2-1">
+<div class="para">According to the <span class="process-math">\(\text{pH}\)</span> formula above, the <span class="process-math">\(\text{pH}\)</span> of lemon juice is</div>
+<div class="displaymath process-math" id="sec_6_3-6-3-2-1-3">
+\begin{equation*}
+\text{pH} = -\log (0.01) = -\log (10^{-2}) = -(-2) = 2.
+\end{equation*}
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.7.1"><a tabindex="-1" href="#sec_6_3-6-3-2" title="Copy heading and permalink for Solution 6.3.7.1" aria-label="Copy heading and permalink for Solution 6.3.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.3.7"><a tabindex="-1" href="#sec_6_3-6-3" title="Copy heading and permalink for Example 6.3.7" aria-label="Copy heading and permalink for Example 6.3.7">🔗</a></div>
+</article>
+<article class="example example-like" id="sec_6_3-6-4"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sec_6_3-6-4-1-1">The <span class="process-math">\(\text{pH}\)</span> of gastric acid is <span class="process-math">\(1\text{.}\)</span> Find the hydrogen ion concentration <span class="process-math">\([\text{H}^{+}]\)</span> in gastric acid.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sec_6_3-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sec_6_3-6-4-2-1">
+<div class="para">To find the hydrogen ion concentration, solve the equation <span class="process-math">\(1 = -\log[\text{H}^+]\text{.}\)</span> Put another way, <span class="process-math">\(-1 = \log[\text{H}^+]\text{.}\)</span> By the definition of the common logarithm, this means</div>
+<div class="displaymath process-math" id="sec_6_3-6-4-2-1-3">
+\begin{equation*}
+10^{-1} = [\text{H}^+]
+\end{equation*}
+</div>
+<div class="para">and therefore <span class="process-math">\([\text{H}^+] = 0.1\)</span> <span class="process-math">\(\dfrac{\text{mol}}{\text{L}}\text{.}\)</span>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#sec_6_3-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.8.1"><a tabindex="-1" href="#sec_6_3-6-4-2" title="Copy heading and permalink for Solution 6.3.8.1" aria-label="Copy heading and permalink for Solution 6.3.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Example 6.3.8"><a tabindex="-1" href="#sec_6_3-6-4" title="Copy heading and permalink for Example 6.3.8" aria-label="Copy heading and permalink for Example 6.3.8">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Subsection: The Acidity of a Liquid"><a tabindex="-1" href="#sec_6_3-6" title="Copy heading and permalink for Subsection: The Acidity of a Liquid" aria-label="Copy heading and permalink for Subsection: The Acidity of a Liquid">🔗</a></div>
+</section>
 <section class="exercises" id="ex_6_3">
 <h2 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber"></span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
@@ -444,40 +1060,40 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-6_3_1-2-1">
 <span class="process-math">\(y=208e^{-0.1625t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_3_1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.1.1"><a tabindex="-1" href="#exercise-6_3_1-2" title="Copy heading and permalink for Solution 6.3.1.1" aria-label="Copy heading and permalink for Solution 6.3.1.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 1.1"><a tabindex="-1" href="#exercise-6_3_1-2" title="Copy heading and permalink for Solution 1.1" aria-label="Copy heading and permalink for Solution 1.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.1"><a tabindex="-1" href="#exercise-6_3_1" title="Copy heading and permalink for Exercise 6.3.1" aria-label="Copy heading and permalink for Exercise 6.3.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 1"><a tabindex="-1" href="#exercise-6_3_1" title="Copy heading and permalink for Exercise 1" aria-label="Copy heading and permalink for Exercise 1">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_3-1-4"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_3-1-4-1-1">
-<span class="process-math">\(\displaystyle y=(1.09)^t\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_3_2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_3_2-1-1">
+<span class="process-math">\(\displaystyle y=(1.09)^t\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-1-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-1-4-2-1">
-<span class="process-math">\(y=e^{0.0862t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-1-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_2-2-1">
+<span class="process-math">\(y=e^{0.0862t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.2.1"><a tabindex="-1" href="#ex_6_3-1-4-2" title="Copy heading and permalink for Solution 6.3.2.1" aria-label="Copy heading and permalink for Solution 6.3.2.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 2.1"><a tabindex="-1" href="#exercise_6_3_2-2" title="Copy heading and permalink for Solution 2.1" aria-label="Copy heading and permalink for Solution 2.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.2"><a tabindex="-1" href="#ex_6_3-1-4" title="Copy heading and permalink for Exercise 6.3.2" aria-label="Copy heading and permalink for Exercise 6.3.2">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 2"><a tabindex="-1" href="#exercise_6_3_2" title="Copy heading and permalink for Exercise 2" aria-label="Copy heading and permalink for Exercise 2">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_3-1-5"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
-<div class="para" id="ex_6_3-1-5-1-1">
-<span class="process-math">\(\displaystyle y= 700(1.32)^t\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_3_3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercise_6_3_3-1-1">
+<span class="process-math">\(\displaystyle y= 700(1.32)^t\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-1-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-1-5-2-1">
-<span class="process-math">\(y=700e^{0.2776t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-1-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_3-2-1">
+<span class="process-math">\(y=700e^{0.2776t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.3.1"><a tabindex="-1" href="#ex_6_3-1-5-2" title="Copy heading and permalink for Solution 6.3.3.1" aria-label="Copy heading and permalink for Solution 6.3.3.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 3.1"><a tabindex="-1" href="#exercise_6_3_3-2" title="Copy heading and permalink for Solution 3.1" aria-label="Copy heading and permalink for Solution 3.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.3"><a tabindex="-1" href="#ex_6_3-1-5" title="Copy heading and permalink for Exercise 6.3.3" aria-label="Copy heading and permalink for Exercise 6.3.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 3"><a tabindex="-1" href="#exercise_6_3_3" title="Copy heading and permalink for Exercise 3" aria-label="Copy heading and permalink for Exercise 3">🔗</a></div>
 </article>
 <article class="exercise exercise-like" id="exercise-6_3_4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="exercise-6_3_4-1-1">
@@ -489,278 +1105,278 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="exercise-6_3_4-2-1">
 <span class="process-math">\(y=2000e^{-0.0943t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise-6_3_4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.4.1"><a tabindex="-1" href="#exercise-6_3_4-2" title="Copy heading and permalink for Solution 6.3.4.1" aria-label="Copy heading and permalink for Solution 6.3.4.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 4.1"><a tabindex="-1" href="#exercise-6_3_4-2" title="Copy heading and permalink for Solution 4.1" aria-label="Copy heading and permalink for Solution 4.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.4"><a tabindex="-1" href="#exercise-6_3_4" title="Copy heading and permalink for Exercise 6.3.4" aria-label="Copy heading and permalink for Exercise 6.3.4">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 4"><a tabindex="-1" href="#exercise-6_3_4" title="Copy heading and permalink for Exercise 4" aria-label="Copy heading and permalink for Exercise 4">🔗</a></div>
 </article>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 6.3.1–4: Rewriting Exponential Functions"><a tabindex="-1" href="#ex_6_3-1" title="Copy heading and permalink for Exercise Group 6.3.1–4: Rewriting Exponential Functions" aria-label="Copy heading and permalink for Exercise Group 6.3.1–4: Rewriting Exponential Functions">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise Group 1–4: Rewriting Exponential Functions"><a tabindex="-1" href="#ex_6_3-1" title="Copy heading and permalink for Exercise Group 1–4: Rewriting Exponential Functions" aria-label="Copy heading and permalink for Exercise Group 1–4: Rewriting Exponential Functions">🔗</a></div>
 </div>
-<article class="exercise exercise-like" id="ex_6_3-2"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="ex_6_3-2-1">
-<div class="para logical" id="ex_6_3-2-1-1">
+<article class="exercise exercise-like" id="exercise_6_3_5"><h3 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exercise_6_3_5-1">
+<div class="para logical" id="exercise_6_3_5-1-1">
 <div class="para">If a bank offers an interest rate of <span class="process-math">\(6.1\%\)</span> with <em class="emphasis">interest compounded continuously</em> (rather than once a year), your balance <span class="process-math">\(B(t)\)</span> after <span class="process-math">\(t\)</span> years is:</div>
-<div class="displaymath process-math" id="ex_6_3-2-1-1-5">
+<div class="displaymath process-math" id="exercise_6_3_5-1-1-5">
 \begin{equation*}
 B(t)=B_0e^{0.061t}
 \end{equation*}
 </div>
 <div class="para">where <span class="process-math">\(B_0\)</span> is your initial deposit, in dollars.</div>
-<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="ex_6_3-2-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ex_6_3-2-2-1-1">How long will it take for your money to double?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="ex_6_3-2-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-2-2-2-1">approximately <span class="process-math">\(11.36\)</span> years<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.5.a.1"><a tabindex="-1" href="#ex_6_3-2-2-2" title="Copy heading and permalink for Solution 6.3.5.a.1" aria-label="Copy heading and permalink for Solution 6.3.5.a.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.5.a"><a tabindex="-1" href="#ex_6_3-2-2" title="Copy heading and permalink for Task 6.3.5.a" aria-label="Copy heading and permalink for Task 6.3.5.a">🔗</a></div>
-</article>
-<article class="task exercise-like" id="ex_6_3-2-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ex_6_3-2-3-1-1">How long will it take for your money to triple?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exercise_6_3_5-2-1-1">How long will it take for your money to double?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-2-3-2-1">approximately <span class="process-math">\(18.01\)</span> years<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_5-2-2-1">approximately <span class="process-math">\(11.36\)</span> years<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.5.b.1"><a tabindex="-1" href="#ex_6_3-2-3-2" title="Copy heading and permalink for Solution 6.3.5.b.1" aria-label="Copy heading and permalink for Solution 6.3.5.b.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.a.1"><a tabindex="-1" href="#exercise_6_3_5-2-2" title="Copy heading and permalink for Solution 5.a.1" aria-label="Copy heading and permalink for Solution 5.a.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.5.b"><a tabindex="-1" href="#ex_6_3-2-3" title="Copy heading and permalink for Task 6.3.5.b" aria-label="Copy heading and permalink for Task 6.3.5.b">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.5"><a tabindex="-1" href="#ex_6_3-2" title="Copy heading and permalink for Exercise 6.3.5" aria-label="Copy heading and permalink for Exercise 6.3.5">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 5.a"><a tabindex="-1" href="#exercise_6_3_5-2" title="Copy heading and permalink for Task 5.a" aria-label="Copy heading and permalink for Task 5.a">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_3-3"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="ex_6_3-3-1">
-<div class="para" id="ex_6_3-3-1-1">A laboratory culture of <em class="emphasis">Salmonella enterica</em> starts with <span class="process-math">\(S_0\)</span> bacteria at <span class="process-math">\(t=0\)</span> and doubles every <span class="process-math">\(30\)</span> minutes.<details class="ptx-footnote" aria-live="polite" id="ex_6_3-3-1-1-5"><summary class="ptx-footnote__number" title="Footnote 6.3.1"><sup> 1 </sup></summary>
-<div class="ptx-footnote__contents" id="ex_6_3-3-1-1-5">
+<article class="task exercise-like" id="exercise_6_3_5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exercise_6_3_5-3-1-1">How long will it take for your money to triple?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise_6_3_5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise_6_3_5-3-2-1">approximately <span class="process-math">\(18.01\)</span> years<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 5.b.1"><a tabindex="-1" href="#exercise_6_3_5-3-2" title="Copy heading and permalink for Solution 5.b.1" aria-label="Copy heading and permalink for Solution 5.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 5.b"><a tabindex="-1" href="#exercise_6_3_5-3" title="Copy heading and permalink for Task 5.b" aria-label="Copy heading and permalink for Task 5.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 5"><a tabindex="-1" href="#exercise_6_3_5" title="Copy heading and permalink for Exercise 5" aria-label="Copy heading and permalink for Exercise 5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise_6_3_6"><h3 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exercise_6_3_6-1">
+<div class="para" id="exercise_6_3_6-1-1">A laboratory culture of <em class="emphasis">Salmonella enterica</em> starts with <span class="process-math">\(S_0\)</span> bacteria at <span class="process-math">\(t=0\)</span> and doubles every <span class="process-math">\(30\)</span> minutes.<details class="ptx-footnote" aria-live="polite" id="exercise_6_3_6-1-1-5"><summary class="ptx-footnote__number" title="Footnote 6.3.3"><sup> 3 </sup></summary>
+<div class="ptx-footnote__contents" id="exercise_6_3_6-1-1-5">
 <a class="external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/</a>, accessed: 6/26/20
-</div></details> Let <span class="process-math">\(S(t)\)</span> be the number of bacteria in the culture at time <span class="process-math">\(t\text{,}\)</span> in minutes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></details> Let <span class="process-math">\(S(t)\)</span> be the number of bacteria in the culture at time <span class="process-math">\(t\text{,}\)</span> in minutes.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="ex_6_3-3-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ex_6_3-3-2-1-1">Write a formula for <span class="process-math">\(S(t)\)</span> in terms of the natural base <span class="process-math">\(e\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="ex_6_3-3-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-3-2-2-1">
-<span class="process-math">\(S(t)=S_0e^{0.0231t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-3-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.6.a.1"><a tabindex="-1" href="#ex_6_3-3-2-2" title="Copy heading and permalink for Solution 6.3.6.a.1" aria-label="Copy heading and permalink for Solution 6.3.6.a.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.6.a"><a tabindex="-1" href="#ex_6_3-3-2" title="Copy heading and permalink for Task 6.3.6.a" aria-label="Copy heading and permalink for Task 6.3.6.a">🔗</a></div>
-</article>
-<article class="task exercise-like" id="ex_6_3-3-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ex_6_3-3-3-1-1">How long will it take for <span class="process-math">\(S(t)\)</span> to triple? Does the tripling time depend on the initial amount <span class="process-math">\(S_0\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_6-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exercise_6_3_6-2-1-1">Write a formula for <span class="process-math">\(S(t)\)</span> in terms of the natural base <span class="process-math">\(e\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-3-3-2-1">approximately <span class="process-math">\(47.6\)</span> minutes; no<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_6-2-2-1">
+<span class="process-math">\(S(t)=S_0e^{0.0231t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.6.b.1"><a tabindex="-1" href="#ex_6_3-3-3-2" title="Copy heading and permalink for Solution 6.3.6.b.1" aria-label="Copy heading and permalink for Solution 6.3.6.b.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.a.1"><a tabindex="-1" href="#exercise_6_3_6-2-2" title="Copy heading and permalink for Solution 6.a.1" aria-label="Copy heading and permalink for Solution 6.a.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.6.b"><a tabindex="-1" href="#ex_6_3-3-3" title="Copy heading and permalink for Task 6.3.6.b" aria-label="Copy heading and permalink for Task 6.3.6.b">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.6"><a tabindex="-1" href="#ex_6_3-3" title="Copy heading and permalink for Exercise 6.3.6" aria-label="Copy heading and permalink for Exercise 6.3.6">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.a"><a tabindex="-1" href="#exercise_6_3_6-2" title="Copy heading and permalink for Task 6.a" aria-label="Copy heading and permalink for Task 6.a">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_3-4"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="ex_6_3-4-1">
-<div class="para" id="ex_6_3-4-1-1">Bacterial population dynamics is not as simple as measuring the doubling time of a bacterium in the laboratory, under optimal growth conditions. A more challenging question is to find the doubling time of a bacterium in its natural environment, for example, in the gut. The doubling time of <em class="emphasis">Salmonella enterica</em> in the gut is <span class="process-math">\(25\)</span> hours<details class="ptx-footnote" aria-live="polite" id="ex_6_3-4-1-1-3"><summary class="ptx-footnote__number" title="Footnote 6.3.2"><sup> 2 </sup></summary>
-<div class="ptx-footnote__contents" id="ex_6_3-4-1-1-3">
+<article class="task exercise-like" id="exercise_6_3_6-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exercise_6_3_6-3-1-1">How long will it take for <span class="process-math">\(S(t)\)</span> to triple? Does the tripling time depend on the initial amount <span class="process-math">\(S_0\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="exercise_6_3_6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="exercise_6_3_6-3-2-1">approximately <span class="process-math">\(47.6\)</span> minutes; no<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 6.b.1"><a tabindex="-1" href="#exercise_6_3_6-3-2" title="Copy heading and permalink for Solution 6.b.1" aria-label="Copy heading and permalink for Solution 6.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 6.b"><a tabindex="-1" href="#exercise_6_3_6-3" title="Copy heading and permalink for Task 6.b" aria-label="Copy heading and permalink for Task 6.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 6"><a tabindex="-1" href="#exercise_6_3_6" title="Copy heading and permalink for Exercise 6" aria-label="Copy heading and permalink for Exercise 6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercise_6_3_7"><h3 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exercise_6_3_7-1">
+<div class="para" id="exercise_6_3_7-1-1">Bacterial population dynamics is not as simple as measuring the doubling time of a bacterium in the laboratory, under optimal growth conditions. A more challenging question is to find the doubling time of a bacterium in its natural environment, for example, in the gut. The doubling time of <em class="emphasis">Salmonella enterica</em> in the gut is <span class="process-math">\(25\)</span> hours<details class="ptx-footnote" aria-live="polite" id="exercise_6_3_7-1-1-3"><summary class="ptx-footnote__number" title="Footnote 6.3.4"><sup> 4 </sup></summary>
+<div class="ptx-footnote__contents" id="exercise_6_3_7-1-1-3">
 <a class="external" href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6015860/</a>, accessed: 6/26/20
-</div></details>. Let <span class="process-math">\(G_0\)</span> be an initial amount of <em class="emphasis">Salmonella enterica</em> in a patient’s gut at <span class="process-math">\(t=0\text{.}\)</span> Let <span class="process-math">\(G(t)\)</span> be the amount <span class="process-math">\(t\)</span> hours later.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></details>. Let <span class="process-math">\(G_0\)</span> be an initial amount of <em class="emphasis">Salmonella enterica</em> in a patient’s gut at <span class="process-math">\(t=0\text{.}\)</span> Let <span class="process-math">\(G(t)\)</span> be the amount <span class="process-math">\(t\)</span> hours later.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="ex_6_3-4-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ex_6_3-4-2-1-1">Find a formula for <span class="process-math">\(G(t)\)</span> in base-<span class="process-math">\(e\)</span> form.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_7-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exercise_6_3_7-2-1-1">Find a formula for <span class="process-math">\(G(t)\)</span> in base-<span class="process-math">\(e\)</span> form.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-4-2-2-1">
-<span class="process-math">\(G(t)=G_0e^{0.0277t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_7-2-2-1">
+<span class="process-math">\(G(t)=G_0e^{0.0277t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.7.a.1"><a tabindex="-1" href="#ex_6_3-4-2-2" title="Copy heading and permalink for Solution 6.3.7.a.1" aria-label="Copy heading and permalink for Solution 6.3.7.a.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.a.1"><a tabindex="-1" href="#exercise_6_3_7-2-2" title="Copy heading and permalink for Solution 7.a.1" aria-label="Copy heading and permalink for Solution 7.a.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.7.a"><a tabindex="-1" href="#ex_6_3-4-2" title="Copy heading and permalink for Task 6.3.7.a" aria-label="Copy heading and permalink for Task 6.3.7.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 7.a"><a tabindex="-1" href="#exercise_6_3_7-2" title="Copy heading and permalink for Task 7.a" aria-label="Copy heading and permalink for Task 7.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ex_6_3-4-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ex_6_3-4-3-1-1">How long will it take for the bacteria to reach <span class="process-math">\(150\%\)</span> of the initial amount?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_7-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exercise_6_3_7-3-1-1">How long will it take for the bacteria to reach <span class="process-math">\(150\%\)</span> of the initial amount?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-4-3-2-1">approximately <span class="process-math">\(14.64\)</span> hours<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_7-3-2-1">approximately <span class="process-math">\(14.64\)</span> hours<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.7.b.1"><a tabindex="-1" href="#ex_6_3-4-3-2" title="Copy heading and permalink for Solution 6.3.7.b.1" aria-label="Copy heading and permalink for Solution 6.3.7.b.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 7.b.1"><a tabindex="-1" href="#exercise_6_3_7-3-2" title="Copy heading and permalink for Solution 7.b.1" aria-label="Copy heading and permalink for Solution 7.b.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.7.b"><a tabindex="-1" href="#ex_6_3-4-3" title="Copy heading and permalink for Task 6.3.7.b" aria-label="Copy heading and permalink for Task 6.3.7.b">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.7"><a tabindex="-1" href="#ex_6_3-4" title="Copy heading and permalink for Exercise 6.3.7" aria-label="Copy heading and permalink for Exercise 6.3.7">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 7.b"><a tabindex="-1" href="#exercise_6_3_7-3" title="Copy heading and permalink for Task 7.b" aria-label="Copy heading and permalink for Task 7.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 7"><a tabindex="-1" href="#exercise_6_3_7" title="Copy heading and permalink for Exercise 7" aria-label="Copy heading and permalink for Exercise 7">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_3-5"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="ex_6_3-5-1">
-<div class="para" id="ex_6_3-5-1-1">Let <span class="process-math">\(N=N(t)\)</span> be the amount of nicotine, in milligrams, in the bloodstream of a person after a cigarette is smoked. Time <span class="process-math">\(t\)</span> is measured in hours. As with most drugs, the process of elimination of nicotine from the body is a process of exponential decay. The half-life of nicotine is <span class="process-math">\(2\)</span> hours and the amount of nicotine absorbed from a cigarette is <span class="process-math">\(2\)</span> mg.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_3_8"><h3 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exercise_6_3_8-1">
+<div class="para" id="exercise_6_3_8-1-1">Let <span class="process-math">\(N=N(t)\)</span> be the amount of nicotine, in milligrams, in the bloodstream of a person after a cigarette is smoked. Time <span class="process-math">\(t\)</span> is measured in hours. As with most drugs, the process of elimination of nicotine from the body is a process of exponential decay. The half-life of nicotine is <span class="process-math">\(2\)</span> hours and the amount of nicotine absorbed from a cigarette is <span class="process-math">\(2\)</span> mg.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="ex_6_3-5-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ex_6_3-5-2-1-1">Find a formula in the form <span class="process-math">\(N(t)=A\cdot e^{kt}\)</span> for the function <span class="process-math">\(N(t)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_8-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exercise_6_3_8-2-1-1">Find a formula in the form <span class="process-math">\(N(t)=A\cdot e^{kt}\)</span> for the function <span class="process-math">\(N(t)\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_8-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-5-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_8-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-5-2-2-1">
-<span class="process-math">\(N(t)=2e^{-0.3466t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-5-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_8-2-2-1">
+<span class="process-math">\(N(t)=2e^{-0.3466t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_8-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.8.a.1"><a tabindex="-1" href="#ex_6_3-5-2-2" title="Copy heading and permalink for Solution 6.3.8.a.1" aria-label="Copy heading and permalink for Solution 6.3.8.a.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.a.1"><a tabindex="-1" href="#exercise_6_3_8-2-2" title="Copy heading and permalink for Solution 8.a.1" aria-label="Copy heading and permalink for Solution 8.a.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.8.a"><a tabindex="-1" href="#ex_6_3-5-2" title="Copy heading and permalink for Task 6.3.8.a" aria-label="Copy heading and permalink for Task 6.3.8.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 8.a"><a tabindex="-1" href="#exercise_6_3_8-2" title="Copy heading and permalink for Task 8.a" aria-label="Copy heading and permalink for Task 8.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ex_6_3-5-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ex_6_3-5-3-1-1">How long will it take for the initial amount of nicotine to be reduced to <span class="process-math">\(0.7\)</span> mg?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_8-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exercise_6_3_8-3-1-1">How long will it take for the initial amount of nicotine to be reduced to <span class="process-math">\(0.7\)</span> mg?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_8-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-5-3-2-1">approximately <span class="process-math">\(3.03\)</span> hours<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_8-3-2-1">approximately <span class="process-math">\(3.03\)</span> hours<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_8-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.8.b.1"><a tabindex="-1" href="#ex_6_3-5-3-2" title="Copy heading and permalink for Solution 6.3.8.b.1" aria-label="Copy heading and permalink for Solution 6.3.8.b.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 8.b.1"><a tabindex="-1" href="#exercise_6_3_8-3-2" title="Copy heading and permalink for Solution 8.b.1" aria-label="Copy heading and permalink for Solution 8.b.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.8.b"><a tabindex="-1" href="#ex_6_3-5-3" title="Copy heading and permalink for Task 6.3.8.b" aria-label="Copy heading and permalink for Task 6.3.8.b">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.8"><a tabindex="-1" href="#ex_6_3-5" title="Copy heading and permalink for Exercise 6.3.8" aria-label="Copy heading and permalink for Exercise 6.3.8">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 8.b"><a tabindex="-1" href="#exercise_6_3_8-3" title="Copy heading and permalink for Task 8.b" aria-label="Copy heading and permalink for Task 8.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 8"><a tabindex="-1" href="#exercise_6_3_8" title="Copy heading and permalink for Exercise 8" aria-label="Copy heading and permalink for Exercise 8">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_3-6"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="ex_6_3-6-1">
-<div class="para" id="ex_6_3-6-1-1">Let <span class="process-math">\(C(t)\)</span> be the amount of caffeine that remains in the person’s body <span class="process-math">\(t\)</span> hours after finishing a cup of coffee. The amount of caffeine absorbed from a cup of coffee is <span class="process-math">\(96\)</span> mg. The continuous growth rate of caffeine in the body is <span class="process-math">\(-13.86\%\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_3_9"><h3 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exercise_6_3_9-1">
+<div class="para" id="exercise_6_3_9-1-1">Let <span class="process-math">\(C(t)\)</span> be the amount of caffeine that remains in the person’s body <span class="process-math">\(t\)</span> hours after finishing a cup of coffee. The amount of caffeine absorbed from a cup of coffee is <span class="process-math">\(96\)</span> mg. The continuous growth rate of caffeine in the body is <span class="process-math">\(-13.86\%\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="ex_6_3-6-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ex_6_3-6-2-1-1">Find a formula for <span class="process-math">\(C(t)\)</span> in terms of the natural base.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_9-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exercise_6_3_9-2-1-1">Find a formula for <span class="process-math">\(C(t)\)</span> in terms of the natural base.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_9-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_9-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-6-2-2-1">
-<span class="process-math">\(C(t)=96e^{-0.1386t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_9-2-2-1">
+<span class="process-math">\(C(t)=96e^{-0.1386t}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_9-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.9.a.1"><a tabindex="-1" href="#ex_6_3-6-2-2" title="Copy heading and permalink for Solution 6.3.9.a.1" aria-label="Copy heading and permalink for Solution 6.3.9.a.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 9.a.1"><a tabindex="-1" href="#exercise_6_3_9-2-2" title="Copy heading and permalink for Solution 9.a.1" aria-label="Copy heading and permalink for Solution 9.a.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.9.a"><a tabindex="-1" href="#ex_6_3-6-2" title="Copy heading and permalink for Task 6.3.9.a" aria-label="Copy heading and permalink for Task 6.3.9.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 9.a"><a tabindex="-1" href="#exercise_6_3_9-2" title="Copy heading and permalink for Task 9.a" aria-label="Copy heading and permalink for Task 9.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ex_6_3-6-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ex_6_3-6-3-1-1">Find the half-life of caffeine in the body. Round off your answer to two decimal places. Include units with your answer.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_9-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exercise_6_3_9-3-1-1">Find the half-life of caffeine in the body. Round off your answer to two decimal places. Include units with your answer.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_9-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_9-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-6-3-2-1">approximately <span class="process-math">\(5\)</span> hours<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_9-3-2-1">approximately <span class="process-math">\(5\)</span> hours<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_9-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.9.b.1"><a tabindex="-1" href="#ex_6_3-6-3-2" title="Copy heading and permalink for Solution 6.3.9.b.1" aria-label="Copy heading and permalink for Solution 6.3.9.b.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 9.b.1"><a tabindex="-1" href="#exercise_6_3_9-3-2" title="Copy heading and permalink for Solution 9.b.1" aria-label="Copy heading and permalink for Solution 9.b.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.9.b"><a tabindex="-1" href="#ex_6_3-6-3" title="Copy heading and permalink for Task 6.3.9.b" aria-label="Copy heading and permalink for Task 6.3.9.b">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 9.b"><a tabindex="-1" href="#exercise_6_3_9-3" title="Copy heading and permalink for Task 9.b" aria-label="Copy heading and permalink for Task 9.b">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ex_6_3-6-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para" id="ex_6_3-6-4-1-1">How long will it take for <span class="process-math">\(C(t)\)</span> to be reduced to <span class="process-math">\(30\%\)</span> of the initial amount? Does the answer depend on the initial amount?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_9-4"><h4 class="heading"><span class="codenumber">(c)</span></h4>
+<div class="para" id="exercise_6_3_9-4-1-1">How long will it take for <span class="process-math">\(C(t)\)</span> to be reduced to <span class="process-math">\(30\%\)</span> of the initial amount? Does the answer depend on the initial amount?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_9-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_9-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-6-4-2-1">approximately <span class="process-math">\(8.69\)</span> hours; no<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_9-4-2-1">approximately <span class="process-math">\(8.69\)</span> hours; no<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_9-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.9.c.1"><a tabindex="-1" href="#ex_6_3-6-4-2" title="Copy heading and permalink for Solution 6.3.9.c.1" aria-label="Copy heading and permalink for Solution 6.3.9.c.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 9.c.1"><a tabindex="-1" href="#exercise_6_3_9-4-2" title="Copy heading and permalink for Solution 9.c.1" aria-label="Copy heading and permalink for Solution 9.c.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.9.c"><a tabindex="-1" href="#ex_6_3-6-4" title="Copy heading and permalink for Task 6.3.9.c" aria-label="Copy heading and permalink for Task 6.3.9.c">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 9.c"><a tabindex="-1" href="#exercise_6_3_9-4" title="Copy heading and permalink for Task 9.c" aria-label="Copy heading and permalink for Task 9.c">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ex_6_3-6-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para" id="ex_6_3-6-5-1-1">How long will it take for <span class="process-math">\(C(t)\)</span> to be reduced to <span class="process-math">\(10\)</span> mg? Does the answer depend on the initial amount?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_9-5"><h4 class="heading"><span class="codenumber">(d)</span></h4>
+<div class="para" id="exercise_6_3_9-5-1-1">How long will it take for <span class="process-math">\(C(t)\)</span> to be reduced to <span class="process-math">\(10\)</span> mg? Does the answer depend on the initial amount?<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_9-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-6-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_9-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-6-5-2-1">approximately <span class="process-math">\(16.32\)</span> hours; yes<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-6-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_9-5-2-1">approximately <span class="process-math">\(16.32\)</span> hours; yes<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_9-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.9.d.1"><a tabindex="-1" href="#ex_6_3-6-5-2" title="Copy heading and permalink for Solution 6.3.9.d.1" aria-label="Copy heading and permalink for Solution 6.3.9.d.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 9.d.1"><a tabindex="-1" href="#exercise_6_3_9-5-2" title="Copy heading and permalink for Solution 9.d.1" aria-label="Copy heading and permalink for Solution 9.d.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.9.d"><a tabindex="-1" href="#ex_6_3-6-5" title="Copy heading and permalink for Task 6.3.9.d" aria-label="Copy heading and permalink for Task 6.3.9.d">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.9"><a tabindex="-1" href="#ex_6_3-6" title="Copy heading and permalink for Exercise 6.3.9" aria-label="Copy heading and permalink for Exercise 6.3.9">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 9.d"><a tabindex="-1" href="#exercise_6_3_9-5" title="Copy heading and permalink for Task 9.d" aria-label="Copy heading and permalink for Task 9.d">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 9"><a tabindex="-1" href="#exercise_6_3_9" title="Copy heading and permalink for Exercise 9" aria-label="Copy heading and permalink for Exercise 9">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_3-7"><h3 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="introduction" id="ex_6_3-7-1">
-<div class="para" id="ex_6_3-7-1-1">The value of an antique chair, <span class="process-math">\(V(t)\text{,}\)</span> <span class="process-math">\(t\)</span> years after it was purchased for <span class="process-math">\(\$7000\)</span> increases by <span class="process-math">\(15\%\)</span> per year.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_3_10"><h3 class="heading"><span class="codenumber">10<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="introduction" id="exercise_6_3_10-1">
+<div class="para" id="exercise_6_3_10-1-1">The value of an antique chair, <span class="process-math">\(V(t)\text{,}\)</span> <span class="process-math">\(t\)</span> years after it was purchased for <span class="process-math">\(\$7000\)</span> increases by <span class="process-math">\(15\%\)</span> per year.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
-<article class="task exercise-like" id="ex_6_3-7-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
-<div class="para" id="ex_6_3-7-2-1-1">Write a formula for <span class="process-math">\(V(t)\)</span> in the form <span class="process-math">\(V(t)=A\cdot b^t\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_10-2"><h4 class="heading"><span class="codenumber">(a)</span></h4>
+<div class="para" id="exercise_6_3_10-2-1-1">Write a formula for <span class="process-math">\(V(t)\)</span> in the form <span class="process-math">\(V(t)=A\cdot b^t\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_10-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_10-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-7-2-2-1">
-<span class="process-math">\(V(t)=7000(1.15)^t\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_10-2-2-1">
+<span class="process-math">\(V(t)=7000(1.15)^t\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_10-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.10.a.1"><a tabindex="-1" href="#ex_6_3-7-2-2" title="Copy heading and permalink for Solution 6.3.10.a.1" aria-label="Copy heading and permalink for Solution 6.3.10.a.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.a.1"><a tabindex="-1" href="#exercise_6_3_10-2-2" title="Copy heading and permalink for Solution 10.a.1" aria-label="Copy heading and permalink for Solution 10.a.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.10.a"><a tabindex="-1" href="#ex_6_3-7-2" title="Copy heading and permalink for Task 6.3.10.a" aria-label="Copy heading and permalink for Task 6.3.10.a">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 10.a"><a tabindex="-1" href="#exercise_6_3_10-2" title="Copy heading and permalink for Task 10.a" aria-label="Copy heading and permalink for Task 10.a">🔗</a></div>
 </article>
-<article class="task exercise-like" id="ex_6_3-7-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para" id="ex_6_3-7-3-1-1">When will the value reach <span class="process-math">\(\$16000\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="exercise_6_3_10-3"><h4 class="heading"><span class="codenumber">(b)</span></h4>
+<div class="para" id="exercise_6_3_10-3-1-1">When will the value reach <span class="process-math">\(\$16000\text{?}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_10-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_10-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-7-3-2-1">approximately <span class="process-math">\(5.9\)</span> years<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_10-3-2-1">approximately <span class="process-math">\(5.9\)</span> years<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_10-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.10.b.1"><a tabindex="-1" href="#ex_6_3-7-3-2" title="Copy heading and permalink for Solution 6.3.10.b.1" aria-label="Copy heading and permalink for Solution 6.3.10.b.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 10.b.1"><a tabindex="-1" href="#exercise_6_3_10-3-2" title="Copy heading and permalink for Solution 10.b.1" aria-label="Copy heading and permalink for Solution 10.b.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Task 6.3.10.b"><a tabindex="-1" href="#ex_6_3-7-3" title="Copy heading and permalink for Task 6.3.10.b" aria-label="Copy heading and permalink for Task 6.3.10.b">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.10"><a tabindex="-1" href="#ex_6_3-7" title="Copy heading and permalink for Exercise 6.3.10" aria-label="Copy heading and permalink for Exercise 6.3.10">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Task 10.b"><a tabindex="-1" href="#exercise_6_3_10-3" title="Copy heading and permalink for Task 10.b" aria-label="Copy heading and permalink for Task 10.b">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercise 10"><a tabindex="-1" href="#exercise_6_3_10" title="Copy heading and permalink for Exercise 10" aria-label="Copy heading and permalink for Exercise 10">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_3-8"><h3 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="ex_6_3-8-1-1">The <span class="process-math">\(\text{pH}\)</span> of orange juice is <span class="process-math">\(3\text{.}\)</span> Find the hydrogen ion concentration <span class="process-math">\([\text{H}^{+}]\)</span> in orange juice.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_3_11"><h3 class="heading"><span class="codenumber">11<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercise_6_3_11-1-1">The <span class="process-math">\(\text{pH}\)</span> of orange juice is <span class="process-math">\(3\text{.}\)</span> Find the hydrogen ion concentration <span class="process-math">\([\text{H}^{+}]\)</span> in orange juice.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-8-2-1">
-<span class="process-math">\(0.001\)</span> <span class="process-math">\(\dfrac{\text{mol}}{\text{L}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_11-2-1">
+<span class="process-math">\(0.001\)</span> <span class="process-math">\(\dfrac{\text{mol}}{\text{L}}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.11.1"><a tabindex="-1" href="#ex_6_3-8-2" title="Copy heading and permalink for Solution 6.3.11.1" aria-label="Copy heading and permalink for Solution 6.3.11.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 11.1"><a tabindex="-1" href="#exercise_6_3_11-2" title="Copy heading and permalink for Solution 11.1" aria-label="Copy heading and permalink for Solution 11.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.11"><a tabindex="-1" href="#ex_6_3-8" title="Copy heading and permalink for Exercise 6.3.11" aria-label="Copy heading and permalink for Exercise 6.3.11">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 11"><a tabindex="-1" href="#exercise_6_3_11" title="Copy heading and permalink for Exercise 11" aria-label="Copy heading and permalink for Exercise 11">🔗</a></div>
 </article>
-<article class="exercise exercise-like" id="ex_6_3-9"><h3 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
-<div class="para" id="ex_6_3-9-1-1">The hydrogen ion concentration <span class="process-math">\([\text{H}^{+}]\)</span> in tomato juice is <span class="process-math">\(0.0001\)</span> moles per liter. Find the <span class="process-math">\(\text{pH}\)</span> of tomato juice.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="exercise exercise-like" id="exercise_6_3_12"><h3 class="heading"><span class="codenumber">12<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h3>
+<div class="para" id="exercise_6_3_12-1-1">The hydrogen ion concentration <span class="process-math">\([\text{H}^{+}]\)</span> in tomato juice is <span class="process-math">\(0.0001\)</span> moles per liter. Find the <span class="process-math">\(\text{pH}\)</span> of tomato juice.<div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="ex_6_3-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="exercise_6_3_12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="ex_6_3-9-2-1">The pH is <span class="process-math">\(4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#ex_6_3-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="exercise_6_3_12-2-1">The pH is <span class="process-math">\(4\text{.}\)</span><div class="autopermalink" aria-hidden="true" data-description="Paragraph"><a tabindex="-1" href="#exercise_6_3_12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Solution 6.3.12.1"><a tabindex="-1" href="#ex_6_3-9-2" title="Copy heading and permalink for Solution 6.3.12.1" aria-label="Copy heading and permalink for Solution 6.3.12.1">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Solution 12.1"><a tabindex="-1" href="#exercise_6_3_12-2" title="Copy heading and permalink for Solution 12.1" aria-label="Copy heading and permalink for Solution 12.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" aria-hidden="true" data-description="Exercise 6.3.12"><a tabindex="-1" href="#ex_6_3-9" title="Copy heading and permalink for Exercise 6.3.12" aria-label="Copy heading and permalink for Exercise 6.3.12">🔗</a></div>
-</article><div class="autopermalink" aria-hidden="true" data-description="Exercises 6.3"><a tabindex="-1" href="#ex_6_3" title="Copy heading and permalink for Exercises 6.3" aria-label="Copy heading and permalink for Exercises 6.3">🔗</a></div>
+<div class="autopermalink" aria-hidden="true" data-description="Exercise 12"><a tabindex="-1" href="#exercise_6_3_12" title="Copy heading and permalink for Exercise 12" aria-label="Copy heading and permalink for Exercise 12">🔗</a></div>
+</article><div class="autopermalink" aria-hidden="true" data-description="Exercises"><a tabindex="-1" href="#ex_6_3" title="Copy heading and permalink for Exercises" aria-label="Copy heading and permalink for Exercises">🔗</a></div>
 </section><div class="autopermalink" aria-hidden="true" data-description="Section 6.3: Logarithms in Applications"><a tabindex="-1" href="#sec_6_3" title="Copy heading and permalink for Section 6.3: Logarithms in Applications" aria-label="Copy heading and permalink for Section 6.3: Logarithms in Applications">🔗</a></div>
 </section>
 </div>
