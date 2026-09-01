@@ -38,12 +38,6 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
 <!-- <xsl:import href="./pretext-latex-common.xsl" /> -->
 
 
-<!-- Remove QR codes for interactive links -->
-<!-- <xsl:template match="*" mode="static-qr"/>
-<xsl:template match="*" mode="static-qr">
-<xsl:text>\relax</xsl:text>
-</xsl:template> -->
-
 <!-- <xsl:template name="titlesec-chapter-style">
 <xsl:text>
 \titleformat{\chapter}[block]{\centering\normalfont\Large\sc}{Chapter \thechapter:}{0.5em}{}[]
